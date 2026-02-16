@@ -1,0 +1,82 @@
+00394243  
+Length: 60 cm Width: 40 cm Thickness: 6 mm Pile coverage: 450 g/m² Pile thickness: 4 mm
+00394243  
+Package Number: 1 Length: 60 cm Width: 40 cm Height: 1 cm Diameter: - Net Weight: 0.27 kg Gross Weight: 0.28 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+20052187  
+Length: 90 cm Width: 60 cm Thickness: 16 mm Surface density: 5900 g/m²
+20052187  
+Package Number: 1 Length: 91 cm Width: 61 cm Height: 2 cm Diameter: - Net Weight: 3.36 kg Gross Weight: 3.37 kg Gross Volume: 8.2 l
+-----------------------------------------------------------------------------------------------------
+20382772  
+Length: 90 cm Width: 60 cm
+20382772  
+Package Number: 1 Length: 90 cm Width: 60 cm Height: 1 cm Diameter: - Net Weight: 0.64 kg Gross Weight: 0.65 kg Gross Volume: 3.2 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+40399045  
+Length: 60 cm Width: 40 cm Thickness: 16 mm
+40399045  
+Package Number: 1 Length: 61 cm Width: 41 cm Height: 2 cm Diameter: - Net Weight: 1.44 kg Gross Weight: 1.45 kg Gross Volume: 3.7 l
+-----------------------------------------------------------------------------------------------------
+50210128  
+Length: 70 cm Width: 40 cm
+50210128  
+Package Number: 1 Length: 70 cm Width: 40 cm Height: 2 cm Diameter: - Net Weight: 1.62 kg Gross Weight: 1.63 kg Gross Volume: 4.2 l
+-----------------------------------------------------------------------------------------------------
+50237665  
+Length: 70 cm Width: 40 cm
+50237665  
+Package Number: 1 Length: 71 cm Width: 41 cm Height: 2 cm Diameter: - Net Weight: 1.68 kg Gross Weight: 1.69 kg Gross Volume: 4.3 l
+-----------------------------------------------------------------------------------------------------
+50382775  
+Length: 90 cm Width: 60 cm Thickness: 6 mm Pile coverage: 321 g/m² Pile thickness: 4 mm
+50382775  
+Package Number: 1 Length: 90 cm Width: 60 cm Height: 1 cm Diameter: - Net Weight: 0.85 kg Gross Weight: 0.86 kg Gross Volume: 4.3 l
+-----------------------------------------------------------------------------------------------------
+60240460  
+Length: 70 cm Width: 40 cm
+60240460  
+Package Number: 1 Length: 71 cm Width: 41 cm Height: 2 cm Diameter: - Net Weight: 1.68 kg Gross Weight: 1.69 kg Gross Volume: 4.3 l
+-----------------------------------------------------------------------------------------------------
+80047635  
+Length: 80 cm Width: 50 cm Thickness: 12 mm Surface density: 2125 g/m²
+80047635  
+Package Number: 1 Length: 80 cm Width: 50 cm Height: 1 cm Diameter: - Net Weight: 0.89 kg Gross Weight: 0.90 kg Gross Volume: 4.0 l
+-----------------------------------------------------------------------------------------------------
+80382769  
+Length: 60 cm Width: 40 cm Thickness: 6 mm Pile coverage: 450 g/m² Pile thickness: 4 mm
+80382769  
+Package Number: 1 Length: 60 cm Width: 40 cm Height: 1 cm Diameter: - Net Weight: 0.27 kg Gross Weight: 0.28 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+90256280  
+Length: 70 cm Width: 40 cm
+90256280  
+Package Number: 1 Length: 71 cm Width: 41 cm Height: 2 cm Diameter: - Net Weight: 1.68 kg Gross Weight: 1.69 kg Gross Volume: 4.3 l
+-----------------------------------------------------------------------------------------------------
+90392452  
+Length: 55 cm Width: 35 cm
+90392452  
+Package Number: 1 Length: 55 cm Width: 35 cm Height: 1 cm Diameter: - Net Weight: 0.14 kg Gross Weight: 0.14 kg Gross Volume: 1.0 l
+-----------------------------------------------------------------------------------------------------
+00469441  
+Length: 60 cm Width: 40 cm Thickness: 15 mm
+00469441  
+Package Number: 1 Length: 61 cm Width: 41 cm Height: 2 cm Diameter: - Net Weight: 1.48 kg Gross Weight: 1.49 kg Gross Volume: 3.8 l
+-----------------------------------------------------------------------------------------------------
+30287939  
+Length: 90 cm Width: 69 cm Thickness: 6 mm Pile coverage: 510 g/m² Pile thickness: 4 mm
+30287939  
+Package Number: 1 Length: 91 cm Width: 70 cm Height: 1 cm Diameter: - Net Weight: 1.48 kg Gross Weight: 1.49 kg Gross Volume: 3.8 l
+-----------------------------------------------------------------------------------------------------
+40382771  
+Length: 60 cm Width: 40 cm Thickness: 6 mm Pile coverage: 450 g/m² Pile thickness: 4 mm
+40382771  
+Package Number: 1 Length: 60 cm Width: 40 cm Height: 1 cm Diameter: - Net Weight: 0.27 kg Gross Weight: 0.28 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+90322671  
+Length: 80 cm Width: 50 cm Pile coverage: 770 g/m²
+90322671  
+Package Number: 1 Length: 80 cm Width: 50 cm Height: 1 cm Diameter: - Net Weight: 0.81 kg Gross Weight: 0.82 kg Gross Volume: 4.8 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------

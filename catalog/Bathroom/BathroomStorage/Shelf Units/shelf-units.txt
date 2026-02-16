@@ -1,0 +1,114 @@
+99183393  
+Width: 40 cm Depth: 27 cm Height: 136 cm
+-----------------------------------------------------------------------------------------------------
+39183391  
+Width: 40 cm Depth: 27 cm Height: 148 cm
+-----------------------------------------------------------------------------------------------------
+29183396  
+Width: 40 cm Depth: 27 cm Height: 176 cm
+-----------------------------------------------------------------------------------------------------
+09183401  
+Width: 80 cm Depth: 27 cm Min. height: 108 cm Max. height: 148 cm
+-----------------------------------------------------------------------------------------------------
+99183406  
+Width: 80 cm Depth: 27 cm Min. height: 96 cm Max. height: 136 cm
+-----------------------------------------------------------------------------------------------------
+69183403  
+Width: 80 cm Depth: 27 cm Min. height: 94 cm Max. height: 134 cm
+-----------------------------------------------------------------------------------------------------
+39183409  
+Width: 120 cm Depth: 27 cm Min. height: 54 cm Max. height: 174 cm
+-----------------------------------------------------------------------------------------------------
+09183397  
+Width: 40 cm Depth: 27 cm Height: 134 cm
+-----------------------------------------------------------------------------------------------------
+69183399  
+Width: 40 cm Depth: 27 cm Height: 174 cm
+-----------------------------------------------------------------------------------------------------
+00318169  
+Width: 40 cm Depth: 27 cm Height: 108 cm
+00318169  
+Package Number: 1 Length: 41 cm Width: 29 cm Height: 12 cm Diameter: - Net Weight: 4.73 kg Gross Weight: 5.32 kg Gross Volume: 13.7 l
+-----------------------------------------------------------------------------------------------------
+00323646  
+Width: 40 cm Depth: 27 cm Height: 40 cm
+00323646  
+Package Number: 1 Length: 41 cm Width: 28 cm Height: 3 cm Diameter: - Net Weight: 1.49 kg Gross Weight: 1.66 kg Gross Volume: 3.7 l
+-----------------------------------------------------------------------------------------------------
+00396647  
+Width: 42 cm Depth: 10 cm Height: 118 cm
+00396647  
+Package Number: 1 Length: 120 cm Width: 18 cm Height: 6 cm Diameter: - Net Weight: 4.64 kg Gross Weight: 6.15 kg Gross Volume: 11.8 l
+-----------------------------------------------------------------------------------------------------
+10093763  
+Width: 42 cm Depth: 40 cm Height: 103 cm
+10093763  
+Package Number: 1 Length: 105 cm Width: 39 cm Height: 5 cm Diameter: - Net Weight: 6.23 kg Gross Weight: 6.40 kg Gross Volume: 20.5 l
+-----------------------------------------------------------------------------------------------------
+10318178  
+Width: 70 cm Depth: 20 cm Height: 189 cm
+10318178  
+Package Number: 1 Length: 71 cm Width: 21 cm Height: 9 cm Diameter: - Net Weight: 7.60 kg Gross Weight: 8.12 kg Gross Volume: 13.5 l
+-----------------------------------------------------------------------------------------------------
+10358744  
+Width: 47 cm Depth: 20 cm Height: 90 cm
+10358744  
+Package Number: 1 Length: 96 cm Width: 28 cm Height: 5 cm Diameter: - Net Weight: 5.70 kg Gross Weight: 6.10 kg Gross Volume: 12.4 l
+-----------------------------------------------------------------------------------------------------
+20318168  
+Width: 40 cm Depth: 27 cm Height: 96 cm
+20318168  
+Package Number: 1 Length: 41 cm Width: 29 cm Height: 9 cm Diameter: - Net Weight: 4.34 kg Gross Weight: 4.90 kg Gross Volume: 10.5 l
+-----------------------------------------------------------------------------------------------------
+30217654  
+Width: 42 cm Depth: 37 cm Height: 172 cm
+30217654  
+Package Number: 1 Length: 172 cm Width: 39 cm Height: 6 cm Diameter: - Net Weight: 16.05 kg Gross Weight: 17.01 kg Gross Volume: 36.3 l
+-----------------------------------------------------------------------------------------------------
+30253067  
+Width: 33 cm Depth: 28 cm Height: 163 cm
+30253067  
+Package Number: 1 Length: 102 cm Width: 31 cm Height: 7 cm Diameter: - Net Weight: 7.72 kg Gross Weight: 8.39 kg Gross Volume: 21.8 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+40307866  
+Width: 36 cm Depth: 23 cm Max. load/shelf: 13 kg Distance between shelves: 30 cm
+40307866  
+Package Number: 1 Length: 37 cm Width: 23 cm Height: 19 cm Diameter: - Net Weight: 1.96 kg Gross Weight: 1.96 kg Gross Volume: 16.1 l
+-----------------------------------------------------------------------------------------------------
+50318176  
+Width: 40 cm Depth: 27 cm Height: 54 cm
+50318176  
+Package Number: 1 Length: 45 cm Width: 42 cm Height: 10 cm Diameter: - Net Weight: 6.50 kg Gross Weight: 7.36 kg Gross Volume: 18.7 l
+-----------------------------------------------------------------------------------------------------
+60093765  
+Width: 37 cm Depth: 37 cm Height: 176 cm
+60093765  
+Package Number: 1 Length: 177 cm Width: 36 cm Height: 6 cm Diameter: - Net Weight: 9.30 kg Gross Weight: 9.60 kg Gross Volume: 36.4 l
+-----------------------------------------------------------------------------------------------------
+60323648  
+Width: 40 cm Depth: 15 cm Height: 40 cm
+60323648  
+Package Number: 1 Length: 42 cm Width: 38 cm Height: 7 cm Diameter: - Net Weight: 3.25 kg Gross Weight: 3.65 kg Gross Volume: 11.2 l
+-----------------------------------------------------------------------------------------------------
+70344457  
+Width: 47 cm Depth: 20 cm Height: 90 cm
+70344457  
+Package Number: 1 Length: 96 cm Width: 28 cm Height: 5 cm Diameter: - Net Weight: 5.85 kg Gross Weight: 6.10 kg Gross Volume: 12.4 l
+-----------------------------------------------------------------------------------------------------
+70358741  
+Width: 46 cm Depth: 26 cm Height: 150 cm
+70358741  
+Package Number: 1 Length: 154 cm Width: 27 cm Height: 10 cm Diameter: - Net Weight: 10.82 kg Gross Weight: 12.10 kg Gross Volume: 41.3 l
+-----------------------------------------------------------------------------------------------------
+90093764  
+Width: 42 cm Depth: 40 cm Height: 176 cm
+90093764  
+Package Number: 1 Length: 176 cm Width: 39 cm Height: 6 cm Diameter: - Net Weight: 9.83 kg Gross Weight: 10.09 kg Gross Volume: 37.8 l
+-----------------------------------------------------------------------------------------------------
+90344456  
+Width: 46 cm Depth: 26 cm Height: 150 cm
+90344456  
+Package Number: 1 Length: 155 cm Width: 27 cm Height: 10 cm Diameter: - Net Weight: 11.23 kg Gross Weight: 12.24 kg Gross Volume: 41.3 l
+-----------------------------------------------------------------------------------------------------
+

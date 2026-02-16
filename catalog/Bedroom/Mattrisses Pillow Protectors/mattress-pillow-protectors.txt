@@ -1,0 +1,141 @@
+30299145  
+Length: 200 cm Width: 80 cm
+30299145  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 15 cm Net Weight: 0.92 kg Gross Weight: 0.94 kg Gross Volume: 8.3 l
+-----------------------------------------------------------------------------------------------------
+30377708  
+Length: 200 cm Width: 80 cm
+30377708  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 14 cm Net Weight: 0.66 kg Gross Weight: 0.70 kg Gross Volume: 7.2 l
+-----------------------------------------------------------------------------------------------------
+40315423  
+Thread count: 176 /inch² Length: 200 cm Width: 180 cm
+40315423  
+Package Number: 1 Length: 66 cm Width: - Height: - Diameter: 24 cm Net Weight: 1.23 kg Gross Weight: 1.27 kg Gross Volume: 29.9 l
+-----------------------------------------------------------------------------------------------------
+50281069  
+Length: 50 cm Width: 60 cm
+50281069  
+Package Number: 1 Length: 28 cm Width: 18 cm Height: 3 cm Diameter: - Net Weight: 0.12 kg Gross Weight: 0.15 kg Gross Volume: 1.5 l
+-----------------------------------------------------------------------------------------------------
+60255545  
+Length: 200 cm Width: 120 cm
+60255545  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 16 cm Net Weight: 1.31 kg Gross Weight: 1.32 kg Gross Volume: 9.5 l
+-----------------------------------------------------------------------------------------------------
+60255550  
+Length: 200 cm Width: 160 cm
+60255550  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 19 cm Net Weight: 1.71 kg Gross Weight: 1.75 kg Gross Volume: 13.3 l
+-----------------------------------------------------------------------------------------------------
+00252413  
+Length: 200 cm Width: 90 cm
+00252413  
+Package Number: 1 Length: 46 cm Width: - Height: - Diameter: 14 cm Net Weight: 1.26 kg Gross Weight: 1.30 kg Gross Volume: 6.6 l
+-----------------------------------------------------------------------------------------------------
+00255553  
+Length: 200 cm Width: 180 cm
+00255553  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 20 cm Net Weight: 1.98 kg Gross Weight: 2.02 kg Gross Volume: 14.8 l
+-----------------------------------------------------------------------------------------------------
+00255572  
+Length: 50 cm Width: 60 cm
+00255572  
+Package Number: 1 Length: 31 cm Width: 20 cm Height: 3 cm Diameter: - Net Weight: 0.25 kg Gross Weight: 0.26 kg Gross Volume: 1.9 l
+-----------------------------------------------------------------------------------------------------
+00281038  
+Length: 200 cm Width: 140 cm
+00281038  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 15 cm Net Weight: 0.77 kg Gross Weight: 0.79 kg Gross Volume: 7.8 l
+-----------------------------------------------------------------------------------------------------
+10252422  
+Length: 50 cm Width: 60 cm
+10252422  
+Package Number: 1 Length: 31 cm Width: 30 cm Height: 6 cm Diameter: - Net Weight: 0.31 kg Gross Weight: 0.34 kg Gross Volume: 5.6 l
+-----------------------------------------------------------------------------------------------------
+10281212  
+Length: 200 cm Width: 140 cm
+10281212  
+Package Number: 1 Length: 37 cm Width: 28 cm Height: 6 cm Diameter: - Net Weight: 0.70 kg Gross Weight: 0.74 kg Gross Volume: 6.2 l
+-----------------------------------------------------------------------------------------------------
+10373240  
+Length: 140 cm Width: 70 cm
+10373240  
+Package Number: 1 Length: 36 cm Width: - Height: - Diameter: 11 cm Net Weight: 0.30 kg Gross Weight: 0.31 kg Gross Volume: 3.1 l
+-----------------------------------------------------------------------------------------------------
+20255547  
+Length: 200 cm Width: 140 cm
+20255547  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 17 cm Net Weight: 1.56 kg Gross Weight: 1.58 kg Gross Volume: 10.7 l
+-----------------------------------------------------------------------------------------------------
+20281042  
+Length: 200 cm Width: 180 cm
+20281042  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 18 cm Net Weight: 0.99 kg Gross Weight: 1.00 kg Gross Volume: 12.0 l
+-----------------------------------------------------------------------------------------------------
+20281216  
+Length: 200 cm Width: 180 cm
+20281216  
+Package Number: 1 Length: 37 cm Width: 27 cm Height: 7 cm Diameter: - Net Weight: 0.86 kg Gross Weight: 0.90 kg Gross Volume: 7.3 l
+-----------------------------------------------------------------------------------------------------
+20315419  
+Thread count: 176 /inch² Length: 200 cm Width: 140 cm
+20315419  
+Package Number: 1 Length: 66 cm Width: - Height: - Diameter: 19 cm Net Weight: 0.98 kg Gross Weight: 1.02 kg Gross Volume: 18.7 l
+-----------------------------------------------------------------------------------------------------
+40281036  
+Length: 200 cm Width: 120 cm
+40281036  
+Package Number: 1 Length: 45 cm Width: - Height: - Diameter: 12 cm Net Weight: 0.64 kg Gross Weight: 0.65 kg Gross Volume: 5.3 l
+-----------------------------------------------------------------------------------------------------
+50255555  
+Length: 200 cm Width: 90 cm
+50255555  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 15 cm Net Weight: 1.05 kg Gross Weight: 1.10 kg Gross Volume: 8.4 l
+-----------------------------------------------------------------------------------------------------
+60281040  
+Length: 200 cm Width: 160 cm
+60281040  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 17 cm Net Weight: 0.91 kg Gross Weight: 0.93 kg Gross Volume: 10.1 l
+-----------------------------------------------------------------------------------------------------
+60315417  
+Thread count: 176 /inch² Length: 200 cm Width: 120 cm
+60315417  
+Package Number: 1 Length: 66 cm Width: - Height: - Diameter: 19 cm Net Weight: 0.88 kg Gross Weight: 0.92 kg Gross Volume: 17.7 l
+-----------------------------------------------------------------------------------------------------
+70281214  
+Length: 200 cm Width: 160 cm
+70281214  
+Package Number: 1 Length: 38 cm Width: 28 cm Height: 7 cm Diameter: - Net Weight: 0.78 kg Gross Weight: 0.82 kg Gross Volume: 6.8 l
+-----------------------------------------------------------------------------------------------------
+70373100  
+Length: 120 cm Width: 60 cm
+70373100  
+Package Number: 1 Length: 36 cm Width: - Height: - Diameter: 8 cm Net Weight: 0.23 kg Gross Weight: 0.24 kg Gross Volume: 1.8 l
+-----------------------------------------------------------------------------------------------------
+80281044  
+Length: 200 cm Width: 90 cm
+80281044  
+Package Number: 1 Length: 47 cm Width: - Height: - Diameter: 14 cm Net Weight: 0.50 kg Gross Weight: 0.53 kg Gross Volume: 7.2 l
+-----------------------------------------------------------------------------------------------------
+80281218  
+Length: 200 cm Width: 90 cm
+80281218  
+Package Number: 1 Length: 38 cm Width: 28 cm Height: 4 cm Diameter: - Net Weight: 0.52 kg Gross Weight: 0.56 kg Gross Volume: 3.9 l
+-----------------------------------------------------------------------------------------------------
+80315421  
+Thread count: 176 /inch² Length: 200 cm Width: 160 cm
+80315421  
+Package Number: 1 Length: 66 cm Width: - Height: - Diameter: 20 cm Net Weight: 1.08 kg Gross Weight: 1.12 kg Gross Volume: 20.7 l
+-----------------------------------------------------------------------------------------------------
+90315425  
+Thread count: 176 /inch² Length: 200 cm Width: 90 cm
+90315425  
+Package Number: 1 Length: 66 cm Width: - Height: - Diameter: 19 cm Net Weight: 0.66 kg Gross Weight: 0.70 kg Gross Volume: 17.7 l
+-----------------------------------------------------------------------------------------------------
+70401259  
+Length: 200 cm Width: 90 cm
+70401259  
+Package Number: 1 Length: 46 cm Width: - Height: - Diameter: 9 cm Net Weight: 0.37 kg Gross Weight: 0.38 kg Gross Volume: 2.9 l
+-----------------------------------------------------------------------------------------------------
+

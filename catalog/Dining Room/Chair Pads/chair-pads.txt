@@ -1,0 +1,95 @@
+00395209  
+Package Number: 1 Length: 1 cm Width: - Height: - Diameter: 35 cm Net Weight: 0.19 kg Gross Weight: 0.19 kg Gross Volume: 0.8 l
+-----------------------------------------------------------------------------------------------------
+00410120  
+Width: 36 cm Depth: 36 cm Thickness: 3.0 cm Total weight: 280 g
+00410120  
+Package Number: 1 Length: 36 cm Width: 36 cm Height: 3 cm Diameter: - Net Weight: 0.28 kg Gross Weight: 0.28 kg Gross Volume: 3.9 l
+-----------------------------------------------------------------------------------------------------
+10150094  
+Package Number: 1 Length: 3 cm Width: - Height: - Diameter: 34 cm Net Weight: 0.11 kg Gross Weight: 0.11 kg Gross Volume: 2.3 l
+-----------------------------------------------------------------------------------------------------
+10209202  
+Min. width: 35 cm Max. width: 40 cm Depth: 38 cm Thickness: 7 cm Filling weight: 330 g Total weight: 460 g
+10209202  
+Package Number: 1 Length: 40 cm Width: 38 cm Height: 9 cm Diameter: - Net Weight: 0.52 kg Gross Weight: 0.52 kg Gross Volume: 13.2 l
+-----------------------------------------------------------------------------------------------------
+10331014  
+Width: 43 cm Min. width: 40 cm Max. width: 35 cm Depth: 38 cm Thickness: 7 cm
+10331014  
+Package Number: 1 Length: 40 cm Width: 38 cm Height: 9 cm Diameter: - Net Weight: 0.48 kg Gross Weight: 0.48 kg Gross Volume: 13.2 l
+-----------------------------------------------------------------------------------------------------
+30141975  
+Package Number: 1 Length: 33 cm Width: 33 cm Height: 2 cm Diameter: - Net Weight: 0.09 kg Gross Weight: 0.09 kg Gross Volume: 1.9 l
+-----------------------------------------------------------------------------------------------------
+30416578  
+Package Number: 1 Length: 3 cm Width: - Height: - Diameter: 36 cm Net Weight: 0.19 kg Gross Weight: 0.19 kg Gross Volume: 2.6 l
+-----------------------------------------------------------------------------------------------------
+40202746  
+Min. width: 35 cm Max. width: 40 cm Depth: 38 cm Thickness: 7 cm Filling weight: 330 g Total weight: 460 g
+40202746  
+Package Number: 1 Length: 40 cm Width: 39 cm Height: 9 cm Diameter: - Net Weight: 0.52 kg Gross Weight: 0.52 kg Gross Volume: 13.6 l
+-----------------------------------------------------------------------------------------------------
+40416587  
+Width: 36 cm Depth: 36 cm Thickness: 3.0 cm Total weight: 280 g
+40416587  
+Package Number: 1 Length: 36 cm Width: 36 cm Height: 3 cm Diameter: - Net Weight: 0.28 kg Gross Weight: 0.28 kg Gross Volume: 3.9 l
+-----------------------------------------------------------------------------------------------------
+60175006  
+Min. width: 35 cm Max. width: 42 cm Depth: 40 cm Thickness: 4.0 cm
+60175006  
+Package Number: 1 Length: 42 cm Width: 40 cm Height: 4 cm Diameter: - Net Weight: 0.22 kg Gross Weight: 0.22 kg Gross Volume: 7.4 l
+-----------------------------------------------------------------------------------------------------
+60304428  
+Min. width: 35 cm Max. width: 42 cm Depth: 40 cm Thickness: 4.0 cm
+60304428  
+Package Number: 1 Length: 42 cm Width: 40 cm Height: 4 cm Diameter: - Net Weight: 0.22 kg Gross Weight: 0.22 kg Gross Volume: 7.4 l
+-----------------------------------------------------------------------------------------------------
+80265143  
+Package Number: 1 Length: 33 cm Width: 33 cm Height: 2 cm Diameter: - Net Weight: 0.09 kg Gross Weight: 0.09 kg Gross Volume: 1.9 l
+-----------------------------------------------------------------------------------------------------
+90175000  
+Min. width: 35 cm Max. width: 42 cm Depth: 40 cm Thickness: 4.0 cm
+90175000  
+Package Number: 1 Length: 42 cm Width: 40 cm Height: 4 cm Diameter: - Net Weight: 0.28 kg Gross Weight: 0.29 kg Gross Volume: 7.4 l
+-----------------------------------------------------------------------------------------------------
+90395813  
+Min. width: 35 cm Max. width: 42 cm Depth: 40 cm Thickness: 4.0 cm
+90395813  
+Package Number: 1 Length: 42 cm Width: 40 cm Height: 4 cm Diameter: - Net Weight: 0.22 kg Gross Weight: 0.22 kg Gross Volume: 7.4 l
+-----------------------------------------------------------------------------------------------------
+90412450  
+Width: 43 cm Depth: 42 cm Thickness: 4.0 cm
+90412450  
+Package Number: 1 Length: 43 cm Width: 42 cm Height: 4 cm Diameter: - Net Weight: 0.36 kg Gross Weight: 0.36 kg Gross Volume: 7.8 l
+-----------------------------------------------------------------------------------------------------
+00410101  
+Width: 38 cm Depth: 38 cm Thickness: 6.5 cm Filling weight: 300 g Total weight: 430 g
+00410101  
+Package Number: 1 Length: 38 cm Width: 38 cm Height: 7 cm Diameter: - Net Weight: 0.45 kg Gross Weight: 0.45 kg Gross Volume: 9.4 l
+-----------------------------------------------------------------------------------------------------
+10395807  
+Width: 38 cm Depth: 38 cm Thickness: 6.5 cm Filling weight: 300 g Total weight: 430 g
+10395807  
+Package Number: 1 Length: 38 cm Width: 38 cm Height: 7 cm Diameter: - Net Weight: 0.45 kg Gross Weight: 0.45 kg Gross Volume: 9.4 l
+-----------------------------------------------------------------------------------------------------
+00410083  
+Package Number: 1 Length: 2 cm Width: - Height: - Diameter: 36 cm Net Weight: 0.11 kg Gross Weight: 0.11 kg Gross Volume: 1.5 l
+-----------------------------------------------------------------------------------------------------
+60416572  
+Package Number: 1 Length: 3 cm Width: - Height: - Diameter: 36 cm Net Weight: 0.18 kg Gross Weight: 0.19 kg Gross Volume: 2.6 l
+-----------------------------------------------------------------------------------------------------
+00333122  
+Width: 43 cm Min. width: 40 cm Max. width: 35 cm Depth: 38 cm Thickness: 7 cm
+00333122  
+Package Number: 1 Length: 40 cm Width: 38 cm Height: 9 cm Diameter: - Net Weight: 0.48 kg Gross Weight: 0.48 kg Gross Volume: 13.2 l
+-----------------------------------------------------------------------------------------------------
+20410077  
+Width: 43 cm Depth: 42 cm Thickness: 4.0 cm
+20410077  
+Package Number: 1 Length: 43 cm Width: 42 cm Height: 4 cm Diameter: - Net Weight: 0.36 kg Gross Weight: 0.36 kg Gross Volume: 7.8 l
+-----------------------------------------------------------------------------------------------------
+40304472  
+Package Number: 1 Length: 3 cm Width: - Height: - Diameter: 34 cm Net Weight: 0.12 kg Gross Weight: 0.12 kg Gross Volume: 2.3 l
+-----------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,389 @@
+00317730  
+Package Number: 1 Length: 36 cm Width: 25 cm Height: 6 cm Diameter: - Net Weight: 1.39 kg Gross Weight: 1.53 kg Gross Volume: 5.4 l
+-----------------------------------------------------------------------------------------------------
+00322312  
+Package Number: 1 Length: 37 cm Width: 25 cm Height: 7 cm Diameter: - Net Weight: 1.25 kg Gross Weight: 1.48 kg Gross Volume: 5.9 l
+-----------------------------------------------------------------------------------------------------
+00348859  
+Package Number: 1 Length: 36 cm Width: 24 cm Height: 7 cm Diameter: - Net Weight: 0.93 kg Gross Weight: 1.12 kg Gross Volume: 5.6 l
+-----------------------------------------------------------------------------------------------------
+00413538  
+Package Number: 1 Length: 36 cm Width: 25 cm Height: 7 cm Diameter: - Net Weight: 1.07 kg Gross Weight: 1.23 kg Gross Volume: 5.8 l
+-----------------------------------------------------------------------------------------------------
+10052362  
+Length: 53 cm Width: 60 cm Height: 7 cm
+10052362  
+Package Number: 1 Length: 56 cm Width: 51 cm Height: 7 cm Diameter: - Net Weight: 1.05 kg Gross Weight: 1.11 kg Gross Volume: 18.4 l
+-----------------------------------------------------------------------------------------------------
+10306241  
+Package Number: 1 Length: 38 cm Width: 24 cm Height: 11 cm Diameter: - Net Weight: 1.28 kg Gross Weight: 1.50 kg Gross Volume: 9.6 l
+-----------------------------------------------------------------------------------------------------
+20278657  
+Package Number: 1 Length: 36 cm Width: 25 cm Height: 7 cm Diameter: - Net Weight: 1.05 kg Gross Weight: 1.27 kg Gross Volume: 6.3 l
+-----------------------------------------------------------------------------------------------------
+20321689  
+Package Number: 1 Length: 37 cm Width: 25 cm Height: 7 cm Diameter: - Net Weight: 1.02 kg Gross Weight: 1.18 kg Gross Volume: 5.8 l
+-----------------------------------------------------------------------------------------------------
+30094592  
+Length: 53 cm Width: 60 cm Height: 7 cm
+30094592  
+Package Number: 1 Length: 57 cm Width: 51 cm Height: 7 cm Diameter: - Net Weight: 1.21 kg Gross Weight: 1.25 kg Gross Volume: 20.4 l
+-----------------------------------------------------------------------------------------------------
+30105897  
+Length: 53 cm Width: 60 cm Height: 7 cm
+30105897  
+Package Number: 1 Length: 57 cm Width: 51 cm Height: 7 cm Diameter: - Net Weight: 1.20 kg Gross Weight: 1.25 kg Gross Volume: 20.4 l
+-----------------------------------------------------------------------------------------------------
+40319732  
+Package Number: 1 Length: 35 cm Width: 23 cm Height: 6 cm Diameter: - Net Weight: 0.89 kg Gross Weight: 1.22 kg Gross Volume: 5.2 l
+-----------------------------------------------------------------------------------------------------
+40345401  
+Package Number: 1 Length: 57 cm Width: 51 cm Height: 5 cm Diameter: - Net Weight: 0.75 kg Gross Weight: 0.80 kg Gross Volume: 14.4 l
+-----------------------------------------------------------------------------------------------------
+40394321  
+Package Number: 1 Length: 59 cm Width: 55 cm Height: 5 cm Diameter: - Net Weight: 0.77 kg Gross Weight: 0.83 kg Gross Volume: 16.2 l
+-----------------------------------------------------------------------------------------------------
+30348909  
+Package Number: 1 Length: 36 cm Width: 25 cm Height: 6 cm Diameter: - Net Weight: 1.01 kg Gross Weight: 1.21 kg Gross Volume: 5.4 l
+-----------------------------------------------------------------------------------------------------
+10305901  
+Length: 53 cm Width: 60 cm Thickness: 7 cm
+10305901  
+Package Number: 1 Length: 57 cm Width: 51 cm Height: 6 cm Diameter: - Net Weight: 0.75 kg Gross Weight: 0.80 kg Gross Volume: 16.7 l
+-----------------------------------------------------------------------------------------------------
+20280325  
+Package Number: 1 Length: 37 cm Width: 25 cm Height: 7 cm Diameter: - Net Weight: 1.07 kg Gross Weight: 1.29 kg Gross Volume: 6.3 l
+-----------------------------------------------------------------------------------------------------
+20339825  
+Package Number: 1 Length: 37 cm Width: 25 cm Height: 7 cm Diameter: - Net Weight: 1.09 kg Gross Weight: 1.26 kg Gross Volume: 5.9 l
+-----------------------------------------------------------------------------------------------------
+30326709  
+Length: 53 cm Width: 60 cm Thickness: 7 cm
+30326709  
+Package Number: 1 Length: 57 cm Width: 54 cm Height: 6 cm Diameter: - Net Weight: 0.98 kg Gross Weight: 1.03 kg Gross Volume: 18.5 l
+-----------------------------------------------------------------------------------------------------
+40326638  
+Length: 53 cm Width: 60 cm Thickness: 7 cm
+40326638  
+Package Number: 1 Length: 58 cm Width: 54 cm Height: 9 cm Diameter: - Net Weight: 1.02 kg Gross Weight: 1.54 kg Gross Volume: 26.4 l
+-----------------------------------------------------------------------------------------------------
+40326723  
+Length: 53 cm Width: 60 cm Thickness: 7 cm
+40326723  
+Package Number: 1 Length: 57 cm Width: 54 cm Height: 6 cm Diameter: - Net Weight: 0.98 kg Gross Weight: 1.03 kg Gross Volume: 18.5 l
+-----------------------------------------------------------------------------------------------------
+50280300  
+Package Number: 1 Length: 36 cm Width: 24 cm Height: 7 cm Diameter: - Net Weight: 1.07 kg Gross Weight: 1.29 kg Gross Volume: 6.1 l
+-----------------------------------------------------------------------------------------------------
+50321744  
+Package Number: 1 Length: 37 cm Width: 24 cm Height: 6 cm Diameter: - Net Weight: 1.42 kg Gross Weight: 1.59 kg Gross Volume: 5.3 l
+-----------------------------------------------------------------------------------------------------
+50362522  
+Length: 53 cm Width: 60 cm Thickness: 7 cm
+50362522  
+Package Number: 1 Length: 57 cm Width: 52 cm Height: 6 cm Diameter: - Net Weight: 0.90 kg Gross Weight: 0.95 kg Gross Volume: 16.0 l
+-----------------------------------------------------------------------------------------------------
+60394320  
+Package Number: 1 Length: 59 cm Width: 55 cm Height: 5 cm Diameter: - Net Weight: 0.77 kg Gross Weight: 0.83 kg Gross Volume: 16.2 l
+-----------------------------------------------------------------------------------------------------
+60397639  
+Length: 53 cm Width: 60 cm Thickness: 7 cm
+60397639  
+Package Number: 1 Length: 56 cm Width: 51 cm Height: 6 cm Diameter: - Net Weight: 0.95 kg Gross Weight: 1.00 kg Gross Volume: 15.7 l
+-----------------------------------------------------------------------------------------------------
+60397644  
+Length: 53 cm Width: 60 cm Thickness: 7 cm
+60397644  
+Package Number: 1 Length: 56 cm Width: 51 cm Height: 6 cm Diameter: - Net Weight: 0.95 kg Gross Weight: 1.00 kg Gross Volume: 15.7 l
+-----------------------------------------------------------------------------------------------------
+60403305  
+Package Number: 1 Length: 37 cm Width: 25 cm Height: 7 cm Diameter: - Net Weight: 0.98 kg Gross Weight: 1.11 kg Gross Volume: 6.3 l
+-----------------------------------------------------------------------------------------------------
+70362521  
+Length: 53 cm Width: 60 cm Thickness: 7 cm
+70362521  
+Package Number: 1 Length: 57 cm Width: 56 cm Height: 6 cm Diameter: - Net Weight: 0.90 kg Gross Weight: 0.95 kg Gross Volume: 17.4 l
+-----------------------------------------------------------------------------------------------------
+70413479  
+Package Number: 1 Length: 37 cm Width: 25 cm Height: 7 cm Diameter: - Net Weight: 1.06 kg Gross Weight: 1.22 kg Gross Volume: 5.9 l
+-----------------------------------------------------------------------------------------------------
+80348855  
+Package Number: 1 Length: 36 cm Width: 24 cm Height: 7 cm Diameter: - Net Weight: 0.96 kg Gross Weight: 1.15 kg Gross Volume: 5.6 l
+-----------------------------------------------------------------------------------------------------
+80413902  
+Package Number: 1 Length: 36 cm Width: 25 cm Height: 6 cm Diameter: - Net Weight: 1.13 kg Gross Weight: 1.27 kg Gross Volume: 5.4 l
+-----------------------------------------------------------------------------------------------------
+50346669  
+Package Number: 1 Length: 57 cm Width: 51 cm Height: 5 cm Diameter: - Net Weight: 0.75 kg Gross Weight: 0.80 kg Gross Volume: 14.4 l
+-----------------------------------------------------------------------------------------------------
+80326622  
+Length: 53 cm Width: 60 cm Height: 7 cm
+80326622  
+Package Number: 1 Length: 57 cm Width: 53 cm Height: 7 cm Diameter: - Net Weight: 1.26 kg Gross Weight: 1.39 kg Gross Volume: 21.0 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+09251452  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+79197843  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+19244673  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+29197893  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+39181245  
+Width: 68 cm Depth: 82 cm Height: 39 cm Seat width: 56 cm Seat depth: 50 cm Seat height: 42 cm
+-----------------------------------------------------------------------------------------------------
+39251436  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+49197868  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+99244669  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+59150158  
+Width: 68 cm Depth: 82 cm Height: 39 cm Seat width: 56 cm Seat depth: 50 cm Seat height: 42 cm
+-----------------------------------------------------------------------------------------------------
+59181334  
+Width: 68 cm Depth: 82 cm Height: 39 cm Seat width: 56 cm Seat depth: 50 cm Seat height: 42 cm
+-----------------------------------------------------------------------------------------------------
+09164902  
+Length: 82 cm Width: 62 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+29251432  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+29181241  
+Width: 68 cm Depth: 82 cm Height: 39 cm Seat width: 56 cm Seat depth: 50 cm Seat height: 42 cm
+-----------------------------------------------------------------------------------------------------
+29197888  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+49244657  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+59197863  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+69244661  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+89251448  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+99197837  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+29150089  
+Width: 68 cm Depth: 82 cm Height: 39 cm Seat width: 56 cm Seat depth: 50 cm Seat height: 42 cm
+-----------------------------------------------------------------------------------------------------
+39181330  
+Width: 68 cm Depth: 82 cm Height: 39 cm Seat width: 56 cm Seat depth: 50 cm Seat height: 42 cm
+-----------------------------------------------------------------------------------------------------
+29129347  
+Width: 144 cm Depth: 49 cm Height: 47 cm
+-----------------------------------------------------------------------------------------------------
+29129106  
+Length: 82 cm Width: 62 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+69129114  
+Length: 82 cm Width: 62 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+69129128  
+Length: 82 cm Width: 62 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+29257504  
+Length: 82 cm Width: 62 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+49192682  
+Length: 64 cm Width: 84 cm Height: 51 cm Free height under furniture: 4 cm Volume: 95 l
+-----------------------------------------------------------------------------------------------------
+30198599  
+Width: 90 cm Depth: 70 cm Height: 43 cm
+30198599  
+Package Number: 1 Length: 92 cm Width: 74 cm Height: 42 cm Diameter: - Net Weight: 26.24 kg Gross Weight: 28.60 kg Gross Volume: 282.5 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+40069851  
+Width: 68 cm Depth: 54 cm Height: 39 cm Seat width: 54 cm Seat depth: 54 cm Seat height: 38 cm
+40069851  
+Package Number: 1 Length: 57 cm Width: 47 cm Height: 8 cm Diameter: - Net Weight: 4.45 kg Gross Weight: 5.00 kg Gross Volume: 21.8 l
+-----------------------------------------------------------------------------------------------------
+40266682  
+Length: 36 cm Width: 36 cm Height: 36 cm
+40266682  
+Package Number: 1 Length: 38 cm Width: 38 cm Height: 9 cm Diameter: - Net Weight: 3.36 kg Gross Weight: 3.61 kg Gross Volume: 12.2 l
+-----------------------------------------------------------------------------------------------------
+50433237  
+Width: 60 cm Depth: 40 cm Height: 44 cm
+50433237  
+Package Number: 1 Length: 61 cm Width: 41 cm Height: 31 cm Diameter: - Net Weight: 6.96 kg Gross Weight: 8.00 kg Gross Volume: 77.4 l
+-----------------------------------------------------------------------------------------------------
+30413966  
+Width: 60 cm Depth: 40 cm Height: 44 cm
+30413966  
+Package Number: 1 Length: 61 cm Width: 41 cm Height: 32 cm Diameter: - Net Weight: 6.50 kg Gross Weight: 7.40 kg Gross Volume: 78.4 l
+-----------------------------------------------------------------------------------------------------
+59252944  
+Width: 90 cm Depth: 70 cm Height: 43 cm
+-----------------------------------------------------------------------------------------------------
+79011393  
+Width: 90 cm Depth: 70 cm Height: 43 cm
+-----------------------------------------------------------------------------------------------------
+09830541  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+89830542  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+79815047  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+29150602  
+Width: 68 cm Depth: 82 cm Height: 39 cm Seat width: 56 cm Seat depth: 50 cm Seat height: 42 cm
+-----------------------------------------------------------------------------------------------------
+59829111  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+29829117  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+39817883  
+Width: 68 cm Depth: 54 cm Height: 39 cm
+-----------------------------------------------------------------------------------------------------
+39150606  
+Width: 68 cm Depth: 82 cm Height: 39 cm Seat width: 56 cm Seat depth: 50 cm Seat height: 42 cm
+-----------------------------------------------------------------------------------------------------
+19194376  
+Width: 90 cm Depth: 70 cm Height: 43 cm
+-----------------------------------------------------------------------------------------------------
+69193713  
+Width: 90 cm Depth: 70 cm Height: 43 cm
+-----------------------------------------------------------------------------------------------------
+69193647  
+Width: 90 cm Depth: 70 cm Height: 43 cm
+-----------------------------------------------------------------------------------------------------
+49269737  
+Length: 77 cm Width: 65 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+09274769  
+Width: 144 cm Depth: 49 cm Height: 47 cm
+-----------------------------------------------------------------------------------------------------
+49274729  
+Width: 144 cm Depth: 49 cm Height: 47 cm
+-----------------------------------------------------------------------------------------------------
+00340472  
+Length: 135 cm Width: 116 cm Height: 20 cm Filling weight: 4800 g Total weight: 5080 g
+00340472  
+Package Number: 1 Length: 107 cm Width: - Height: - Diameter: 28 cm Net Weight: 6.16 kg Gross Weight: 6.50 kg Gross Volume: 65.9 l
+-----------------------------------------------------------------------------------------------------
+00385309  
+Height: 41 cm Diameter: 56 cm
+00385309  
+Package Number: 1 Length: 18 cm Width: - Height: - Diameter: 57 cm Net Weight: 4.69 kg Gross Weight: 4.82 kg Gross Volume: 45.9 l
+-----------------------------------------------------------------------------------------------------
+00385314  
+Height: 33 cm Diameter: 45 cm
+00385314  
+Package Number: 1 Length: 16 cm Width: - Height: - Diameter: 46 cm Net Weight: 3.48 kg Gross Weight: 3.58 kg Gross Volume: 26.6 l
+-----------------------------------------------------------------------------------------------------
+20300432  
+Width: 60 cm Depth: 40 cm Height: 44 cm
+20300432  
+Package Number: 1 Length: 61 cm Width: 41 cm Height: 32 cm Diameter: - Net Weight: 6.59 kg Gross Weight: 7.50 kg Gross Volume: 79.4 l
+-----------------------------------------------------------------------------------------------------
+20335484  
+Package Number: 1 Length: 59 cm Width: 44 cm Height: 32 cm Diameter: - Net Weight: 4.44 kg Gross Weight: 5.49 kg Gross Volume: 83.1 l
+-----------------------------------------------------------------------------------------------------
+20359837  
+Width: 60 cm Depth: 40 cm Height: 44 cm
+20359837  
+Package Number: 1 Length: 61 cm Width: 41 cm Height: 32 cm Diameter: - Net Weight: 6.49 kg Gross Weight: 7.40 kg Gross Volume: 79.4 l
+-----------------------------------------------------------------------------------------------------
+50300416  
+Width: 60 cm Depth: 40 cm Height: 44 cm
+50300416  
+Package Number: 1 Length: 61 cm Width: 41 cm Height: 32 cm Diameter: - Net Weight: 6.40 kg Gross Weight: 7.30 kg Gross Volume: 79.4 l
+-----------------------------------------------------------------------------------------------------
+50360009  
+Width: 60 cm Depth: 40 cm Height: 44 cm
+50360009  
+Package Number: 1 Length: 61 cm Width: 41 cm Height: 32 cm Diameter: - Net Weight: 6.49 kg Gross Weight: 7.40 kg Gross Volume: 79.4 l
+-----------------------------------------------------------------------------------------------------
+50363970  
+Height: 44 cm Diameter: 71 cm
+50363970  
+Package Number: 1 Length: 20 cm Width: - Height: - Diameter: 72 cm Net Weight: 7.26 kg Gross Weight: 7.50 kg Gross Volume: 81.4 l
+-----------------------------------------------------------------------------------------------------
+60266681  
+Length: 36 cm Width: 36 cm Height: 36 cm
+60266681  
+Package Number: 1 Length: 38 cm Width: 38 cm Height: 9 cm Diameter: - Net Weight: 3.36 kg Gross Weight: 3.61 kg Gross Volume: 12.2 l
+-----------------------------------------------------------------------------------------------------
+61305907  
+Width: 68 cm Depth: 54 cm Height: 39 cm Seat width: 54 cm Seat depth: 54 cm Seat height: 38 cm
+61305907  
+Package Number: 1 Length: 58 cm Width: 48 cm Height: 8 cm Diameter: - Net Weight: 4.53 kg Gross Weight: 5.00 kg Gross Volume: 22.4 l
+-----------------------------------------------------------------------------------------------------
+90335485  
+Package Number: 1 Length: 59 cm Width: 44 cm Height: 32 cm Diameter: - Net Weight: 4.44 kg Gross Weight: 5.49 kg Gross Volume: 83.1 l
+-----------------------------------------------------------------------------------------------------
+09031813  
+Length: 77 cm Width: 65 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+89031809  
+Length: 77 cm Width: 65 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+69183498  
+Length: 82 cm Width: 62 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+19269748  
+Length: 77 cm Width: 65 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+39269182  
+Length: 77 cm Width: 65 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+89031833  
+Length: 77 cm Width: 65 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+99031837  
+Length: 77 cm Width: 65 cm Height: 44 cm
+-----------------------------------------------------------------------------------------------------
+50414823  
+Length: 55 cm Width: 55 cm Filling weight: 750 g Total weight: 990 g
+50414823  
+Package Number: 1 Length: 55 cm Width: 55 cm Height: 12 cm Diameter: - Net Weight: 1.04 kg Gross Weight: 1.04 kg Gross Volume: 34.8 l
+-----------------------------------------------------------------------------------------------------
+60103203  
+Width: 60 cm Depth: 51 cm Height: 41 cm
+60103203  
+Package Number: 1 Length: 57 cm Width: 51 cm Height: 41 cm Diameter: - Net Weight: 11.30 kg Gross Weight: 12.70 kg Gross Volume: 118.1 l
+-----------------------------------------------------------------------------------------------------
+60335482  
+Package Number: 1 Length: 59 cm Width: 44 cm Height: 32 cm Diameter: - Net Weight: 4.29 kg Gross Weight: 5.61 kg Gross Volume: 83.1 l
+-----------------------------------------------------------------------------------------------------
+80414831  
+Length: 55 cm Width: 55 cm Filling weight: 750 g Total weight: 990 g
+80414831  
+Package Number: 1 Length: 55 cm Width: 55 cm Height: 12 cm Diameter: - Net Weight: 1.04 kg Gross Weight: 1.04 kg Gross Volume: 34.8 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+20033919  
+Package Number: 1 Length: 60 cm Width: 60 cm Height: 17 cm Diameter: - Net Weight: 4.00 kg Gross Weight: 4.00 kg Gross Volume: 61.2 l
+-----------------------------------------------------------------------------------------------------
+10434309  
+Height: 36 cm Diameter: 62 cm Free height under furniture: 14 cm
+10434309  
+Package Number: 1 Length: 62 cm Width: 50 cm Height: 20 cm Diameter: - Net Weight: 5.15 kg Gross Weight: 5.50 kg Gross Volume: 62.3 l
+-----------------------------------------------------------------------------------------------------
+

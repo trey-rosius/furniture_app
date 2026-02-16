@@ -1,0 +1,25 @@
+00354727  
+Length: 82 cm Depth: 49 cm Thickness: 2.0 cm
+00354727  
+Package Number: 1 Length: 90 cm Width: 50 cm Height: 3 cm Diameter: - Net Weight: 5.58 kg Gross Weight: 6.24 kg Gross Volume: 11.2 l
+-----------------------------------------------------------------------------------------------------
+30354801  
+Length: 62 cm Depth: 40 cm Thickness: 2.0 cm
+30354801  
+Package Number: 1 Length: 69 cm Width: 41 cm Height: 3 cm Diameter: - Net Weight: 3.11 kg Gross Weight: 3.70 kg Gross Volume: 7.1 l
+-----------------------------------------------------------------------------------------------------
+40371273  
+Length: 82 cm Depth: 49 cm Thickness: 1.8 cm
+40371273  
+Package Number: 1 Length: 94 cm Width: 51 cm Height: 3 cm Diameter: - Net Weight: 5.42 kg Gross Weight: 6.00 kg Gross Volume: 11.8 l
+-----------------------------------------------------------------------------------------------------
+50354701  
+Length: 82 cm Depth: 49 cm Thickness: 2.0 cm
+50354701  
+Package Number: 1 Length: 94 cm Width: 50 cm Height: 3 cm Diameter: - Net Weight: 5.79 kg Gross Weight: 6.32 kg Gross Volume: 11.7 l
+-----------------------------------------------------------------------------------------------------
+70354804  
+Length: 62 cm Depth: 40 cm Thickness: 2.0 cm
+70354804  
+Package Number: 1 Length: 69 cm Width: 41 cm Height: 3 cm Diameter: - Net Weight: 3.14 kg Gross Weight: 3.70 kg Gross Volume: 7.1 l
+-----------------------------------------------------------------------------------------------------

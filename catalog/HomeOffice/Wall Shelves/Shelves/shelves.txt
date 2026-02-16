@@ -1,0 +1,72 @@
+-----------------------------------------------------------------------------------------------------
+00426282  
+Width: 80 cm Depth: 30 cm Thickness: 2.5 cm Max. load: 10 kg
+00426282  
+Package Number: 1 Length: 86 cm Width: 31 cm Height: 3 cm Diameter: - Net Weight: 4.18 kg Gross Weight: 4.42 kg Gross Volume: 7.1 l
+-----------------------------------------------------------------------------------------------------
+10421236  
+Width: 80 cm Depth: 30 cm Thickness: 2.5 cm Max. load: 10 kg
+10421236  
+Package Number: 1 Length: 86 cm Width: 31 cm Height: 3 cm Diameter: - Net Weight: 4.18 kg Gross Weight: 4.42 kg Gross Volume: 7.1 l
+-----------------------------------------------------------------------------------------------------
+30421235  
+Width: 120 cm Depth: 30 cm Thickness: 2.5 cm Max. load: 20 kg
+30421235  
+Package Number: 1 Length: 130 cm Width: 31 cm Height: 3 cm Diameter: - Net Weight: 6.32 kg Gross Weight: 6.70 kg Gross Volume: 10.7 l
+-----------------------------------------------------------------------------------------------------
+30421240  
+Width: 120 cm Depth: 30 cm Thickness: 2.5 cm Max. load: 20 kg
+30421240  
+Package Number: 1 Length: 130 cm Width: 31 cm Height: 3 cm Diameter: - Net Weight: 6.32 kg Gross Weight: 6.70 kg Gross Volume: 10.7 l
+-----------------------------------------------------------------------------------------------------
+30426285  
+Width: 80 cm Depth: 20 cm Thickness: 2.5 cm Max. load: 10 kg
+30426285  
+Package Number: 1 Length: 86 cm Width: 21 cm Height: 3 cm Diameter: - Net Weight: 2.96 kg Gross Weight: 3.13 kg Gross Volume: 4.8 l
+-----------------------------------------------------------------------------------------------------
+40400044  
+Width: 80 cm Depth: 30 cm Thickness: 2.5 cm Max. load: 10 kg
+40400044  
+Package Number: 1 Length: 86 cm Width: 31 cm Height: 3 cm Diameter: - Net Weight: 4.18 kg Gross Weight: 4.42 kg Gross Volume: 7.1 l
+-----------------------------------------------------------------------------------------------------
+50421239  
+Width: 120 cm Depth: 20 cm Thickness: 2.5 cm Max. load: 20 kg
+50421239  
+Package Number: 1 Length: 130 cm Width: 21 cm Height: 3 cm Diameter: - Net Weight: 4.43 kg Gross Weight: 4.69 kg Gross Volume: 7.2 l
+-----------------------------------------------------------------------------------------------------
+60421234  
+Width: 80 cm Depth: 20 cm Thickness: 2.5 cm Max. load: 10 kg
+60421234  
+Package Number: 1 Length: 86 cm Width: 21 cm Height: 3 cm Diameter: - Net Weight: 2.96 kg Gross Weight: 3.13 kg Gross Volume: 4.8 l
+-----------------------------------------------------------------------------------------------------
+60426284  
+Width: 120 cm Depth: 20 cm Thickness: 2.5 cm Max. load: 20 kg
+60426284  
+Package Number: 1 Length: 130 cm Width: 21 cm Height: 3 cm Diameter: - Net Weight: 4.43 kg Gross Weight: 4.69 kg Gross Volume: 7.2 l
+-----------------------------------------------------------------------------------------------------
+70421238  
+Width: 80 cm Depth: 20 cm Thickness: 2.5 cm Max. load: 10 kg
+70421238  
+Package Number: 1 Length: 86 cm Width: 21 cm Height: 3 cm Diameter: - Net Weight: 2.88 kg Gross Weight: 3.05 kg Gross Volume: 4.8 l
+-----------------------------------------------------------------------------------------------------
+80400042  
+Width: 59 cm Depth: 20 cm Thickness: 1.5 cm Max. load: 10 kg
+80400042  
+Package Number: 1 Length: 59 cm Width: 20 cm Height: 2 cm Diameter: - Net Weight: 1.27 kg Gross Weight: 1.27 kg Gross Volume: 1.7 l
+-----------------------------------------------------------------------------------------------------
+80421247  
+Width: 101 cm Depth: 20 cm Height: 21 cm Max. load: 15 kg
+80421247  
+Package Number: 1 Length: 102 cm Width: 23 cm Height: 5 cm Diameter: - Net Weight: 2.64 kg Gross Weight: 3.10 kg Gross Volume: 10.3 l
+-----------------------------------------------------------------------------------------------------
+80426283  
+Width: 120 cm Depth: 30 cm Thickness: 2.5 cm Max. load: 20 kg
+80426283  
+Package Number: 1 Length: 130 cm Width: 31 cm Height: 3 cm Diameter: - Net Weight: 6.32 kg Gross Weight: 6.70 kg Gross Volume: 10.7 l
+-----------------------------------------------------------------------------------------------------
+90421237  
+Width: 120 cm Depth: 20 cm Thickness: 2.5 cm Max. load: 20 kg
+90421237  
+Package Number: 1 Length: 130 cm Width: 21 cm Height: 3 cm Diameter: - Net Weight: 4.43 kg Gross Weight: 4.69 kg Gross Volume: 7.2 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------

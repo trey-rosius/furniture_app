@@ -1,0 +1,66 @@
+00252875  
+Length: 140 cm Width: 140 cm Height: 73 cm Max. load: 100 kg
+00252875  
+Package Number: 1 Length: 137 cm Width: 38 cm Height: 19 cm Diameter: - Net Weight: 20.91 kg Gross Weight: 23.11 kg Gross Volume: 97.7 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+00360988  
+Length: 146 cm Width: 67 cm Height: 76 cm Min. height: 62 cm Max. height: 76 cm Max. load: 75 kg
+00360988  
+Package Number: 1 Length: 81 cm Width: 67 cm Height: 14 cm Diameter: - Net Weight: 15.46 kg Gross Weight: 18.10 kg Gross Volume: 77.1 l
+-----------------------------------------------------------------------------------------------------
+10252912  
+Underframe, width: 46 cm Underframe, length: 106 cm Length: 120 cm Width: 80 cm Min. height: 65 cm Max. height: 85 cm Max. load: 100 kg
+10252912  
+Package Number: 1 Length: 109 cm Width: 47 cm Height: 10 cm Diameter: - Net Weight: 11.94 kg Gross Weight: 13.66 kg Gross Volume: 50.0 l
+-----------------------------------------------------------------------------------------------------
+10252974  
+Underframe, width: 96 cm Underframe, length: 146 cm Length: 160 cm Width: 110 cm Min. height: 65 cm Max. height: 85 cm Max. load: 100 kg
+10252974  
+Package Number: 1 Length: 149 cm Width: 65 cm Height: 10 cm Diameter: - Net Weight: 16.08 kg Gross Weight: 19.21 kg Gross Volume: 93.9 l
+-----------------------------------------------------------------------------------------------------
+30252906  
+Underframe, width: 46 cm Underframe, length: 146 cm Length: 160 cm Width: 80 cm Min. height: 65 cm Max. height: 85 cm Max. load: 100 kg
+30252906  
+Package Number: 1 Length: 149 cm Width: 47 cm Height: 10 cm Diameter: - Net Weight: 12.71 kg Gross Weight: 15.01 kg Gross Volume: 68.4 l
+-----------------------------------------------------------------------------------------------------
+30252911  
+Underframe, width: 46 cm Underframe, length: 106 cm Length: 120 cm Width: 80 cm Min. height: 65 cm Max. height: 85 cm Max. load: 100 kg
+30252911  
+Package Number: 1 Length: 109 cm Width: 47 cm Height: 10 cm Diameter: - Net Weight: 11.94 kg Gross Weight: 13.66 kg Gross Volume: 50.0 l
+-----------------------------------------------------------------------------------------------------
+50252967  
+Underframe, width: 96 cm Underframe, length: 146 cm Length: 160 cm Width: 110 cm Min. height: 65 cm Max. height: 85 cm Max. load: 100 kg
+50252967  
+Package Number: 1 Length: 149 cm Width: 65 cm Height: 10 cm Diameter: - Net Weight: 16.08 kg Gross Weight: 19.21 kg Gross Volume: 93.9 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+80397916  
+Length: 146 cm Width: 67 cm Height: 76 cm Min. height: 62 cm Max. height: 76 cm Max. load: 75 kg
+80397916  
+Package Number: 1 Length: 81 cm Width: 67 cm Height: 14 cm Diameter: - Net Weight: 15.46 kg Gross Weight: 18.10 kg Gross Volume: 77.1 l
+-----------------------------------------------------------------------------------------------------
+90252908  
+Underframe, width: 46 cm Underframe, length: 146 cm Length: 160 cm Width: 80 cm Min. height: 65 cm Max. height: 85 cm Max. load: 100 kg
+90252908  
+Package Number: 1 Length: 149 cm Width: 47 cm Height: 10 cm Diameter: - Net Weight: 12.71 kg Gross Weight: 15.01 kg Gross Volume: 68.4 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+90255327  
+Underframe, width: 46 cm Underframe, length: 126 cm Length: 140 cm Width: 60 cm Min. height: 65 cm Max. height: 85 cm Max. load: 100 kg
+90255327  
+Package Number: 1 Length: 129 cm Width: 47 cm Height: 10 cm Diameter: - Net Weight: 11.61 kg Gross Weight: 13.60 kg Gross Volume: 59.3 l
+-----------------------------------------------------------------------------------------------------
+90293777  
+Length: 120 cm Width: 60 cm Min. height: 60 cm Max. height: 90 cm Max. load: 100 kg
+90293777  
+Package Number: 1 Length: 157 cm Width: 18 cm Height: 7 cm Diameter: - Net Weight: 10.02 kg Gross Weight: 11.11 kg Gross Volume: 20.6 l
+-----------------------------------------------------------------------------------------------------
+30255325  
+Underframe, width: 46 cm Underframe, length: 126 cm Length: 140 cm Width: 60 cm Min. height: 65 cm Max. height: 85 cm Max. load: 100 kg
+30255325  
+Package Number: 1 Length: 129 cm Width: 47 cm Height: 10 cm Diameter: - Net Weight: 11.61 kg Gross Weight: 13.60 kg Gross Volume: 59.3 l
+-----------------------------------------------------------------------------------------------------

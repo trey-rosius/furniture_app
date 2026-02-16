@@ -1,0 +1,61 @@
+00338233  
+Package Number: 1 Length: 63 cm Width: 46 cm Height: 6 cm Diameter: - Net Weight: 0.43 kg Gross Weight: 0.65 kg Gross Volume: 17.3 l
+-----------------------------------------------------------------------------------------------------
+10433814  
+Length: 52 cm Width: 42 cm
+10433814  
+Package Number: 1 Length: 52 cm Width: 42 cm Height: 1 cm Diameter: - Net Weight: 0.93 kg Gross Weight: 0.95 kg Gross Volume: 2.4 l
+-----------------------------------------------------------------------------------------------------
+10433828  
+Width: 60 cm Height: 60 cm
+10433828  
+Package Number: 1 Length: 60 cm Width: 60 cm Height: 3 cm Diameter: - Net Weight: 1.05 kg Gross Weight: 1.23 kg Gross Volume: 9.4 l
+-----------------------------------------------------------------------------------------------------
+00433763  
+Width: 30 cm Height: 73 cm Thickness: 1 cm
+00433763  
+Package Number: 1 Length: 73 cm Width: 30 cm Height: 2 cm Diameter: - Net Weight: 0.99 kg Gross Weight: 1.25 kg Gross Volume: 4.4 l
+-----------------------------------------------------------------------------------------------------
+20423391  
+Length: 60 cm Width: 35 cm
+20423391  
+Package Number: 1 Length: 60 cm Width: 35 cm Height: 2 cm Diameter: - Net Weight: 1.34 kg Gross Weight: 1.40 kg Gross Volume: 5.0 l
+-----------------------------------------------------------------------------------------------------
+20440362  
+Length: 60 cm Width: 40 cm
+20440362  
+Package Number: 1 Length: 60 cm Width: 41 cm Height: 3 cm Diameter: - Net Weight: 1.41 kg Gross Weight: 1.44 kg Gross Volume: 6.1 l
+-----------------------------------------------------------------------------------------------------
+30452241  
+Width: 58 cm Height: 39 cm
+30452241  
+Package Number: 1 Length: 58 cm Width: 39 cm Height: 2 cm Diameter: - Net Weight: 0.56 kg Gross Weight: 0.60 kg Gross Volume: 3.6 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+80423388  
+Width: 60 cm Height: 75 cm
+80423388  
+Package Number: 1 Length: 75 cm Width: 60 cm Height: 2 cm Diameter: - Net Weight: 0.51 kg Gross Weight: 0.98 kg Gross Volume: 9.5 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+10310629  
+Length: 52 cm Width: 37 cm
+10310629  
+Package Number: 1 Length: 52 cm Width: 37 cm Height: 2 cm Diameter: - Net Weight: 1.30 kg Gross Weight: 1.33 kg Gross Volume: 3.1 l
+-----------------------------------------------------------------------------------------------------
+90422557  
+Package Number: 1 Length: 63 cm Width: 46 cm Height: 5 cm Diameter: - Net Weight: 0.38 kg Gross Weight: 0.65 kg Gross Volume: 14.4 l
+-----------------------------------------------------------------------------------------------------
+00440363  
+Length: 60 cm Width: 40 cm
+00440363  
+Package Number: 1 Length: 60 cm Width: 41 cm Height: 3 cm Diameter: - Net Weight: 1.41 kg Gross Weight: 1.44 kg Gross Volume: 6.1 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+70159483  
+Package Number: 1 Length: 18 cm Width: 14 cm Height: 1 cm Diameter: - Net Weight: 0.13 kg Gross Weight: 0.15 kg Gross Volume: 0.3 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------

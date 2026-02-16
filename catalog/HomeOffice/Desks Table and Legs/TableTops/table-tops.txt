@@ -1,0 +1,134 @@
+00251135  
+Length: 100 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+00251135  
+Package Number: 1 Length: 100 cm Width: 60 cm Height: 3 cm Diameter: - Net Weight: 6.35 kg Gross Weight: 6.40 kg Gross Volume: 20.4 l
+-----------------------------------------------------------------------------------------------------
+00251338  
+Length: 100 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+00251338  
+Package Number: 1 Length: 100 cm Width: 60 cm Height: 3 cm Diameter: - Net Weight: 6.36 kg Gross Weight: 6.40 kg Gross Volume: 20.4 l
+-----------------------------------------------------------------------------------------------------
+00251343  
+Length: 120 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+00251343  
+Package Number: 1 Length: 121 cm Width: 61 cm Height: 4 cm Diameter: - Net Weight: 7.46 kg Gross Weight: 7.50 kg Gross Volume: 25.5 l
+-----------------------------------------------------------------------------------------------------
+10251352  
+Length: 150 cm Width: 75 cm Thickness: 3.4 cm Max. load: 50 kg
+10251352  
+Package Number: 1 Length: 157 cm Width: 76 cm Height: 4 cm Diameter: - Net Weight: 9.75 kg Gross Weight: 10.00 kg Gross Volume: 44.0 l
+-----------------------------------------------------------------------------------------------------
+10353732  
+Length: 150 cm Width: 75 cm Thickness: 3.4 cm Max. load: 50 kg
+10353732  
+Package Number: 1 Length: 150 cm Width: 76 cm Height: 4 cm Diameter: - Net Weight: 10.28 kg Gross Weight: 10.85 kg Gross Volume: 39.7 l
+-----------------------------------------------------------------------------------------------------
+10365457  
+Length: 120 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+10365457  
+Package Number: 1 Length: 123 cm Width: 62 cm Height: 4 cm Diameter: - Net Weight: 9.37 kg Gross Weight: 10.25 kg Gross Volume: 32.8 l
+-----------------------------------------------------------------------------------------------------
+20251139  
+Length: 150 cm Width: 75 cm Thickness: 3.4 cm Max. load: 50 kg
+20251139  
+Package Number: 1 Length: 157 cm Width: 76 cm Height: 4 cm Diameter: - Net Weight: 9.75 kg Gross Weight: 10.00 kg Gross Volume: 44.0 l
+-----------------------------------------------------------------------------------------------------
+20353736  
+Length: 150 cm Width: 75 cm Thickness: 3.4 cm Max. load: 50 kg
+20353736  
+Package Number: 1 Length: 150 cm Width: 76 cm Height: 4 cm Diameter: - Net Weight: 10.28 kg Gross Weight: 10.85 kg Gross Volume: 39.7 l
+-----------------------------------------------------------------------------------------------------
+20353741  
+Length: 150 cm Width: 75 cm Thickness: 3.4 cm Max. load: 50 kg
+20353741  
+Package Number: 1 Length: 151 cm Width: 76 cm Height: 4 cm Diameter: - Net Weight: 8.90 kg Gross Weight: 9.50 kg Gross Volume: 41.3 l
+-----------------------------------------------------------------------------------------------------
+20353755  
+Length: 120 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+20353755  
+Package Number: 1 Length: 121 cm Width: 61 cm Height: 4 cm Diameter: - Net Weight: 6.70 kg Gross Weight: 7.10 kg Gross Volume: 27.7 l
+-----------------------------------------------------------------------------------------------------
+30353745  
+Length: 148 cm Width: 73 cm Thickness: 1.0 cm Max. load: 50 kg
+30353745  
+Package Number: 1 Length: 159 cm Width: 76 cm Height: 2 cm Diameter: - Net Weight: 26.87 kg Gross Weight: 28.65 kg Gross Volume: 21.7 l
+-----------------------------------------------------------------------------------------------------
+40261057  
+Package Number: 1 Length: 14 cm Width: 9 cm Height: 5 cm Diameter: - Net Weight: 0.41 kg Gross Weight: 0.45 kg Gross Volume: 0.6 l
+-----------------------------------------------------------------------------------------------------
+50106773  
+Length: 155 cm Width: 75 cm Thickness: 3 cm Max. load: 50 kg
+50106773  
+Package Number: 1 Length: 166 cm Width: 77 cm Height: 4 cm Diameter: - Net Weight: 25.15 kg Gross Weight: 26.74 kg Gross Volume: 45.6 l
+-----------------------------------------------------------------------------------------------------
+50353730  
+Length: 120 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+50353730  
+Package Number: 1 Length: 120 cm Width: 60 cm Height: 3 cm Diameter: - Net Weight: 7.26 kg Gross Weight: 7.30 kg Gross Volume: 24.5 l
+-----------------------------------------------------------------------------------------------------
+60251137  
+Length: 120 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+60251137  
+Package Number: 1 Length: 120 cm Width: 60 cm Height: 3 cm Diameter: - Net Weight: 6.97 kg Gross Weight: 7.00 kg Gross Volume: 24.5 l
+-----------------------------------------------------------------------------------------------------
+60353758  
+Length: 120 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+60353758  
+Package Number: 1 Length: 121 cm Width: 61 cm Height: 4 cm Diameter: - Net Weight: 6.70 kg Gross Weight: 7.10 kg Gross Volume: 27.7 l
+-----------------------------------------------------------------------------------------------------
+70353734  
+Length: 120 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+70353734  
+Package Number: 1 Length: 120 cm Width: 60 cm Height: 3 cm Diameter: - Net Weight: 7.26 kg Gross Weight: 7.30 kg Gross Volume: 24.5 l
+-----------------------------------------------------------------------------------------------------
+80251141  
+Length: 200 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+80251141  
+Package Number: 1 Length: 202 cm Width: 61 cm Height: 4 cm Diameter: - Net Weight: 11.73 kg Gross Weight: 12.00 kg Gross Volume: 45.5 l
+-----------------------------------------------------------------------------------------------------
+80251358  
+Length: 200 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+80251358  
+Package Number: 1 Length: 202 cm Width: 61 cm Height: 4 cm Diameter: - Net Weight: 11.73 kg Gross Weight: 12.00 kg Gross Volume: 45.5 l
+-----------------------------------------------------------------------------------------------------
+80278287  
+Length: 140 cm Width: 65 cm Thickness: 3.0 cm
+80278287  
+Package Number: 1 Length: 143 cm Width: 66 cm Height: 4 cm Diameter: - Net Weight: 7.27 kg Gross Weight: 8.51 kg Gross Volume: 34.0 l
+-----------------------------------------------------------------------------------------------------
+80353738  
+Length: 120 cm Width: 60 cm Thickness: 3.4 cm Max. load: 50 kg
+80353738  
+Package Number: 1 Length: 120 cm Width: 60 cm Height: 3 cm Diameter: - Net Weight: 6.33 kg Gross Weight: 6.40 kg Gross Volume: 24.5 l
+-----------------------------------------------------------------------------------------------------
+80356341  
+Length: 120 cm Width: 60 cm Thickness: 2.8 cm Max. load: 50 kg
+80356341  
+Package Number: 1 Length: 125 cm Width: 63 cm Height: 4 cm Diameter: - Net Weight: 15.40 kg Gross Weight: 16.30 kg Gross Volume: 28.2 l
+-----------------------------------------------------------------------------------------------------
+90353747  
+Length: 150 cm Width: 75 cm Thickness: 2.8 cm Max. load: 50 kg
+90353747  
+Package Number: 1 Length: 155 cm Width: 78 cm Height: 4 cm Diameter: - Net Weight: 24.47 kg Gross Weight: 25.79 kg Gross Volume: 43.6 l
+-----------------------------------------------------------------------------------------------------
+20288251  
+Length: 120 cm Width: 70 cm Thickness: 22 mm Max. load: 50 kg
+20288251  
+Package Number: 1 Length: 124 cm Width: 74 cm Height: 3 cm Diameter: - Net Weight: 8.38 kg Gross Weight: 9.25 kg Gross Volume: 27.5 l
+-----------------------------------------------------------------------------------------------------
+50288725  
+Length: 160 cm Width: 80 cm Thickness: 22 mm Max. load: 50 kg
+50288725  
+Package Number: 1 Length: 164 cm Width: 84 cm Height: 3 cm Diameter: - Net Weight: 12.20 kg Gross Weight: 14.05 kg Gross Volume: 42.6 l
+-----------------------------------------------------------------------------------------------------
+60240771  
+Length: 120 cm Width: 60 cm
+60240771  
+Package Number: 1 Length: 128 cm Width: 62 cm Height: 2 cm Diameter: - Net Weight: 17.67 kg Gross Weight: 18.37 kg Gross Volume: 14.2 l
+-----------------------------------------------------------------------------------------------------
+90238955  
+Length: 120 cm Width: 60 cm
+90238955  
+Package Number: 1 Length: 128 cm Width: 62 cm Height: 2 cm Diameter: - Net Weight: 17.67 kg Gross Weight: 18.37 kg Gross Volume: 14.2 l
+-----------------------------------------------------------------------------------------------------
+

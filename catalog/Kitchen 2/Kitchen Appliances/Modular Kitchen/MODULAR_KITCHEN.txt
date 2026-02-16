@@ -1,0 +1,216 @@
+00326796  
+Width: 120.0 cm Depth: 31.0 cm Height: 75.0 cm
+00326796  
+Package Number: 1 Length: 150 cm Width: 77 cm Height: 6 cm Diameter: - Net Weight: 31.07 kg Gross Weight: 32.56 kg Gross Volume: 69.1 l
+-----------------------------------------------------------------------------------------------------
+10326809  
+Width: 120.0 cm Depth: 31.0 cm Height: 75.0 cm
+10326809  
+Package Number: 1 Length: 150 cm Width: 77 cm Height: 6 cm Diameter: - Net Weight: 31.02 kg Gross Weight: 32.56 kg Gross Volume: 69.1 l
+-----------------------------------------------------------------------------------------------------
+20326795  
+Worktop length: 182.0 cm Width: 180.0 cm Depth: 61.0 cm Height: 90.0 cm
+20326795  
+Package Number: 1 Length: 187 cm Width: 63 cm Height: 5 cm Diameter: - Net Weight: 29.90 kg Gross Weight: 31.26 kg Gross Volume: 58.8 l  Package Number: 2 Length: 182 cm Width: 60 cm Height: 5 cm Diameter: - Net Weight: 19.93 kg Gross Weight: 21.18 kg Gross Volume: 49.0 l  Package Number: 3 Length: 182 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 30.64 kg Gross Weight: 31.96 kg Gross Volume: 59.9 l
+-----------------------------------------------------------------------------------------------------
+30326808  
+Worktop length: 182.0 cm Width: 180.0 cm Depth: 61.0 cm Height: 90.0 cm
+30326808  
+Package Number: 1 Length: 187 cm Width: 63 cm Height: 5 cm Diameter: - Net Weight: 29.89 kg Gross Weight: 31.26 kg Gross Volume: 58.8 l  Package Number: 2 Length: 182 cm Width: 60 cm Height: 5 cm Diameter: - Net Weight: 19.93 kg Gross Weight: 21.18 kg Gross Volume: 49.0 l  Package Number: 3 Length: 182 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 30.64 kg Gross Weight: 31.96 kg Gross Volume: 60.1 l
+-----------------------------------------------------------------------------------------------------
+50326794  
+Worktop length: 122.0 cm Width: 120 cm Depth: 61.0 cm Height: 90.0 cm
+50326794  
+Package Number: 1 Length: 142 cm Width: 63 cm Height: 6 cm Diameter: - Net Weight: 22.90 kg Gross Weight: 24.00 kg Gross Volume: 49.0 l  Package Number: 2 Length: 122 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 20.56 kg Gross Weight: 21.58 kg Gross Volume: 40.3 l  Package Number: 3 Length: 134 cm Width: 59 cm Height: 6 cm Diameter: - Net Weight: 15.44 kg Gross Weight: 16.54 kg Gross Volume: 43.2 l
+-----------------------------------------------------------------------------------------------------
+60326798  
+Width: 60 cm Depth: 31 cm Height: 60 cm
+60326798  
+Package Number: 1 Length: 63 cm Width: 62 cm Height: 9 cm Diameter: - Net Weight: 14.24 kg Gross Weight: 14.92 kg Gross Volume: 34.9 l
+-----------------------------------------------------------------------------------------------------
+70326793  
+Worktop length: 42.0 cm Width: 40.0 cm Depth: 61.0 cm Height: 90.0 cm
+70326793  
+Package Number: 1 Length: 93 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 15.04 kg Gross Weight: 15.74 kg Gross Volume: 30.5 l  Package Number: 2 Length: 66 cm Width: 52 cm Height: 10 cm Diameter: - Net Weight: 16.07 kg Gross Weight: 16.88 kg Gross Volume: 34.3 l
+-----------------------------------------------------------------------------------------------------
+80326797  
+Width: 40 cm Depth: 31 cm Height: 75 cm
+80326797  
+Package Number: 1 Length: 89 cm Width: 42 cm Height: 8 cm Diameter: - Net Weight: 12.46 kg Gross Weight: 13.10 kg Gross Volume: 28.0 l
+-----------------------------------------------------------------------------------------------------
+30326790  
+Worktop length: 122.0 cm Width: 120 cm Depth: 61.0 cm Height: 90.0 cm
+30326790  
+Package Number: 1 Length: 142 cm Width: 63 cm Height: 6 cm Diameter: - Net Weight: 22.90 kg Gross Weight: 24.00 kg Gross Volume: 49.0 l  Package Number: 2 Length: 122 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 20.56 kg Gross Weight: 21.58 kg Gross Volume: 40.3 l  Package Number: 3 Length: 134 cm Width: 59 cm Height: 6 cm Diameter: - Net Weight: 15.44 kg Gross Weight: 16.54 kg Gross Volume: 43.2 l
+-----------------------------------------------------------------------------------------------------
+40326799  
+Worktop length: 42.0 cm Width: 40.0 cm Depth: 61.0 cm Height: 90.0 cm
+40326799  
+Package Number: 1 Length: 93 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 15.04 kg Gross Weight: 15.74 kg Gross Volume: 30.5 l  Package Number: 2 Length: 66 cm Width: 52 cm Height: 10 cm Diameter: - Net Weight: 16.07 kg Gross Weight: 16.88 kg Gross Volume: 34.3 l
+-----------------------------------------------------------------------------------------------------
+40358993  
+Width: 20.0 cm System, depth: 37.0 cm Depth: 36.6 cm Height: 60.0 cm
+40358993  
+Package Number: 1 Length: 59 cm Width: 39 cm Height: 9 cm Diameter: - Net Weight: 8.70 kg Gross Weight: 9.50 kg Gross Volume: 19.3 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+10326791  
+Width: 60 cm Depth: 31 cm Height: 60 cm
+10326791  
+Package Number: 1 Length: 63 cm Width: 62 cm Height: 9 cm Diameter: - Net Weight: 14.24 kg Gross Weight: 14.92 kg Gross Volume: 34.9 l
+-----------------------------------------------------------------------------------------------------
+50326789  
+Width: 40 cm Depth: 31 cm Height: 75 cm
+50326789  
+Package Number: 1 Length: 89 cm Width: 42 cm Height: 8 cm Diameter: - Net Weight: 12.46 kg Gross Weight: 13.10 kg Gross Volume: 28.0 l
+-----------------------------------------------------------------------------------------------------
+50349823  
+Width: 19.9 cm Depth: 36.6 cm Height: 40.0 cm
+50349823  
+Package Number: 1 Length: 42 cm Width: 38 cm Height: 6 cm Diameter: - Net Weight: 5.48 kg Gross Weight: 5.77 kg Gross Volume: 10.2 l
+-----------------------------------------------------------------------------------------------------
+60349827  
+Width: 40.0 cm Depth: 36.6 cm Height: 40.0 cm
+60349827  
+Package Number: 1 Length: 42 cm Width: 40 cm Height: 8 cm Diameter: - Net Weight: 7.51 kg Gross Weight: 7.75 kg Gross Volume: 13.4 l
+-----------------------------------------------------------------------------------------------------
+70326788  
+Worktop length: 182.0 cm Width: 180.0 cm Depth: 61.0 cm Height: 90.0 cm
+70326788  
+Package Number: 1 Length: 187 cm Width: 63 cm Height: 5 cm Diameter: - Net Weight: 29.89 kg Gross Weight: 31.26 kg Gross Volume: 58.8 l  Package Number: 2 Length: 182 cm Width: 60 cm Height: 5 cm Diameter: - Net Weight: 19.93 kg Gross Weight: 21.18 kg Gross Volume: 49.0 l  Package Number: 3 Length: 182 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 30.60 kg Gross Weight: 31.96 kg Gross Volume: 60.1 l
+-----------------------------------------------------------------------------------------------------
+90302079  
+Width: 112 cm Depth: 56 cm Height: 139 cm
+90302079  
+Package Number: 1 Length: 115 cm Width: 62 cm Height: 17 cm Diameter: - Net Weight: 13.98 kg Gross Weight: 16.35 kg Gross Volume: 116.7 l
+-----------------------------------------------------------------------------------------------------
+90326787  
+Worktop length: 42.0 cm Width: 40.0 cm Depth: 61.0 cm Height: 90.0 cm
+90326787  
+Package Number: 1 Length: 93 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 15.04 kg Gross Weight: 15.74 kg Gross Volume: 30.5 l  Package Number: 2 Length: 66 cm Width: 52 cm Height: 10 cm Diameter: - Net Weight: 15.80 kg Gross Weight: 16.88 kg Gross Volume: 34.3 l
+-----------------------------------------------------------------------------------------------------
+90326792  
+Width: 120.0 cm Depth: 31.0 cm Height: 75.0 cm
+90326792  
+Package Number: 1 Length: 150 cm Width: 77 cm Height: 6 cm Diameter: - Net Weight: 31.03 kg Gross Weight: 32.56 kg Gross Volume: 69.1 l
+-----------------------------------------------------------------------------------------------------
+90349821  
+Width: 19.9 cm Depth: 36.6 cm Height: 40.0 cm
+90349821  
+Package Number: 1 Length: 42 cm Width: 38 cm Height: 6 cm Diameter: - Net Weight: 5.47 kg Gross Weight: 5.77 kg Gross Volume: 10.2 l
+-----------------------------------------------------------------------------------------------------
+00349825  
+Width: 40.0 cm Depth: 36.6 cm Height: 40.0 cm
+00349825  
+Package Number: 1 Length: 42 cm Width: 40 cm Height: 8 cm Diameter: - Net Weight: 7.49 kg Gross Weight: 7.75 kg Gross Volume: 13.4 l
+-----------------------------------------------------------------------------------------------------
+60326802  
+Worktop length: 182.0 cm Width: 180.0 cm Depth: 61.0 cm Height: 90.0 cm
+60326802  
+Package Number: 1 Length: 187 cm Width: 63 cm Height: 5 cm Diameter: - Net Weight: 29.89 kg Gross Weight: 31.26 kg Gross Volume: 58.8 l  Package Number: 2 Length: 182 cm Width: 60 cm Height: 5 cm Diameter: - Net Weight: 19.93 kg Gross Weight: 21.18 kg Gross Volume: 49.0 l  Package Number: 3 Length: 182 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 30.59 kg Gross Weight: 31.96 kg Gross Volume: 59.9 l
+-----------------------------------------------------------------------------------------------------
+70326806  
+Worktop length: 42.0 cm Width: 40.0 cm Depth: 61.0 cm Height: 90.0 cm
+70326806  
+Package Number: 1 Length: 93 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 14.98 kg Gross Weight: 15.74 kg Gross Volume: 30.5 l  Package Number: 2 Length: 66 cm Width: 53 cm Height: 10 cm Diameter: - Net Weight: 16.09 kg Gross Weight: 16.90 kg Gross Volume: 34.7 l
+-----------------------------------------------------------------------------------------------------
+70326811  
+Width: 60 cm Depth: 31 cm Height: 60 cm
+70326811  
+Package Number: 1 Length: 63 cm Width: 62 cm Height: 9 cm Diameter: - Net Weight: 14.24 kg Gross Weight: 14.92 kg Gross Volume: 34.9 l
+-----------------------------------------------------------------------------------------------------
+80326801  
+Worktop length: 122.0 cm Width: 120 cm Depth: 61.0 cm Height: 90.0 cm
+80326801  
+Package Number: 1 Length: 142 cm Width: 63 cm Height: 6 cm Diameter: - Net Weight: 22.90 kg Gross Weight: 24.00 kg Gross Volume: 49.0 l  Package Number: 2 Length: 122 cm Width: 60 cm Height: 6 cm Diameter: - Net Weight: 20.42 kg Gross Weight: 21.58 kg Gross Volume: 40.3 l  Package Number: 3 Length: 134 cm Width: 59 cm Height: 6 cm Diameter: - Net Weight: 15.40 kg Gross Weight: 16.54 kg Gross Volume: 43.2 l
+-----------------------------------------------------------------------------------------------------
+00358966  
+Width: 16.0 cm Depth: 34.0 cm Height: 15.0 cm
+00358966  
+Package Number: 1 Length: 35 cm Width: 18 cm Height: 5 cm Diameter: - Net Weight: 1.57 kg Gross Weight: 1.72 kg Gross Volume: 3.2 l
+-----------------------------------------------------------------------------------------------------
+00358971  
+Width: 16.0 cm Depth: 34.0 cm Height: 15.0 cm
+00358971  
+Package Number: 1 Length: 35 cm Width: 18 cm Height: 5 cm Diameter: - Net Weight: 1.57 kg Gross Weight: 1.72 kg Gross Volume: 3.2 l
+-----------------------------------------------------------------------------------------------------
+10232113  
+Width: 20.0 cm System, depth: 37.0 cm Depth: 39.1 cm Height: 40.0 cm
+10232113  
+Package Number: 1 Length: 65 cm Width: 39 cm Height: 4 cm Diameter: - Net Weight: 5.36 kg Gross Weight: 5.67 kg Gross Volume: 10.6 l
+-----------------------------------------------------------------------------------------------------
+20358965  
+Width: 20.0 cm System, depth: 37.0 cm Depth: 36.6 cm Height: 40.0 cm
+20358965  
+Package Number: 1 Length: 40 cm Width: 38 cm Height: 8 cm Diameter: - Net Weight: 6.18 kg Gross Weight: 6.59 kg Gross Volume: 12.5 l
+-----------------------------------------------------------------------------------------------------
+20358970  
+Width: 20.0 cm System, depth: 37.0 cm Depth: 36.6 cm Height: 80.0 cm
+20358970  
+Package Number: 1 Length: 81 cm Width: 38 cm Height: 8 cm Diameter: - Net Weight: 12.04 kg Gross Weight: 12.80 kg Gross Volume: 25.0 l
+-----------------------------------------------------------------------------------------------------
+20358994  
+Width: 20.0 cm System, depth: 37.0 cm Depth: 36.6 cm Height: 80.0 cm
+20358994  
+Package Number: 1 Length: 81 cm Width: 38 cm Height: 8 cm Diameter: - Net Weight: 12.04 kg Gross Weight: 12.80 kg Gross Volume: 25.0 l
+-----------------------------------------------------------------------------------------------------
+20374338  
+Width: 20 cm Depth: 37 cm Height: 80 cm
+20374338  
+Package Number: 1 Length: 91 cm Width: 38 cm Height: 7 cm Diameter: - Net Weight: 11.73 kg Gross Weight: 12.70 kg Gross Volume: 22.4 l
+-----------------------------------------------------------------------------------------------------
+50374332  
+Width: 40 cm Depth: 37 cm Height: 40 cm
+50374332  
+Package Number: 1 Length: 78 cm Width: 39 cm Height: 9 cm Diameter: - Net Weight: 14.46 kg Gross Weight: 15.50 kg Gross Volume: 27.5 l
+-----------------------------------------------------------------------------------------------------
+60358968  
+Width: 20.0 cm System, depth: 37.0 cm Depth: 36.6 cm Height: 60.0 cm
+60358968  
+Package Number: 1 Length: 59 cm Width: 39 cm Height: 9 cm Diameter: - Net Weight: 8.70 kg Gross Weight: 9.50 kg Gross Volume: 19.3 l
+-----------------------------------------------------------------------------------------------------
+60358992  
+Width: 20.0 cm System, depth: 37.0 cm Depth: 36.6 cm Height: 40.0 cm
+60358992  
+Package Number: 1 Length: 40 cm Width: 38 cm Height: 8 cm Diameter: - Net Weight: 6.18 kg Gross Weight: 6.59 kg Gross Volume: 12.5 l
+-----------------------------------------------------------------------------------------------------
+60374336  
+Width: 20 cm Depth: 37 cm Height: 40 cm
+60374336  
+Package Number: 1 Length: 42 cm Width: 38 cm Height: 9 cm Diameter: - Net Weight: 5.87 kg Gross Weight: 7.10 kg Gross Volume: 13.4 l
+-----------------------------------------------------------------------------------------------------
+60374341  
+Width: 20 cm Depth: 37 cm Height: 60 cm
+60374341  
+Package Number: 1 Length: 69 cm Width: 39 cm Height: 7 cm Diameter: - Net Weight: 8.81 kg Gross Weight: 9.70 kg Gross Volume: 17.4 l
+-----------------------------------------------------------------------------------------------------
+80358967  
+Width: 40.0 cm System, depth: 37.0 cm Depth: 36.6 cm Height: 40.0 cm
+80358967  
+Package Number: 1 Length: 54 cm Width: 39 cm Height: 12 cm Diameter: - Net Weight: 11.81 kg Gross Weight: 12.44 kg Gross Volume: 25.1 l
+-----------------------------------------------------------------------------------------------------
+80358972  
+Width: 40.0 cm System, depth: 37.0 cm Depth: 36.6 cm Height: 40.0 cm
+80358972  
+Package Number: 1 Length: 54 cm Width: 39 cm Height: 12 cm Diameter: - Net Weight: 11.81 kg Gross Weight: 12.44 kg Gross Volume: 25.1 l
+-----------------------------------------------------------------------------------------------------
+90374330  
+Width: 40 cm Depth: 37 cm Height: 40 cm
+90374330  
+Package Number: 1 Length: 52 cm Width: 40 cm Height: 11 cm Diameter: - Net Weight: 9.97 kg Gross Weight: 10.90 kg Gross Volume: 22.4 l
+-----------------------------------------------------------------------------------------------------
+10281698  
+Width: 60 cm System, height: 88 cm System, depth: 60 cm System, width: 60 cm Depth: 59 cm Height: 88 cm Min. height: 87.5 cm Max. height: 89.0 cm
+10281698  
+Package Number: 1 Length: 89 cm Width: 59 cm Height: 9 cm Diameter: - Net Weight: 14.41 kg Gross Weight: 15.10 kg Gross Volume: 47.5 l
+-----------------------------------------------------------------------------------------------------
+90326810  
+Width: 40 cm Depth: 31 cm Height: 75 cm
+90326810  
+Package Number: 1 Length: 89 cm Width: 42 cm Height: 8 cm Diameter: - Net Weight: 12.46 kg Gross Weight: 13.10 kg Gross Volume: 28.0 l
+-----------------------------------------------------------------------------------------------------
+

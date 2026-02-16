@@ -1,0 +1,423 @@
+00289261  
+Height: 5 cm Diameter: 12 cm
+00289261  
+Package Number: 1 Length: - Width: - Height: 6 cm Diameter: 12 cm Net Weight: 0.25 kg Gross Weight: 0.25 kg Gross Volume: 0.6 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+00423957  
+Height: 6 cm Diameter: 14 cm
+00423957  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 15 cm Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 1.1 l
+-----------------------------------------------------------------------------------------------------
+10115595  
+Height: 10 cm Diameter: 11 cm
+10115595  
+Package Number: 1 Length: 11 cm Width: 11 cm Height: 10 cm Diameter: - Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+10277465  
+Length: 10 cm Height: 3 cm
+10277465  
+Package Number: 1 Length: 10 cm Width: 10 cm Height: 3 cm Diameter: - Net Weight: 0.12 kg Gross Weight: 0.12 kg Gross Volume: 0.3 l
+-----------------------------------------------------------------------------------------------------
+10289227  
+Height: 6 cm Diameter: 12 cm
+10289227  
+Package Number: 1 Length: 12 cm Width: 12 cm Height: 6 cm Diameter: - Net Weight: 0.23 kg Gross Weight: 0.23 kg Gross Volume: 0.8 l
+-----------------------------------------------------------------------------------------------------
+10319026  
+Height: 7 cm Diameter: 13 cm
+10319026  
+Package Number: 1 Length: 7 cm Width: - Height: - Diameter: 13 cm Net Weight: 0.36 kg Gross Weight: 0.36 kg Gross Volume: 1.0 l
+-----------------------------------------------------------------------------------------------------
+10391017  
+Height: 6 cm Diameter: 17 cm
+10391017  
+Package Number: 1 Length: - Width: - Height: 6 cm Diameter: 17 cm Net Weight: 0.19 kg Gross Weight: 0.19 kg Gross Volume: 1.3 l
+-----------------------------------------------------------------------------------------------------
+10420072  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 17 cm Net Weight: 0.36 kg Gross Weight: 0.36 kg Gross Volume: 1.5 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+30375281  
+Height: 7 cm Diameter: 30 cm
+30375281  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 30 cm Net Weight: 1.41 kg Gross Weight: 1.41 kg Gross Volume: 5.2 l
+-----------------------------------------------------------------------------------------------------
+30392407  
+Height: 5 cm Diameter: 16 cm
+30392407  
+Package Number: 1 Length: - Width: - Height: 6 cm Diameter: 16 cm Net Weight: 0.29 kg Gross Weight: 0.29 kg Gross Volume: 1.1 l
+-----------------------------------------------------------------------------------------------------
+40339508  
+Height: 7 cm Diameter: 14 cm
+40339508  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 14 cm Net Weight: 0.33 kg Gross Weight: 0.33 kg Gross Volume: 1.0 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+60289263  
+Height: 6 cm Diameter: 15 cm
+60289263  
+Package Number: 1 Length: 15 cm Width: 15 cm Height: 6 cm Diameter: - Net Weight: 0.48 kg Gross Weight: 0.48 kg Gross Volume: 1.4 l
+-----------------------------------------------------------------------------------------------------
+70234798  
+Height: 7 cm Diameter: 16 cm
+70234798  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 17 cm Net Weight: 0.45 kg Gross Weight: 0.45 kg Gross Volume: 1.5 l
+-----------------------------------------------------------------------------------------------------
+70289248  
+Height: 13 cm Diameter: 26 cm
+70289248  
+Package Number: 1 Length: 27 cm Width: 26 cm Height: 13 cm Diameter: - Net Weight: 1.89 kg Gross Weight: 1.89 kg Gross Volume: 8.9 l
+-----------------------------------------------------------------------------------------------------
+80152551  
+Height: 6 cm Diameter: 14 cm
+80152551  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 15 cm Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 1.1 l
+-----------------------------------------------------------------------------------------------------
+80258915  
+Height: 5 cm Diameter: 15 cm
+80258915  
+Package Number: 1 Length: 5 cm Width: - Height: - Diameter: 15 cm Net Weight: 0.22 kg Gross Weight: 0.23 kg Gross Volume: 0.9 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+80289224  
+Height: 7 cm Diameter: 15 cm
+80289224  
+Package Number: 1 Length: 15 cm Width: 15 cm Height: 7 cm Diameter: - Net Weight: 0.40 kg Gross Weight: 0.41 kg Gross Volume: 1.6 l
+-----------------------------------------------------------------------------------------------------
+80318231  
+Height: 6 cm Diameter: 14 cm
+80318231  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 15 cm Net Weight: 0.38 kg Gross Weight: 0.38 kg Gross Volume: 1.1 l
+-----------------------------------------------------------------------------------------------------
+80423977  
+Height: 6 cm Diameter: 14 cm
+80423977  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 15 cm Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 1.1 l
+-----------------------------------------------------------------------------------------------------
+90318914  
+Height: 7 cm Diameter: 16 cm
+90318914  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 16 cm Net Weight: 0.41 kg Gross Weight: 0.41 kg Gross Volume: 1.5 l
+-----------------------------------------------------------------------------------------------------
+90346648  
+Height: 6 cm Diameter: 14 cm
+90346648  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 15 cm Net Weight: 0.38 kg Gross Weight: 0.38 kg Gross Volume: 1.1 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+10409606  
+Height: 7 cm Diameter: 19 cm
+10409606  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 19 cm Net Weight: 0.58 kg Gross Weight: 0.58 kg Gross Volume: 1.9 l
+-----------------------------------------------------------------------------------------------------
+00424706  
+Height: 7.5 cm Diameter: 16 cm
+00424706  
+Package Number: 1 Length: - Width: - Height: 8 cm Diameter: 16 cm Net Weight: 0.39 kg Gross Weight: 0.39 kg Gross Volume: 1.6 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+60433388  
+Height: 6 cm Diameter: 17 cm
+60433388  
+Package Number: 1 Length: 6 cm Width: - Height: - Diameter: 17 cm Net Weight: 0.32 kg Gross Weight: 0.32 kg Gross Volume: 1.3 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+30351973  
+Height: 5 cm Diameter: 15 cm
+30351973  
+Package Number: 1 Length: - Width: - Height: 5 cm Diameter: 16 cm Net Weight: 0.25 kg Gross Weight: 0.26 kg Gross Volume: 1.0 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+60330559  
+Height: 7 cm Diameter: 16 cm
+60330559  
+Package Number: 1 Length: - Width: - Height: 7 cm Diameter: 16 cm Net Weight: 0.37 kg Gross Weight: 0.38 kg Gross Volume: 1.4 l
+-----------------------------------------------------------------------------------------------------
+80289257  
+Height: 7 cm Diameter: 15 cm
+80289257  
+Package Number: 1 Length: 15 cm Width: 15 cm Height: 7 cm Diameter: - Net Weight: 0.38 kg Gross Weight: 0.38 kg Gross Volume: 1.6 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+00318942  
+Package Number: 1 Length: - Width: - Height: 4 cm Diameter: 20 cm Net Weight: 0.27 kg Gross Weight: 0.28 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+10339524  
+Height: 5 cm Diameter: 20 cm
+10339524  
+Package Number: 1 Length: - Width: - Height: 5 cm Diameter: 20 cm Net Weight: 0.52 kg Gross Weight: 0.52 kg Gross Volume: 1.5 l
+-----------------------------------------------------------------------------------------------------
+20330561  
+Package Number: 1 Length: - Width: - Height: 5 cm Diameter: 24 cm Net Weight: 0.63 kg Gross Weight: 0.63 kg Gross Volume: 2.4 l
+-----------------------------------------------------------------------------------------------------
+30152544  
+Package Number: 1 Length: 5 cm Width: - Height: - Diameter: 22 cm Net Weight: 0.61 kg Gross Weight: 0.61 kg Gross Volume: 2.1 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+40318233  
+Package Number: 1 Length: - Width: - Height: 5 cm Diameter: 22 cm Net Weight: 0.61 kg Gross Weight: 0.61 kg Gross Volume: 2.1 l
+-----------------------------------------------------------------------------------------------------
+40318916  
+Package Number: 1 Length: - Width: - Height: 5 cm Diameter: 24 cm Net Weight: 0.72 kg Gross Weight: 0.72 kg Gross Volume: 2.4 l
+-----------------------------------------------------------------------------------------------------
+50346650  
+Package Number: 1 Length: - Width: - Height: 5 cm Diameter: 22 cm Net Weight: 0.61 kg Gross Weight: 0.61 kg Gross Volume: 2.1 l
+-----------------------------------------------------------------------------------------------------
+60289277  
+Package Number: 1 Length: 23 cm Width: 23 cm Height: 5 cm Diameter: - Net Weight: 0.58 kg Gross Weight: 0.58 kg Gross Volume: 2.4 l
+-----------------------------------------------------------------------------------------------------
+60319019  
+Package Number: 1 Length: 4 cm Width: - Height: - Diameter: 24 cm Net Weight: 0.51 kg Gross Weight: 0.51 kg Gross Volume: 1.9 l
+-----------------------------------------------------------------------------------------------------
+90277348  
+Length: 20 cm Width: 20 cm
+90277348  
+Package Number: 1 Length: 20 cm Width: 20 cm Height: 6 cm Diameter: - Net Weight: 0.54 kg Gross Weight: 0.54 kg Gross Volume: 2.4 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+50424718  
+Height: 5 cm Diameter: 26 cm
+50424718  
+Package Number: 1 Length: - Width: - Height: 5 cm Diameter: 26 cm Net Weight: 0.63 kg Gross Weight: 0.63 kg Gross Volume: 2.7 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+20423980  
+Package Number: 1 Length: - Width: - Height: 5 cm Diameter: 22 cm Net Weight: 0.57 kg Gross Weight: 0.57 kg Gross Volume: 2.1 l
+-----------------------------------------------------------------------------------------------------
+40423960  
+Package Number: 1 Length: - Width: - Height: 5 cm Diameter: 22 cm Net Weight: 0.57 kg Gross Weight: 0.57 kg Gross Volume: 2.0 l
+-----------------------------------------------------------------------------------------------------
+60234794  
+Package Number: 1 Length: - Width: - Height: 5 cm Diameter: 24 cm Net Weight: 0.72 kg Gross Weight: 0.72 kg Gross Volume: 2.5 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+70386961  
+Package Number: 1 Length: - Width: - Height: 1 cm Diameter: 19 cm Net Weight: 0.24 kg Gross Weight: 0.24 kg Gross Volume: 0.4 l
+-----------------------------------------------------------------------------------------------------
+90339426  
+Length: 18 cm Width: 18 cm
+90339426  
+Package Number: 1 Length: 18 cm Width: 18 cm Height: 2 cm Diameter: - Net Weight: 0.30 kg Gross Weight: 0.30 kg Gross Volume: 0.6 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+10318526  
+Package Number: 1 Length: 35 cm Width: 27 cm Height: 22 cm Diameter: - Net Weight: 9.74 kg Gross Weight: 10.15 kg Gross Volume: 20.4 l
+-----------------------------------------------------------------------------------------------------
+30333922  
+Package Number: 1 Length: 35 cm Width: 26 cm Height: 22 cm Diameter: - Net Weight: 9.80 kg Gross Weight: 10.23 kg Gross Volume: 20.3 l
+-----------------------------------------------------------------------------------------------------
+40318921  
+Package Number: 1 Length: 35 cm Width: 27 cm Height: 22 cm Diameter: - Net Weight: 9.91 kg Gross Weight: 10.33 kg Gross Volume: 21.4 l
+-----------------------------------------------------------------------------------------------------
+70247710  
+Package Number: 1 Length: 37 cm Width: 29 cm Height: 22 cm Diameter: - Net Weight: 11.37 kg Gross Weight: 11.80 kg Gross Volume: 24.0 l
+-----------------------------------------------------------------------------------------------------
+70277354  
+Package Number: 1 Length: 31 cm Width: 27 cm Height: 26 cm Diameter: - Net Weight: 9.59 kg Gross Weight: 10.01 kg Gross Volume: 21.4 l
+-----------------------------------------------------------------------------------------------------
+70346159  
+Package Number: 1 Length: 29 cm Width: 27 cm Height: 13 cm Diameter: - Net Weight: 5.22 kg Gross Weight: 5.39 kg Gross Volume: 10.2 l
+-----------------------------------------------------------------------------------------------------
+70423992  
+Package Number: 1 Length: 35 cm Width: 27 cm Height: 22 cm Diameter: - Net Weight: 9.59 kg Gross Weight: 10.04 kg Gross Volume: 20.3 l
+-----------------------------------------------------------------------------------------------------
+90152555  
+Package Number: 1 Length: 35 cm Width: 26 cm Height: 22 cm Diameter: - Net Weight: 9.74 kg Gross Weight: 10.15 kg Gross Volume: 20.3 l
+-----------------------------------------------------------------------------------------------------
+90330572  
+Package Number: 1 Length: 35 cm Width: 27 cm Height: 22 cm Diameter: - Net Weight: 9.91 kg Gross Weight: 10.33 kg Gross Volume: 21.4 l
+-----------------------------------------------------------------------------------------------------
+90423972  
+Package Number: 1 Length: 35 cm Width: 26 cm Height: 22 cm Diameter: - Net Weight: 9.43 kg Gross Weight: 9.81 kg Gross Volume: 19.8 l
+-----------------------------------------------------------------------------------------------------
+20429637  
+Package Number: 1 Length: 37 cm Width: 28 cm Height: 24 cm Diameter: - Net Weight: 10.11 kg Gross Weight: 10.56 kg Gross Volume: 24.7 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+00318918  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 27 cm Net Weight: 0.79 kg Gross Weight: 0.79 kg Gross Volume: 1.4 l
+-----------------------------------------------------------------------------------------------------
+00339949  
+Length: 30 cm Width: 30 cm
+00339949  
+Package Number: 1 Length: 30 cm Width: 30 cm Height: 4 cm Diameter: - Net Weight: 1.01 kg Gross Weight: 1.02 kg Gross Volume: 3.2 l
+-----------------------------------------------------------------------------------------------------
+00392404  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 29 cm Net Weight: 0.75 kg Gross Weight: 0.77 kg Gross Volume: 1.7 l
+-----------------------------------------------------------------------------------------------------
+10277352  
+Length: 25 cm Width: 25 cm
+10277352  
+Package Number: 1 Length: 25 cm Width: 25 cm Height: 3 cm Diameter: - Net Weight: 0.75 kg Gross Weight: 0.75 kg Gross Volume: 1.9 l
+-----------------------------------------------------------------------------------------------------
+10346652  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 26 cm Net Weight: 0.66 kg Gross Weight: 0.66 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+20152549  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 26 cm Net Weight: 0.65 kg Gross Weight: 0.66 kg Gross Volume: 1.3 l
+-----------------------------------------------------------------------------------------------------
+20318521  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 26 cm Net Weight: 0.66 kg Gross Weight: 0.66 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+20392403  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 18 cm Net Weight: 0.29 kg Gross Weight: 0.29 kg Gross Volume: 0.7 l
+-----------------------------------------------------------------------------------------------------
+30258913  
+Package Number: 1 Length: 2 cm Width: - Height: - Diameter: 25 cm Net Weight: 0.36 kg Gross Weight: 0.36 kg Gross Volume: 1.1 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+40234790  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 27 cm Net Weight: 0.79 kg Gross Weight: 0.79 kg Gross Volume: 1.6 l
+-----------------------------------------------------------------------------------------------------
+40420075  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 27 cm Net Weight: 0.60 kg Gross Weight: 0.60 kg Gross Volume: 1.6 l
+-----------------------------------------------------------------------------------------------------
+50330569  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 27 cm Net Weight: 0.68 kg Gross Weight: 0.68 kg Gross Volume: 1.4 l
+-----------------------------------------------------------------------------------------------------
+60277359  
+Length: 31 cm Width: 26 cm
+60277359  
+Package Number: 1 Length: 32 cm Width: 27 cm Height: 3 cm Diameter: - Net Weight: 1.11 kg Gross Weight: 1.12 kg Gross Volume: 2.3 l
+-----------------------------------------------------------------------------------------------------
+60319024  
+Package Number: 1 Length: 2 cm Width: - Height: - Diameter: 28 cm Net Weight: 0.64 kg Gross Weight: 0.64 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+70392405  
+Package Number: 1 Length: 25 cm Width: 22 cm Height: 3 cm Diameter: - Net Weight: 0.45 kg Gross Weight: 0.47 kg Gross Volume: 1.4 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+80289182  
+Package Number: 1 Length: 29 cm Width: 29 cm Height: 3 cm Diameter: - Net Weight: 0.64 kg Gross Weight: 0.64 kg Gross Volume: 2.2 l
+-----------------------------------------------------------------------------------------------------
+80391014  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 23 cm Net Weight: 0.27 kg Gross Weight: 0.27 kg Gross Volume: 0.8 l
+-----------------------------------------------------------------------------------------------------
+80423963  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 26 cm Net Weight: 0.65 kg Gross Weight: 0.66 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+90339501  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 25 cm Net Weight: 0.52 kg Gross Weight: 0.52 kg Gross Volume: 0.8 l
+-----------------------------------------------------------------------------------------------------
+10424701  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 28 cm Net Weight: 0.68 kg Gross Weight: 0.68 kg Gross Volume: 1.8 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+70424703  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 22 cm Net Weight: 0.39 kg Gross Weight: 0.39 kg Gross Volume: 0.9 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+20433413  
+Package Number: 1 Length: 2 cm Width: - Height: - Diameter: 20 cm Net Weight: 0.39 kg Gross Weight: 0.39 kg Gross Volume: 0.7 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+10423966  
+Length: 30 cm Width: 20 cm
+10423966  
+Package Number: 1 Length: 30 cm Width: 20 cm Height: 2 cm Diameter: - Net Weight: 0.71 kg Gross Weight: 0.71 kg Gross Volume: 1.3 l
+-----------------------------------------------------------------------------------------------------
+40152548  
+Length: 30 cm Width: 20 cm
+40152548  
+Package Number: 1 Length: 30 cm Width: 20 cm Height: 2 cm Diameter: - Net Weight: 0.77 kg Gross Weight: 0.77 kg Gross Volume: 1.4 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+60339423  
+Length: 25 cm Width: 25 cm
+60339423  
+Package Number: 1 Length: 25 cm Width: 25 cm Height: 3 cm Diameter: - Net Weight: 0.62 kg Gross Weight: 0.62 kg Gross Volume: 1.5 l
+-----------------------------------------------------------------------------------------------------
+60423983  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 26 cm Net Weight: 0.65 kg Gross Weight: 0.66 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+80289281  
+Package Number: 1 Length: 29 cm Width: 29 cm Height: 3 cm Diameter: - Net Weight: 0.67 kg Gross Weight: 0.67 kg Gross Volume: 2.2 l
+-----------------------------------------------------------------------------------------------------
+90423986  
+Length: 30 cm Width: 20 cm
+90423986  
+Package Number: 1 Length: 30 cm Width: 20 cm Height: 2 cm Diameter: - Net Weight: 0.75 kg Gross Weight: 0.75 kg Gross Volume: 1.3 l
+-----------------------------------------------------------------------------------------------------
+00277357  
+Length: 18 cm Width: 18 cm
+00277357  
+Package Number: 1 Length: 18 cm Width: 18 cm Height: 2 cm Diameter: - Net Weight: 0.35 kg Gross Weight: 0.35 kg Gross Volume: 0.8 l
+-----------------------------------------------------------------------------------------------------
+00318923  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 21 cm Net Weight: 0.41 kg Gross Weight: 0.41 kg Gross Volume: 0.9 l
+-----------------------------------------------------------------------------------------------------
+00319017  
+Package Number: 1 Length: 2 cm Width: - Height: - Diameter: 22 cm Net Weight: 0.39 kg Gross Weight: 0.39 kg Gross Volume: 0.7 l
+-----------------------------------------------------------------------------------------------------
+10234782  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 21 cm Net Weight: 0.43 kg Gross Weight: 0.43 kg Gross Volume: 0.9 l
+-----------------------------------------------------------------------------------------------------
+50152543  
+Package Number: 1 Length: 2 cm Width: - Height: - Diameter: 20 cm Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 0.6 l
+-----------------------------------------------------------------------------------------------------
+50286585  
+Package Number: 1 Length: 21 cm Width: 21 cm Height: 2 cm Diameter: - Net Weight: 0.43 kg Gross Weight: 0.43 kg Gross Volume: 1.1 l
+-----------------------------------------------------------------------------------------------------
+50330574  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 21 cm Net Weight: 0.39 kg Gross Weight: 0.39 kg Gross Volume: 0.9 l
+-----------------------------------------------------------------------------------------------------
+50423974  
+Package Number: 1 Length: 2 cm Width: - Height: - Diameter: 20 cm Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 0.6 l
+-----------------------------------------------------------------------------------------------------
+60318939  
+Package Number: 1 Length: 2 cm Width: - Height: - Diameter: 19 cm Net Weight: 0.22 kg Gross Weight: 0.22 kg Gross Volume: 0.6 l
+-----------------------------------------------------------------------------------------------------
+70289286  
+Package Number: 1 Length: 21 cm Width: 21 cm Height: 2 cm Diameter: - Net Weight: 0.43 kg Gross Weight: 0.43 kg Gross Volume: 1.1 l
+-----------------------------------------------------------------------------------------------------
+70318528  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 20 cm Net Weight: 0.40 kg Gross Weight: 0.40 kg Gross Volume: 0.7 l
+-----------------------------------------------------------------------------------------------------
+70346654  
+Package Number: 1 Length: 2 cm Width: - Height: - Diameter: 20 cm Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 0.6 l
+-----------------------------------------------------------------------------------------------------
+80339506  
+Package Number: 1 Length: - Width: - Height: 2 cm Diameter: 16 cm Net Weight: 0.23 kg Gross Weight: 0.23 kg Gross Volume: 0.3 l
+-----------------------------------------------------------------------------------------------------
+80420078  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 21 cm Net Weight: 0.34 kg Gross Weight: 0.34 kg Gross Volume: 0.9 l
+-----------------------------------------------------------------------------------------------------
+70410145  
+Package Number: 1 Length: - Width: - Height: 3 cm Diameter: 22 cm Net Weight: 0.53 kg Gross Weight: 0.53 kg Gross Volume: 1.0 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+30423994  
+Package Number: 1 Length: 2 cm Width: - Height: - Diameter: 20 cm Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 0.6 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+70386961  
+Package Number: 1 Length: - Width: - Height: 1 cm Diameter: 19 cm Net Weight: 0.24 kg Gross Weight: 0.24 kg Gross Volume: 0.4 l
+-----------------------------------------------------------------------------------------------------
+90339426  
+Length: 18 cm Width: 18 cm
+90339426  
+Package Number: 1 Length: 18 cm Width: 18 cm Height: 2 cm Diameter: - Net Weight: 0.30 kg Gross Weight: 0.30 kg Gross Volume: 0.6 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+

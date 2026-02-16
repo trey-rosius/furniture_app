@@ -1,0 +1,72 @@
+00342541  
+Package Number: 1 Length: 29 cm Width: 13 cm Height: 4 cm Diameter: - Net Weight: 0.15 kg Gross Weight: 0.20 kg Gross Volume: 1.6 l
+-----------------------------------------------------------------------------------------------------
+10342545  
+Handshower diameter: 90 mm Length of hose: 1500 mm Height: 650 mm
+10342545  
+Package Number: 1 Length: 70 cm Width: 21 cm Height: 6 cm Diameter: - Net Weight: 1.27 kg Gross Weight: 1.80 kg Gross Volume: 8.1 l
+-----------------------------------------------------------------------------------------------------
+10349655  
+Connection centre distance: 150 mm Width: 265 mm Depth: 100 mm
+10349655  
+Package Number: 1 Length: 39 cm Width: 12 cm Height: 7 cm Diameter: - Net Weight: 1.31 kg Gross Weight: 1.58 kg Gross Volume: 3.1 l
+-----------------------------------------------------------------------------------------------------
+10349660  
+Handshower diameter: 80 mm Length of hose: 1500 mm Height: 620 mm
+10349660  
+Package Number: 1 Length: 72 cm Width: 21 cm Height: 5 cm Diameter: - Net Weight: 0.53 kg Gross Weight: 1.11 kg Gross Volume: 7.5 l
+-----------------------------------------------------------------------------------------------------
+20342535  
+Connection centre distance: 150 mm Handshower diameter: 90 mm Headshower diameter: 200 mm Length of hose: 1500 mm Width: 300 mm Depth: 570 mm Height: 1170 mm
+20342535  
+Package Number: 1 Length: 86 cm Width: 34 cm Height: 11 cm Diameter: - Net Weight: 5.71 kg Gross Weight: 7.28 kg Gross Volume: 32.0 l
+-----------------------------------------------------------------------------------------------------
+20342578  
+Package Number: 1 Length: 33 cm Width: 16 cm Height: 9 cm Diameter: - Net Weight: 0.23 kg Gross Weight: 0.30 kg Gross Volume: 4.7 l
+-----------------------------------------------------------------------------------------------------
+20342583  
+Package Number: 1 Length: 32 cm Width: 14 cm Height: 8 cm Diameter: - Net Weight: 0.19 kg Gross Weight: 0.25 kg Gross Volume: 3.5 l
+-----------------------------------------------------------------------------------------------------
+20349650  
+Package Number: 1 Length: 25 cm Width: 12 cm Height: 4 cm Diameter: - Net Weight: 0.12 kg Gross Weight: 0.16 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+30342587  
+Package Number: 1 Length: 32 cm Width: 14 cm Height: 8 cm Diameter: - Net Weight: 0.15 kg Gross Weight: 0.22 kg Gross Volume: 3.5 l
+-----------------------------------------------------------------------------------------------------
+40342539  
+Connection centre distance: 150 mm Width: 300 mm Depth: 110 mm
+40342539  
+Package Number: 1 Length: 35 cm Width: 16 cm Height: 8 cm Diameter: - Net Weight: 2.98 kg Gross Weight: 3.32 kg Gross Volume: 4.4 l
+-----------------------------------------------------------------------------------------------------
+40342544  
+Package Number: 1 Length: 29 cm Width: 13 cm Height: 4 cm Diameter: - Net Weight: 0.17 kg Gross Weight: 0.22 kg Gross Volume: 1.6 l
+-----------------------------------------------------------------------------------------------------
+40342600  
+Connection centre distance: 150 mm Handshower diameter: 90 mm Headshower diameter: 200 mm Length of hose: 1500 mm Width: 290 mm Depth: 580 mm Height: 1160 mm
+40342600  
+Package Number: 1 Length: 86 cm Width: 34 cm Height: 11 cm Diameter: - Net Weight: 5.16 kg Gross Weight: 6.74 kg Gross Volume: 32.0 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+60342543  
+Package Number: 1 Length: 32 cm Width: 14 cm Height: 6 cm Diameter: - Net Weight: 0.24 kg Gross Weight: 0.29 kg Gross Volume: 2.5 l
+-----------------------------------------------------------------------------------------------------
+60342595  
+Length: 1500 mm
+60342595  
+Package Number: 1 Length: 22 cm Width: 13 cm Height: 3 cm Diameter: - Net Weight: 0.26 kg Gross Weight: 0.27 kg Gross Volume: 0.8 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+70342613  
+Handshower diameter: 90 mm Length of hose: 1500 mm Height: 680 mm
+70342613  
+Package Number: 1 Length: 72 cm Width: 21 cm Height: 9 cm Diameter: - Net Weight: 0.95 kg Gross Weight: 1.69 kg Gross Volume: 12.8 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+30342629  
+Package Number: 1 Length: 21 cm Width: 8 cm Height: 4 cm Diameter: - Net Weight: 0.10 kg Gross Weight: 0.10 kg Gross Volume: 0.7 l
+-----------------------------------------------------------------------------------------------------
+70390562  
+Length: 150 cm
+70390562  
+Package Number: 1 Length: 20 cm Width: 17 cm Height: 3 cm Diameter: - Net Weight: 0.08 kg Gross Weight: 0.08 kg Gross Volume: 1.0 l
+-----------------------------------------------------------------------------------------------------

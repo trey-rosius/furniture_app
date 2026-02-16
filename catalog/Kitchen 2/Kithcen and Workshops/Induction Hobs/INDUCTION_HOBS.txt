@@ -1,0 +1,77 @@
+10243296  
+Width: 60.0 cm
+10243296  
+Package Number: 1 Length: 57 cm Width: 50 cm Height: 2 cm Diameter: - Net Weight: 1.66 kg Gross Weight: 2.10 kg Gross Volume: 6.9 l
+-----------------------------------------------------------------------------------------------------
+10301960  
+Width: 56.4 cm Frame, width: 60 cm Depth: 50.4 cm Frame, depth: 60 cm Max. load: 75 kg
+10301960  
+Package Number: 1 Length: 56 cm Width: 26 cm Height: 3 cm Diameter: - Net Weight: 2.91 kg Gross Weight: 3.12 kg Gross Volume: 3.8 l
+-----------------------------------------------------------------------------------------------------
+10368823  
+Width: 59.0 cm Depth: 52.0 cm Height: 3.9 cm Weight: 8.00 kg
+10368823  
+Package Number: 1 Length: 68 cm Width: 60 cm Height: 12 cm Diameter: - Net Weight: 7.61 kg Gross Weight: 9.00 kg Gross Volume: 49.0 l
+-----------------------------------------------------------------------------------------------------
+30243295  
+Width: 80.0 cm
+30243295  
+Package Number: 1 Length: 77 cm Width: 50 cm Height: 2 cm Diameter: - Net Weight: 2.25 kg Gross Weight: 2.78 kg Gross Volume: 9.3 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+50237137  
+Width: 29.0 cm Depth: 52.0 cm Height: 3.9 cm Weight: 5.00 kg
+50237137  
+Package Number: 1 Length: 61 cm Width: 39 cm Height: 12 cm Diameter: - Net Weight: 4.29 kg Gross Weight: 5.20 kg Gross Volume: 28.8 l
+-----------------------------------------------------------------------------------------------------
+70222818  
+Width: 59.0 cm Depth: 52 cm Height: 3.9 cm Weight: 8.05 kg
+70222818  
+Package Number: 1 Length: 68 cm Width: 60 cm Height: 12 cm Diameter: - Net Weight: 7.76 kg Gross Weight: 9.10 kg Gross Volume: 49.0 l
+-----------------------------------------------------------------------------------------------------
+00278074  
+Width: 58.0 cm Depth: 51.0 cm
+00278074  
+Package Number: 1 Length: 66 cm Width: 59 cm Height: 16 cm Diameter: - Net Weight: 8.15 kg Gross Weight: 9.00 kg Gross Volume: 63.5 l
+-----------------------------------------------------------------------------------------------------
+10278083  
+Width: 58.0 cm Depth: 51.0 cm
+10278083  
+Package Number: 1 Length: 66 cm Width: 59 cm Height: 16 cm Diameter: - Net Weight: 11.65 kg Gross Weight: 12.50 kg Gross Volume: 63.5 l
+-----------------------------------------------------------------------------------------------------
+10376842  
+Width: 59.5 cm Depth: 51.0 cm Height: 9.4 cm Cord length: 110.0 cm Weight: 9.90 kg
+10376842  
+Package Number: 1 Length: 70 cm Width: 60 cm Height: 15 cm Diameter: - Net Weight: 10.04 kg Gross Weight: 11.00 kg Gross Volume: 63.0 l
+-----------------------------------------------------------------------------------------------------
+00331627  
+Width: 30 cm Depth: 38.5 cm Height: 5.4 cm Weight: 3.00 kg
+00331627  
+Package Number: 1 Length: 45 cm Width: 35 cm Height: 9 cm Diameter: - Net Weight: 3.01 kg Gross Weight: 3.80 kg Gross Volume: 14.4 l
+-----------------------------------------------------------------------------------------------------
+20222830  
+Width: 59 cm Depth: 52 cm Height: 5.1 cm Weight: 11.00 kg
+20222830  
+Package Number: 1 Length: 68 cm Width: 60 cm Height: 13 cm Diameter: - Net Weight: 10.95 kg Gross Weight: 12.30 kg Gross Volume: 51.0 l
+-----------------------------------------------------------------------------------------------------
+30291615  
+Width: 58.0 cm Depth: 51.0 cm Height: 5.6 cm Cord length: 150 cm Weight: 8.13 kg
+30291615  
+Package Number: 1 Length: 67 cm Width: 59 cm Height: 11 cm Diameter: - Net Weight: 8.85 kg Gross Weight: 9.80 kg Gross Volume: 43.5 l
+-----------------------------------------------------------------------------------------------------
+30368822  
+Width: 59.0 cm Depth: 52.0 cm Height: 5.1 cm Weight: 12.00 kg
+30368822  
+Package Number: 1 Length: 68 cm Width: 60 cm Height: 13 cm Diameter: - Net Weight: 10.60 kg Gross Weight: 12.00 kg Gross Volume: 51.0 l
+-----------------------------------------------------------------------------------------------------
+40303934  
+Width: 58.0 cm Depth: 51.0 cm Height: 5.6 cm Weight: 10.00 kg
+40303934  
+Package Number: 1 Length: 67 cm Width: 59 cm Height: 13 cm Diameter: - Net Weight: 10.31 kg Gross Weight: 11.40 kg Gross Volume: 50.2 l
+-----------------------------------------------------------------------------------------------------
+60303933  
+Width: 78.0 cm Depth: 52.0 cm Height: 5.8 cm Weight: 14.90 kg
+60303933  
+Package Number: 1 Length: 87 cm Width: 60 cm Height: 13 cm Diameter: - Net Weight: 14.10 kg Gross Weight: 15.90 kg Gross Volume: 65.3 l
+-----------------------------------------------------------------------------------------------------
+

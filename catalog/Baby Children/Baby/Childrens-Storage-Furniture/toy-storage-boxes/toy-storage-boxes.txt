@@ -1,0 +1,49 @@
+
+Length: 20 cm Width: 28 cm
+
+Package Number: 1 Length: 28 cm Width: 20 cm Height: 1 cm Diameter: - Net Weight: 0.09 kg Gross Weight: 0.09 kg Gross Volume: 0.6 l
+-----------------------------------------------------------------------------------------------------
+Length: 20 cm Width: 30 cm Height: 10 cm
+
+Package Number: 1 Length: 30 cm Width: 21 cm Height: 10 cm Diameter: - Net Weight: 0.21 kg Gross Weight: 0.22 kg Gross Volume: 6.3 l
+-----------------------------------------------------------------------------------------------------
+Length: 42 cm Width: 30 cm Height: 23 cm
+
+Package Number: 1 Length: 42 cm Width: 30 cm Height: 23 cm Diameter: - Net Weight: 0.54 kg Gross Weight: 0.54 kg Gross Volume: 29.0 l
+-----------------------------------------------------------------------------------------------------
+Length: 42 cm Width: 30 cm Height: 36 cm
+
+Package Number: 1 Length: 42 cm Width: 36 cm Height: 30 cm Diameter: - Net Weight: 0.76 kg Gross Weight: 0.76 kg Gross Volume: 45.6 l
+-----------------------------------------------------------------------------------------------------
+Length: 42 cm Width: 30 cm Height: 23 cm
+
+Package Number: 1 Length: 42 cm Width: 30 cm Height: 23 cm Diameter: - Net Weight: 0.57 kg Gross Weight: 0.57 kg Gross Volume: 29.0 l
+-----------------------------------------------------------------------------------------------------
+Length: 42 cm Width: 30 cm Height: 23 cm
+
+Package Number: 1 Length: 42 cm Width: 30 cm Height: 23 cm Diameter: - Net Weight: 0.57 kg Gross Weight: 0.57 kg Gross Volume: 29.0 l
+-----------------------------------------------------------------------------------------------------
+Length: 42 cm Width: 30 cm Height: 10 cm
+
+Package Number: 1 Length: 42 cm Width: 30 cm Height: 11 cm Diameter: - Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 13.9 l
+-----------------------------------------------------------------------------------------------------
+Length: 40 cm Width: 28 cm
+
+Package Number: 1 Length: 40 cm Width: 28 cm Height: 1 cm Diameter: - Net Weight: 0.18 kg Gross Weight: 0.18 kg Gross Volume: 1.1 l
+-----------------------------------------------------------------------------------------------------
+Length: 42 cm Width: 30 cm Height: 10 cm
+
+Package Number: 1 Length: 42 cm Width: 30 cm Height: 11 cm Diameter: - Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 13.9 l
+-----------------------------------------------------------------------------------------------------
+Length: 20 cm Width: 30 cm Height: 10 cm
+
+Package Number: 1 Length: 30 cm Width: 21 cm Height: 10 cm Diameter: - Net Weight: 0.21 kg Gross Weight: 0.22 kg Gross Volume: 6.3 l
+-----------------------------------------------------------------------------------------------------
+Length: 42 cm Width: 30 cm Height: 10 cm
+
+Package Number: 1 Length: 42 cm Width: 30 cm Height: 11 cm Diameter: - Net Weight: 0.37 kg Gross Weight: 0.37 kg Gross Volume: 13.9 l
+-----------------------------------------------------------------------------------------------------
+Length: 42 cm Width: 30 cm Height: 23 cm
+
+Package Number: 1 Length: 42 cm Width: 30 cm Height: 23 cm Diameter: - Net Weight: 0.57 kg Gross Weight: 0.57 kg Gross Volume: 29.0 l
+-----------------------------------------------------------------------------------------------------

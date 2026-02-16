@@ -1,0 +1,619 @@
+00336601  
+Package Number: 1 Length: 22 cm Width: 19 cm Height: 5 cm Diameter: - Net Weight: 0.44 kg Gross Weight: 0.47 kg Gross Volume: 1.8 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+40301633  
+Package Number: 1 Length: 22 cm Width: 19 cm Height: 5 cm Diameter: - Net Weight: 0.48 kg Gross Weight: 0.49 kg Gross Volume: 1.9 l
+-----------------------------------------------------------------------------------------------------
+40336595  
+Package Number: 1 Length: 22 cm Width: 19 cm Height: 5 cm Diameter: - Net Weight: 0.44 kg Gross Weight: 0.46 kg Gross Volume: 1.8 l
+-----------------------------------------------------------------------------------------------------
+40377048  
+Package Number: 1 Length: 18 cm Width: 18 cm Height: 1 cm Diameter: - Net Weight: 0.12 kg Gross Weight: 0.14 kg Gross Volume: 0.4 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+60384335  
+Package Number: 1 Length: 35 cm Width: 23 cm Height: 8 cm Diameter: - Net Weight: 0.95 kg Gross Weight: 0.99 kg Gross Volume: 6.4 l
+-----------------------------------------------------------------------------------------------------
+60452150  
+Package Number: 1 Length: 23 cm Width: 21 cm Height: 1 cm Diameter: - Net Weight: 0.13 kg Gross Weight: 0.15 kg Gross Volume: 0.4 l
+-----------------------------------------------------------------------------------------------------
+60452169  
+Package Number: 1 Length: 21 cm Width: 16 cm Height: 1 cm Diameter: - Net Weight: 0.11 kg Gross Weight: 0.12 kg Gross Volume: 0.3 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+20377049  
+Package Number: 1 Length: 18 cm Width: 18 cm Height: 2 cm Diameter: - Net Weight: 0.11 kg Gross Weight: 0.12 kg Gross Volume: 0.5 l
+-----------------------------------------------------------------------------------------------------
+60377047  
+Package Number: 1 Length: 18 cm Width: 18 cm Height: 1 cm Diameter: - Net Weight: 0.12 kg Gross Weight: 0.14 kg Gross Volume: 0.4 l
+-----------------------------------------------------------------------------------------------------
+70336674  
+Package Number: 1 Length: 22 cm Width: 19 cm Height: 5 cm Diameter: - Net Weight: 0.48 kg Gross Weight: 0.49 kg Gross Volume: 2.0 l
+-----------------------------------------------------------------------------------------------------
+80187683  
+Package Number: 1 Length: 23 cm Width: 18 cm Height: 3 cm Diameter: - Net Weight: 0.51 kg Gross Weight: 0.53 kg Gross Volume: 1.2 l
+-----------------------------------------------------------------------------------------------------
+80377046  
+Package Number: 1 Length: 29 cm Width: 16 cm Height: 2 cm Diameter: - Net Weight: 0.12 kg Gross Weight: 0.13 kg Gross Volume: 0.7 l
+-----------------------------------------------------------------------------------------------------
+10370977  
+Package Number: 1 Length: 26 cm Width: 23 cm Height: 5 cm Diameter: - Net Weight: 0.36 kg Gross Weight: 0.39 kg Gross Volume: 3.0 l
+-----------------------------------------------------------------------------------------------------
+00287974  
+Width: 48 cm Depth: 51 cm Height: 46 cm Seat height: 46 cm
+00287974  
+Package Number: 1 Length: 84 cm Width: 35 cm Height: 6 cm Diameter: - Net Weight: 1.13 kg Gross Weight: 2.47 kg Gross Volume: 16.4 l
+-----------------------------------------------------------------------------------------------------
+00288638  
+Height: 39 cm Seat width: 45 cm Seat depth: 47 cm
+00288638  
+Package Number: 1 Length: 46 cm Width: 42 cm Height: 40 cm Diameter: - Net Weight: 2.75 kg Gross Weight: 2.80 kg Gross Volume: 76.3 l
+-----------------------------------------------------------------------------------------------------
+10288628  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 45 cm Seat height: 45 cm
+10288628  
+Package Number: 1 Length: 52 cm Width: 48 cm Height: 25 cm Diameter: - Net Weight: 1.94 kg Gross Weight: 2.03 kg Gross Volume: 61.8 l
+-----------------------------------------------------------------------------------------------------
+30288632  
+Tested for: 110 kg Height: 42 cm Seat width: 45 cm Seat depth: 36 cm
+30288632  
+Package Number: 1 Length: 50 cm Width: 45 cm Height: 43 cm Diameter: - Net Weight: 2.22 kg Gross Weight: 2.31 kg Gross Volume: 97.6 l
+-----------------------------------------------------------------------------------------------------
+30339896  
+Height: 39 cm Seat width: 45 cm Seat depth: 47 cm
+30339896  
+Package Number: 1 Length: 46 cm Width: 42 cm Height: 40 cm Diameter: - Net Weight: 2.75 kg Gross Weight: 2.80 kg Gross Volume: 76.3 l
+-----------------------------------------------------------------------------------------------------
+30339900  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 45 cm Seat height: 45 cm
+30339900  
+Package Number: 1 Length: 55 cm Width: 48 cm Height: 21 cm Diameter: - Net Weight: 1.94 kg Gross Weight: 2.03 kg Gross Volume: 53.6 l
+-----------------------------------------------------------------------------------------------------
+70288630  
+Tested for: 110 kg Width: 53 cm Depth: 50 cm Height: 65 cm Seat height: 46 cm
+70288630  
+Package Number: 1 Length: 67 cm Width: 55 cm Height: 50 cm Diameter: - Net Weight: 3.36 kg Gross Weight: 3.40 kg Gross Volume: 184.3 l
+-----------------------------------------------------------------------------------------------------
+90339902  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 45 cm Seat height: 45 cm
+90339902  
+Package Number: 1 Length: 55 cm Width: 48 cm Height: 21 cm Diameter: - Net Weight: 1.90 kg Gross Weight: 1.98 kg Gross Volume: 53.6 l
+-----------------------------------------------------------------------------------------------------
+20451647  
+Tested for: 110 kg Height: 42 cm Seat width: 45 cm Seat depth: 36 cm
+20451647  
+Package Number: 1 Length: 49 cm Width: 46 cm Height: 41 cm Diameter: - Net Weight: 2.21 kg Gross Weight: 2.27 kg Gross Volume: 91.4 l
+-----------------------------------------------------------------------------------------------------
+90451644  
+Tested for: 110 kg Height: 42 cm Seat width: 45 cm Seat depth: 36 cm
+90451644  
+Package Number: 1 Length: 49 cm Width: 46 cm Height: 42 cm Diameter: - Net Weight: 2.21 kg Gross Weight: 2.29 kg Gross Volume: 93.6 l
+-----------------------------------------------------------------------------------------------------
+10291918  
+Tested for: 110 kg Height: 42 cm Seat width: 45 cm Seat depth: 36 cm
+10291918  
+Package Number: 1 Length: 49 cm Width: 45 cm Height: 42 cm Diameter: - Net Weight: 2.26 kg Gross Weight: 2.31 kg Gross Volume: 93.1 l
+-----------------------------------------------------------------------------------------------------
+70451640  
+Tested for: 110 kg Height: 42 cm Seat width: 45 cm Seat depth: 36 cm
+70451640  
+Package Number: 1 Length: 49 cm Width: 46 cm Height: 42 cm Diameter: - Net Weight: 2.21 kg Gross Weight: 2.29 kg Gross Volume: 93.6 l
+-----------------------------------------------------------------------------------------------------
+79127807  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+19304167  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+49304180  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+89127802  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+29304204  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+39127809  
+Tested for: 110 kg Width: 53 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+59304170  
+Tested for: 110 kg Width: 53 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+99304187  
+Tested for: 110 kg Width: 53 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+19127805  
+Tested for: 110 kg Width: 53 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+19304209  
+Tested for: 110 kg Width: 53 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+69197693  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 84 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+99197700  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 84 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+59127808  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 88 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+29304195  
+Tested for: 110 kg Width: 48 cm Depth: 51 cm Height: 85 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+79304169  
+Tested for: 110 kg Width: 48 cm Depth: 51 cm Height: 85 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+99127806  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 88 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+69304216  
+Tested for: 110 kg Width: 48 cm Depth: 51 cm Height: 85 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+49197694  
+Tested for: 110 kg Width: 48 cm Depth: 51 cm Height: 85 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+09219527  
+Tested for: 100 kg Width: 49 cm Depth: 52 cm Height: 86 cm Seat width: 38 cm Seat depth: 38 cm Seat height: 45 cm
+-----------------------------------------------------------------------------------------------------
+59197702  
+Tested for: 110 kg Width: 48 cm Depth: 51 cm Height: 85 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+69197711  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+09304182  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+89304164  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+09197709  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+49304199  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+89197710  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+29304162  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+29304176  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+29197708  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+09304196  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 87 cm Seat width: 45 cm Seat depth: 36 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+99197696  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 84 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+39197699  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 84 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+79197701  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 84 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+79197697  
+Tested for: 110 kg Width: 52 cm Depth: 50 cm Height: 84 cm Seat width: 45 cm Seat depth: 47 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+49304972  
+Tested for: 110 kg Width: 69 cm Depth: 69 cm Max. height: 87 cm Seat width: 45 cm Seat depth: 36 cm Min. seat height: 41 cm Max. seat height: 51 cm
+-----------------------------------------------------------------------------------------------------
+69304966  
+Tested for: 110 kg Width: 69 cm Depth: 69 cm Max. height: 87 cm Seat width: 45 cm Seat depth: 36 cm Min. seat height: 41 cm Max. seat height: 51 cm
+-----------------------------------------------------------------------------------------------------
+29301700  
+Tested for: 110 kg Width: 69 cm Depth: 69 cm Max. height: 87 cm Seat width: 45 cm Seat depth: 36 cm Min. seat height: 41 cm Max. seat height: 51 cm
+-----------------------------------------------------------------------------------------------------
+00211088  
+Tested for: 110 kg Width: 42 cm Depth: 49 cm Height: 90 cm Seat width: 36 cm Seat depth: 39 cm Seat height: 45 cm
+00211088  
+Package Number: 1 Length: 95 cm Width: 48 cm Height: 9 cm Diameter: - Net Weight: 3.70 kg Gross Weight: 4.17 kg Gross Volume: 39.1 l
+-----------------------------------------------------------------------------------------------------
+00246078  
+Tested for: 110 kg Width: 50 cm Depth: 46 cm Height: 76 cm Seat width: 40 cm Seat depth: 40 cm Seat height: 44 cm
+00246078  
+Package Number: 1 Length: 77 cm Width: 52 cm Height: 47 cm Diameter: - Net Weight: 4.73 kg Gross Weight: 4.75 kg Gross Volume: 187.4 l
+-----------------------------------------------------------------------------------------------------
+00358023  
+Tested for: 110 kg Width: 46 cm Depth: 54 cm Height: 80 cm Seat width: 40 cm Seat depth: 37 cm Seat height: 45 cm
+00358023  
+Package Number: 1 Length: 78 cm Width: 45 cm Height: 6 cm Diameter: - Net Weight: 4.84 kg Gross Weight: 5.60 kg Gross Volume: 20.7 l
+-----------------------------------------------------------------------------------------------------
+00360002  
+Tested for: 110 kg Width: 45 cm Depth: 51 cm Height: 81 cm Seat width: 45 cm Seat depth: 41 cm Seat height: 43 cm
+00360002  
+Package Number: 1 Length: 55 cm Width: 50 cm Height: 48 cm Diameter: - Net Weight: 5.11 kg Gross Weight: 6.43 kg Gross Volume: 129.3 l
+-----------------------------------------------------------------------------------------------------
+10219178  
+Tested for: 110 kg Width: 39 cm Depth: 47 cm Height: 77 cm Seat width: 39 cm Seat depth: 34 cm Seat height: 45 cm
+10219178  
+Package Number: 1 Length: 77 cm Width: 50 cm Height: 8 cm Diameter: - Net Weight: 2.82 kg Gross Weight: 2.92 kg Gross Volume: 28.9 l
+-----------------------------------------------------------------------------------------------------
+10422504  
+Tested for: 110 kg Width: 46 cm Depth: 49 cm Height: 79 cm Seat width: 41 cm Seat depth: 41 cm Seat height: 45 cm
+10422504  
+Package Number: 1 Length: 80 cm Width: 53 cm Height: 11 cm Diameter: - Net Weight: 5.68 kg Gross Weight: 6.50 kg Gross Volume: 48.3 l
+-----------------------------------------------------------------------------------------------------
+20153068  
+Tested for: 110 kg Width: 49 cm Depth: 50 cm Height: 77 cm Seat width: 45 cm Seat depth: 40 cm Seat height: 47 cm
+20153068  
+Package Number: 1 Length: 68 cm Width: 48 cm Height: 42 cm Diameter: - Net Weight: 5.70 kg Gross Weight: 7.06 kg Gross Volume: 134.4 l
+-----------------------------------------------------------------------------------------------------
+20163802  
+Tested for: 110 kg Width: 49 cm Depth: 50 cm Height: 77 cm Seat width: 45 cm Seat depth: 40 cm Seat height: 48 cm
+20163802  
+Package Number: 1 Length: 68 cm Width: 48 cm Height: 42 cm Diameter: - Net Weight: 5.70 kg Gross Weight: 7.06 kg Gross Volume: 133.5 l
+-----------------------------------------------------------------------------------------------------
+20259423  
+Tested for: 110 kg Width: 42 cm Depth: 49 cm Height: 85 cm Seat width: 42 cm Seat depth: 38 cm Seat height: 48 cm
+20259423  
+Package Number: 1 Length: 93 cm Width: 48 cm Height: 12 cm Diameter: - Net Weight: 3.69 kg Gross Weight: 4.45 kg Gross Volume: 51.5 l
+-----------------------------------------------------------------------------------------------------
+20349674  
+Tested for: 100 kg Width: 55 cm Depth: 56 cm Height: 82 cm Seat width: 48 cm Seat depth: 46 cm Seat height: 44 cm
+20349674  
+Package Number: 1 Length: 47 cm Width: 47 cm Height: 47 cm Diameter: - Net Weight: 3.70 kg Gross Weight: 3.71 kg Gross Volume: 106.5 l  Package Number: 2 Length: 55 cm Width: 53 cm Height: 46 cm Diameter: - Net Weight: 3.75 kg Gross Weight: 3.78 kg Gross Volume: 134.1 l
+-----------------------------------------------------------------------------------------------------
+40228812  
+Tested for: 110 kg Width: 42 cm Depth: 47 cm Height: 80 cm Seat width: 41 cm Seat depth: 40 cm Seat height: 46 cm
+40228812  
+Package Number: 1 Length: 79 cm Width: 44 cm Height: 11 cm Diameter: - Net Weight: 4.14 kg Gross Weight: 4.70 kg Gross Volume: 37.8 l
+-----------------------------------------------------------------------------------------------------
+50364149  
+Tested for: 110 kg Width: 45 cm Depth: 51 cm Height: 81 cm Seat width: 45 cm Seat depth: 41 cm Seat height: 43 cm
+50364149  
+Package Number: 1 Length: 55 cm Width: 50 cm Height: 48 cm Diameter: - Net Weight: 5.11 kg Gross Weight: 6.43 kg Gross Volume: 129.3 l
+-----------------------------------------------------------------------------------------------------
+60217822  
+Tested for: 110 kg Width: 43 cm Depth: 52 cm Height: 91 cm Seat width: 41 cm Seat depth: 38 cm Seat height: 44 cm
+60217822  
+Package Number: 1 Length: 94 cm Width: 49 cm Height: 10 cm Diameter: - Net Weight: 5.01 kg Gross Weight: 5.60 kg Gross Volume: 44.2 l
+-----------------------------------------------------------------------------------------------------
+60246080  
+Tested for: 110 kg Width: 50 cm Depth: 46 cm Height: 76 cm Seat width: 40 cm Seat depth: 40 cm Seat height: 44 cm
+60246080  
+Package Number: 1 Length: 77 cm Width: 52 cm Height: 47 cm Diameter: - Net Weight: 4.73 kg Gross Weight: 4.75 kg Gross Volume: 187.4 l
+-----------------------------------------------------------------------------------------------------
+60247051  
+Tested for: 110 kg Width: 42 cm Depth: 50 cm Height: 85 cm Seat width: 42 cm Seat depth: 38 cm Seat height: 45 cm
+60247051  
+Package Number: 1 Length: 94 cm Width: 48 cm Height: 10 cm Diameter: - Net Weight: 3.85 kg Gross Weight: 4.53 kg Gross Volume: 43.7 l
+-----------------------------------------------------------------------------------------------------
+60334722  
+Tested for: 110 kg Width: 55 cm Depth: 56 cm Height: 82 cm Seat width: 48 cm Seat depth: 46 cm Seat height: 44 cm
+60334722  
+Package Number: 1 Length: 47 cm Width: 47 cm Height: 47 cm Diameter: - Net Weight: 3.70 kg Gross Weight: 3.71 kg Gross Volume: 106.5 l  Package Number: 2 Length: 55 cm Width: 53 cm Height: 46 cm Diameter: - Net Weight: 3.75 kg Gross Weight: 3.78 kg Gross Volume: 134.1 l
+-----------------------------------------------------------------------------------------------------
+60359996  
+Tested for: 110 kg Width: 45 cm Depth: 51 cm Height: 81 cm Seat width: 45 cm Seat depth: 41 cm Seat height: 43 cm
+60359996  
+Package Number: 1 Length: 55 cm Width: 50 cm Height: 48 cm Diameter: - Net Weight: 5.11 kg Gross Weight: 6.43 kg Gross Volume: 129.3 l
+-----------------------------------------------------------------------------------------------------
+70103250  
+Tested for: 110 kg Width: 43 cm Depth: 52 cm Height: 91 cm Seat width: 41 cm Seat depth: 38 cm Seat height: 44 cm
+70103250  
+Package Number: 1 Length: 95 cm Width: 47 cm Height: 14 cm Diameter: - Net Weight: 8.09 kg Gross Weight: 8.90 kg Gross Volume: 61.3 l
+-----------------------------------------------------------------------------------------------------
+70264281  
+Tested for: 110 kg Width: 42 cm Depth: 49 cm Height: 85 cm Seat width: 42 cm Seat depth: 38 cm Seat height: 48 cm
+70264281  
+Package Number: 1 Length: 93 cm Width: 48 cm Height: 12 cm Diameter: - Net Weight: 3.69 kg Gross Weight: 4.45 kg Gross Volume: 51.5 l
+-----------------------------------------------------------------------------------------------------
+70273092  
+Tested for: 110 kg Width: 47 cm Depth: 51 cm Height: 83 cm Seat width: 38 cm Seat depth: 41 cm Seat height: 45 cm
+70273092  
+Package Number: 1 Length: 52 cm Width: 47 cm Height: 45 cm Diameter: - Net Weight: 5.57 kg Gross Weight: 6.20 kg Gross Volume: 110.0 l
+-----------------------------------------------------------------------------------------------------
+80349671  
+Tested for: 100 kg Width: 55 cm Depth: 56 cm Height: 82 cm Seat width: 48 cm Seat depth: 46 cm Seat height: 44 cm
+80349671  
+Package Number: 1 Length: 56 cm Width: 50 cm Height: 47 cm Diameter: - Net Weight: 4.05 kg Gross Weight: 4.05 kg Gross Volume: 130.5 l  Package Number: 2 Length: 58 cm Width: 53 cm Height: 46 cm Diameter: - Net Weight: 4.15 kg Gross Weight: 4.20 kg Gross Volume: 140.7 l
+-----------------------------------------------------------------------------------------------------
+90214285  
+Tested for: 110 kg Width: 39 cm Depth: 47 cm Height: 77 cm Seat width: 39 cm Seat depth: 34 cm Seat height: 45 cm
+90214285  
+Package Number: 1 Length: 77 cm Width: 50 cm Height: 8 cm Diameter: - Net Weight: 2.82 kg Gross Weight: 2.92 kg Gross Volume: 28.9 l
+-----------------------------------------------------------------------------------------------------
+90219184  
+Tested for: 110 kg Width: 39 cm Depth: 47 cm Height: 77 cm Seat width: 39 cm Seat depth: 34 cm Seat height: 45 cm
+90219184  
+Package Number: 1 Length: 77 cm Width: 50 cm Height: 7 cm Diameter: - Net Weight: 2.82 kg Gross Weight: 2.92 kg Gross Volume: 27.7 l
+-----------------------------------------------------------------------------------------------------
+90263902  
+Tested for: 110 kg Width: 41 cm Depth: 50 cm Height: 95 cm Seat width: 39 cm Seat depth: 40 cm Seat height: 45 cm
+90263902  
+Package Number: 1 Length: 98 cm Width: 49 cm Height: 11 cm Diameter: - Net Weight: 4.22 kg Gross Weight: 4.90 kg Gross Volume: 50.4 l
+-----------------------------------------------------------------------------------------------------
+90350937  
+Tested for: 110 kg Width: 46 cm Depth: 54 cm Height: 80 cm Seat width: 40 cm Seat depth: 37 cm Seat height: 45 cm
+90350937  
+Package Number: 1 Length: 78 cm Width: 45 cm Height: 7 cm Diameter: - Net Weight: 5.26 kg Gross Weight: 5.77 kg Gross Volume: 23.0 l
+-----------------------------------------------------------------------------------------------------
+90435324  
+Tested for: 100 kg Width: 56 cm Depth: 46 cm Height: 82 cm Seat width: 52 cm Seat depth: 40 cm Seat height: 46 cm
+90435324  
+Package Number: 1 Length: 67 cm Width: 56 cm Height: 48 cm Diameter: - Net Weight: 10.27 kg Gross Weight: 11.80 kg Gross Volume: 178.2 l
+-----------------------------------------------------------------------------------------------------
+00369111  
+Tested for: 110 kg Width: 44 cm Depth: 56 cm Height: 97 cm Seat width: 44 cm Seat depth: 43 cm Seat height: 45 cm
+00369111  
+Package Number: 1 Length: 100 cm Width: 50 cm Height: 10 cm Diameter: - Net Weight: 4.88 kg Gross Weight: 5.48 kg Gross Volume: 47.7 l
+-----------------------------------------------------------------------------------------------------
+40369109  
+Tested for: 110 kg Width: 44 cm Depth: 56 cm Height: 97 cm Seat width: 44 cm Seat depth: 43 cm Seat height: 45 cm
+40369109  
+Package Number: 1 Length: 100 cm Width: 50 cm Height: 10 cm Diameter: - Net Weight: 4.99 kg Gross Weight: 5.48 kg Gross Volume: 47.7 l
+-----------------------------------------------------------------------------------------------------
+50457313  
+Tested for: 110 kg Width: 45 cm Depth: 51 cm Height: 81 cm Seat width: 45 cm Seat depth: 41 cm Seat height: 43 cm
+50457313  
+Package Number: 1 Length: 55 cm Width: 50 cm Height: 49 cm Diameter: - Net Weight: 5.11 kg Gross Weight: 6.43 kg Gross Volume: 132.0 l
+-----------------------------------------------------------------------------------------------------
+80417636  
+Tested for: 110 kg Width: 53 cm Depth: 51 cm Height: 71 cm Seat width: 40 cm Seat depth: 40 cm Seat height: 46 cm
+80417636  
+Package Number: 1 Length: 72 cm Width: 53 cm Height: 50 cm Diameter: - Net Weight: 5.60 kg Gross Weight: 5.74 kg Gross Volume: 189.3 l
+-----------------------------------------------------------------------------------------------------
+90342688  
+Width: 41 cm Depth: 47 cm Height: 90 cm Seat width: 41 cm Seat depth: 41 cm Seat height: 44 cm
+90342688  
+Package Number: 1 Length: 95 cm Width: 48 cm Height: 9 cm Diameter: - Net Weight: 3.41 kg Gross Weight: 3.87 kg Gross Volume: 38.4 l
+-----------------------------------------------------------------------------------------------------
+00217820  
+Tested for: 110 kg Width: 43 cm Depth: 52 cm Height: 91 cm Seat width: 41 cm Seat depth: 38 cm Seat height: 44 cm
+00217820  
+Package Number: 1 Length: 94 cm Width: 50 cm Height: 10 cm Diameter: - Net Weight: 5.01 kg Gross Weight: 5.60 kg Gross Volume: 44.7 l
+-----------------------------------------------------------------------------------------------------
+40280843  
+Tested for: 110 kg Width: 47 cm Depth: 51 cm Height: 83 cm Seat width: 38 cm Seat depth: 41 cm Seat height: 45 cm
+40280843  
+Package Number: 1 Length: 52 cm Width: 47 cm Height: 45 cm Diameter: - Net Weight: 5.57 kg Gross Weight: 6.20 kg Gross Volume: 110.0 l
+-----------------------------------------------------------------------------------------------------
+50404824  
+Tested for: 110 kg Width: 49 cm Depth: 50 cm Height: 77 cm Seat width: 45 cm Seat depth: 40 cm Seat height: 47 cm
+50404824  
+Package Number: 1 Length: 68 cm Width: 48 cm Height: 42 cm Diameter: - Net Weight: 5.70 kg Gross Weight: 7.33 kg Gross Volume: 135.4 l
+-----------------------------------------------------------------------------------------------------
+50412895  
+Tested for: 110 kg Width: 46 cm Depth: 49 cm Height: 79 cm Seat width: 41 cm Seat depth: 41 cm Seat height: 45 cm
+50412895  
+Package Number: 1 Length: 80 cm Width: 53 cm Height: 11 cm Diameter: - Net Weight: 5.68 kg Gross Weight: 6.50 kg Gross Volume: 48.3 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+80225166  
+Tested for: 110 kg Width: 42 cm Depth: 47 cm Height: 80 cm Seat width: 41 cm Seat depth: 40 cm Seat height: 46 cm
+80225166  
+Package Number: 1 Length: 79 cm Width: 44 cm Height: 11 cm Diameter: - Net Weight: 4.14 kg Gross Weight: 4.70 kg Gross Volume: 37.8 l
+-----------------------------------------------------------------------------------------------------
+50434312  
+Tested for: 110 kg Width: 57 cm Depth: 57 cm Height: 82 cm Seat width: 42 cm Seat depth: 40 cm Seat height: 44 cm
+50434312  
+Package Number: 1 Length: 64 cm Width: 57 cm Height: 55 cm Diameter: - Net Weight: 6.46 kg Gross Weight: 7.20 kg Gross Volume: 200.6 l
+-----------------------------------------------------------------------------------------------------
+00217797  
+Tested for: 100 kg Width: 41 cm Depth: 45 cm Height: 78 cm Seat width: 37 cm Seat depth: 34 cm Seat height: 45 cm
+00217797  
+Package Number: 1 Length: 91 cm Width: 42 cm Height: 7 cm Diameter: - Net Weight: 2.17 kg Gross Weight: 2.18 kg Gross Volume: 26.6 l
+-----------------------------------------------------------------------------------------------------
+10115067  
+Tested for: 100 kg Width: 45 cm Depth: 47 cm Height: 76 cm Seat width: 39 cm Seat depth: 42 cm Seat height: 45 cm
+10115067  
+Package Number: 1 Length: 88 cm Width: 44 cm Height: 8 cm Diameter: - Net Weight: 3.75 kg Gross Weight: 3.82 kg Gross Volume: 28.6 l
+-----------------------------------------------------------------------------------------------------
+30115066  
+Tested for: 100 kg Width: 45 cm Depth: 47 cm Height: 76 cm Seat width: 39 cm Seat depth: 42 cm Seat height: 45 cm
+30115066  
+Package Number: 1 Length: 89 cm Width: 44 cm Height: 8 cm Diameter: - Net Weight: 3.55 kg Gross Weight: 3.62 kg Gross Volume: 29.0 l
+-----------------------------------------------------------------------------------------------------
+40217795  
+Tested for: 100 kg Width: 45 cm Depth: 55 cm Height: 80 cm Seat width: 40 cm Seat depth: 41 cm Seat height: 46 cm
+40217795  
+Package Number: 1 Length: 105 cm Width: 46 cm Height: 16 cm Diameter: - Net Weight: 4.88 kg Gross Weight: 4.98 kg Gross Volume: 77.9 l
+-----------------------------------------------------------------------------------------------------
+60217799  
+Tested for: 100 kg Width: 41 cm Depth: 45 cm Height: 78 cm Seat width: 37 cm Seat depth: 34 cm Seat height: 45 cm
+60217799  
+Package Number: 1 Length: 91 cm Width: 42 cm Height: 7 cm Diameter: - Net Weight: 2.18 kg Gross Weight: 2.18 kg Gross Volume: 26.6 l
+-----------------------------------------------------------------------------------------------------
+80222441  
+Tested for: 100 kg Width: 44 cm Depth: 51 cm Height: 77 cm Seat width: 38 cm Seat depth: 33 cm Seat height: 46 cm
+80222441  
+Package Number: 1 Length: 89 cm Width: 44 cm Height: 9 cm Diameter: - Net Weight: 3.20 kg Gross Weight: 3.20 kg Gross Volume: 35.2 l
+-----------------------------------------------------------------------------------------------------
+00222440  
+Tested for: 100 kg Width: 44 cm Depth: 51 cm Height: 77 cm Seat width: 38 cm Seat depth: 33 cm Seat height: 46 cm
+00222440  
+Package Number: 1 Length: 89 cm Width: 44 cm Height: 9 cm Diameter: - Net Weight: 3.20 kg Gross Weight: 3.20 kg Gross Volume: 35.2 l
+-----------------------------------------------------------------------------------------------------
+40225677  
+Tested for: 100 kg Width: 44 cm Depth: 51 cm Height: 77 cm Seat width: 38 cm Seat depth: 33 cm Seat height: 46 cm
+40225677  
+Package Number: 1 Length: 89 cm Width: 44 cm Height: 9 cm Diameter: - Net Weight: 3.20 kg Gross Weight: 3.20 kg Gross Volume: 35.2 l
+-----------------------------------------------------------------------------------------------------
+59220830  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+29184268  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+29184273  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+79220810  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+09220842  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+69279028  
+Tested for: 110 kg Width: 60 cm Depth: 67 cm Height: 96 cm Seat width: 42 cm Seat depth: 47 cm Seat height: 52 cm
+-----------------------------------------------------------------------------------------------------
+29317980  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+39318026  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+19265279  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+19265236  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+79265257  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+00141689  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+00141689  
+Package Number: 1 Length: 98 cm Width: 47 cm Height: 23 cm Diameter: - Net Weight: 7.43 kg Gross Weight: 7.70 kg Gross Volume: 103.6 l
+-----------------------------------------------------------------------------------------------------
+00380948  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+00380948  
+Package Number: 1 Length: 100 cm Width: 55 cm Height: 21 cm Diameter: - Net Weight: 8.87 kg Gross Weight: 10.85 kg Gross Volume: 113.9 l
+-----------------------------------------------------------------------------------------------------
+10384328  
+Tested for: 110 kg Width: 60 cm Depth: 67 cm Height: 96 cm Seat width: 42 cm Seat depth: 47 cm Seat height: 52 cm
+10384328  
+Package Number: 1 Length: 114 cm Width: 69 cm Height: 28 cm Diameter: - Net Weight: 12.09 kg Gross Weight: 14.20 kg Gross Volume: 215.4 l
+-----------------------------------------------------------------------------------------------------
+10413137  
+Tested for: 100 kg Width: 58 cm Depth: 56 cm Height: 85 cm Seat width: 44 cm Seat depth: 44 cm Seat height: 45 cm
+10413137  
+Package Number: 1 Length: 62 cm Width: 59 cm Height: 48 cm Diameter: - Net Weight: 5.18 kg Gross Weight: 6.75 kg Gross Volume: 174.1 l
+-----------------------------------------------------------------------------------------------------
+20030925  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+20030925  
+Package Number: 1 Length: 105 cm Width: 49 cm Height: 23 cm Diameter: - Net Weight: 7.48 kg Gross Weight: 7.75 kg Gross Volume: 115.2 l
+-----------------------------------------------------------------------------------------------------
+30246289  
+Tested for: 110 kg Width: 57 cm Depth: 63 cm Height: 99 cm Seat width: 42 cm Seat depth: 44 cm Seat height: 48 cm
+30246289  
+Package Number: 1 Length: 105 cm Width: 58 cm Height: 17 cm Diameter: - Net Weight: 8.62 kg Gross Weight: 10.00 kg Gross Volume: 105.9 l
+-----------------------------------------------------------------------------------------------------
+30361038  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+30361038  
+Package Number: 1 Length: 99 cm Width: 49 cm Height: 24 cm Diameter: - Net Weight: 7.42 kg Gross Weight: 7.75 kg Gross Volume: 116.4 l
+-----------------------------------------------------------------------------------------------------
+40341021  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+40341021  
+Package Number: 1 Length: 96 cm Width: 45 cm Height: 12 cm Diameter: - Net Weight: 5.89 kg Gross Weight: 6.70 kg Gross Volume: 51.0 l
+-----------------------------------------------------------------------------------------------------
+60105829  
+Tested for: 110 kg Width: 48 cm Depth: 50 cm Height: 96 cm Seat width: 48 cm Seat depth: 37 cm Seat height: 47 cm
+60105829  
+Package Number: 1 Length: 100 cm Width: 51 cm Height: 13 cm Diameter: - Net Weight: 5.47 kg Gross Weight: 6.70 kg Gross Volume: 65.3 l
+-----------------------------------------------------------------------------------------------------
+60361032  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+60361032  
+Package Number: 1 Length: 99 cm Width: 49 cm Height: 24 cm Diameter: - Net Weight: 7.68 kg Gross Weight: 8.10 kg Gross Volume: 116.4 l
+-----------------------------------------------------------------------------------------------------
+80340760  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+80340760  
+Package Number: 1 Length: 98 cm Width: 45 cm Height: 12 cm Diameter: - Net Weight: 5.91 kg Gross Weight: 6.70 kg Gross Volume: 52.0 l
+-----------------------------------------------------------------------------------------------------
+80341019  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+80341019  
+Package Number: 1 Length: 95 cm Width: 45 cm Height: 12 cm Diameter: - Net Weight: 5.55 kg Gross Weight: 6.27 kg Gross Volume: 49.9 l
+-----------------------------------------------------------------------------------------------------
+80404672  
+Tested for: 110 kg Width: 50 cm Depth: 45 cm Height: 90 cm Seat width: 44 cm Seat depth: 38 cm Seat height: 48 cm
+80404672  
+Package Number: 1 Length: 67 cm Width: 49 cm Height: 47 cm Diameter: - Net Weight: 5.58 kg Gross Weight: 7.04 kg Gross Volume: 152.7 l
+-----------------------------------------------------------------------------------------------------
+90246291  
+Tested for: 110 kg Width: 57 cm Depth: 63 cm Height: 99 cm Seat width: 42 cm Seat depth: 44 cm Seat height: 48 cm
+90246291  
+Package Number: 1 Length: 105 cm Width: 58 cm Height: 17 cm Diameter: - Net Weight: 8.69 kg Gross Weight: 10.00 kg Gross Volume: 105.9 l
+-----------------------------------------------------------------------------------------------------
+90402352  
+Tested for: 110 kg Width: 50 cm Depth: 45 cm Height: 90 cm Seat width: 44 cm Seat depth: 38 cm Seat height: 48 cm
+90402352  
+Package Number: 1 Length: 67 cm Width: 49 cm Height: 47 cm Diameter: - Net Weight: 5.58 kg Gross Weight: 7.04 kg Gross Volume: 151.1 l
+-----------------------------------------------------------------------------------------------------
+50341025  
+Tested for: 110 kg Width: 49 cm Depth: 55 cm Height: 81 cm Seat width: 45 cm Seat depth: 40 cm Seat height: 46 cm
+50341025  
+Package Number: 1 Length: 75 cm Width: 56 cm Height: 8 cm Diameter: - Net Weight: 3.88 kg Gross Weight: 4.15 kg Gross Volume: 31.5 l
+-----------------------------------------------------------------------------------------------------
+80443904  
+Tested for: 110 kg Width: 49 cm Depth: 55 cm Height: 81 cm Seat width: 45 cm Seat depth: 40 cm Seat height: 46 cm
+80443904  
+Package Number: 1 Length: 75 cm Width: 56 cm Height: 8 cm Diameter: - Net Weight: 3.88 kg Gross Weight: 4.15 kg Gross Volume: 31.5 l
+-----------------------------------------------------------------------------------------------------
+09220818  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+19190340  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+89213183  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+09190048  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+89203004  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+19203007  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+09265265  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+19265241  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+69265286  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+09265270  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+29265212  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+89265247  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+89318217  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+99318245  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+29265274  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+49265225  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+89265252  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+-----------------------------------------------------------------------------------------------------
+49220374  
+Tested for: 110 kg Width: 51 cm Depth: 58 cm Height: 97 cm Seat width: 51 cm Seat depth: 42 cm Seat height: 47 cm
+-----------------------------------------------------------------------------------------------------
+60341015  
+Tested for: 110 kg Width: 43 cm Depth: 51 cm Height: 95 cm Seat width: 43 cm Seat depth: 41 cm Seat height: 46 cm
+60341015  
+Package Number: 1 Length: 96 cm Width: 45 cm Height: 10 cm Diameter: - Net Weight: 5.91 kg Gross Weight: 6.62 kg Gross Volume: 43.2 l
+-----------------------------------------------------------------------------------------------------
+

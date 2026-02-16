@@ -1,0 +1,40 @@
+20291767  
+Length: 55 cm Depth: 12 cm Max. load: 5.00 kg
+20291767  
+Package Number: 1 Length: 55 cm Width: 12 cm Height: 7 cm Diameter: - Net Weight: 1.01 kg Gross Weight: 1.06 kg Gross Volume: 5.0 l
+-----------------------------------------------------------------------------------------------------
+40291766  
+Length: 55 cm Depth: 12 cm Max. load: 5.00 kg
+40291766  
+Package Number: 1 Length: 55 cm Width: 12 cm Height: 7 cm Diameter: - Net Weight: 1.01 kg Gross Weight: 1.06 kg Gross Volume: 5.0 l
+-----------------------------------------------------------------------------------------------------
+70292104  
+Length: 115 cm Depth: 12 cm Max. load: 7.50 kg
+70292104  
+Package Number: 1 Length: 115 cm Width: 12 cm Height: 8 cm Diameter: - Net Weight: 2.15 kg Gross Weight: 2.21 kg Gross Volume: 10.8 l
+-----------------------------------------------------------------------------------------------------
+90292103  
+Length: 115 cm Depth: 12 cm Max. load: 7.50 kg
+90292103  
+Package Number: 1 Length: 115 cm Width: 12 cm Height: 8 cm Diameter: - Net Weight: 2.15 kg Gross Weight: 2.21 kg Gross Volume: 10.8 l
+-----------------------------------------------------------------------------------------------------
+00446237  
+Length: 75 cm Max. load: 5.00 kg
+00446237  
+Package Number: 1 Length: 75 cm Width: 13 cm Height: 3 cm Diameter: - Net Weight: 1.47 kg Gross Weight: 1.50 kg Gross Volume: 2.9 l
+-----------------------------------------------------------------------------------------------------
+60446239  
+Length: 60 cm Depth: 10.5 cm Max. load: 5.00 kg
+60446239  
+Package Number: 1 Length: 60 cm Width: 12 cm Height: 5 cm Diameter: - Net Weight: 0.48 kg Gross Weight: 0.51 kg Gross Volume: 3.5 l
+-----------------------------------------------------------------------------------------------------
+20446236  
+Length: 60 cm Depth: 12 cm Max. load: 5.00 kg
+20446236  
+Package Number: 1 Length: 60 cm Width: 12 cm Height: 5 cm Diameter: - Net Weight: 0.87 kg Gross Weight: 0.90 kg Gross Volume: 3.6 l
+-----------------------------------------------------------------------------------------------------
+40446339  
+Length: 60 cm Depth: 12 cm Max. load: 5.00 kg
+40446339  
+Package Number: 1 Length: 60 cm Width: 12 cm Height: 5 cm Diameter: - Net Weight: 0.87 kg Gross Weight: 0.90 kg Gross Volume: 3.6 l
+-----------------------------------------------------------------------------------------------------

@@ -1,0 +1,43 @@
+00245880  
+Width: 35 cm Depth: 45 cm Height: 125 cm
+00245880  
+Package Number: 1 Length: 46 cm Width: 35 cm Height: 4 cm Diameter: - Net Weight: 1.19 kg Gross Weight: 1.20 kg Gross Volume: 6.4 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+20251974  
+Width: 55 cm Depth: 7 cm Height: 150 cm Min. height: 115 cm
+20251974  
+Package Number: 1 Length: 56 cm Width: 34 cm Height: 1 cm Diameter: - Net Weight: 0.44 kg Gross Weight: 0.45 kg Gross Volume: 2.1 l
+-----------------------------------------------------------------------------------------------------
+20375677  
+Width: 51 cm Height: 140 cm Min. height: 115 cm
+20375677  
+Package Number: 1 Length: 56 cm Width: 34 cm Height: 1 cm Diameter: - Net Weight: 0.40 kg Gross Weight: 0.42 kg Gross Volume: 2.3 l
+-----------------------------------------------------------------------------------------------------
+20398358  
+Width: 30 cm Depth: 30 cm Height: 90 cm
+20398358  
+Package Number: 1 Length: 31 cm Width: 31 cm Height: 7 cm Diameter: - Net Weight: 1.09 kg Gross Weight: 1.10 kg Gross Volume: 6.3 l
+-----------------------------------------------------------------------------------------------------
+40422480  
+Width: 30 cm Depth: 30 cm Height: 90 cm
+40422480  
+Package Number: 1 Length: 31 cm Width: 31 cm Height: 7 cm Diameter: - Net Weight: 1.09 kg Gross Weight: 1.10 kg Gross Volume: 6.3 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+70370856  
+Width: 30 cm Depth: 30 cm Height: 90 cm
+70370856  
+Package Number: 1 Length: 31 cm Width: 31 cm Height: 5 cm Diameter: - Net Weight: 0.73 kg Gross Weight: 0.74 kg Gross Volume: 4.3 l
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+80245876  
+Width: 35 cm Depth: 45 cm Height: 125 cm
+80245876  
+Package Number: 1 Length: 46 cm Width: 35 cm Height: 4 cm Diameter: - Net Weight: 1.19 kg Gross Weight: 1.20 kg Gross Volume: 6.4 l
+-----------------------------------------------------------------------------------------------------
+80421030  
+Width: 30 cm Depth: 30 cm Height: 90 cm
+80421030  
+Package Number: 1 Length: 31 cm Width: 31 cm Height: 5 cm Diameter: - Net Weight: 0.69 kg Gross Weight: 0.70 kg Gross Volume: 4.3 l
+-----------------------------------------------------------------------------------------------------
