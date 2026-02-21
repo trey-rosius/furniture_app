@@ -1,0 +1,76 @@
+schema {
+  mutation: Mutation
+  query: Query
+  subscription: Subscription
+}
+
+type Query @aws_iam @aws_api_key {
+  getProduct(id: ID!): Product
+  listProducts(category: String): [Product]
+}
+
+type Mutation @aws_iam @aws_api_key {
+  # Trigger visual search (deprecated if using S3 triggers directly)
+  visualSearch(imageUri: String!): Boolean!
+
+  # Trigger distributed map workflow to process all images in the catalog.
+  triggerCatalogProcessing: Boolean!
+
+  # Get presigned URL for upload
+  getUploadUrl(fileName: String!, contentType: String!): UploadUrl!
+
+  
+  # Invoke the Furniture AI Agent
+  invokeAgent(prompt: String!): AgentResponse!
+
+  # Push search results back to client
+  pushSearchResult(status: String!, message: String, results: [ProductInput!]): VisualSearchResult
+    @aws_iam @aws_api_key
+}
+
+input ProductInput {
+  PK: String
+  SK: String
+  productName: String
+  imageFile: String
+  price: Float
+  category: String
+  subCategory: String
+  level: String
+  image_uri: String
+  original_productId: String
+}
+
+type Subscription @aws_iam @aws_api_key {
+  onSearchResult: VisualSearchResult
+    @aws_subscribe(mutations: ["pushSearchResult"])
+}
+
+type Product @aws_iam @aws_api_key {
+  PK: String!
+  SK: String!
+  productName: String
+  imageFile: String
+  price: Float
+  category: String
+  subCategory: String
+  level: String
+  image_uri: String
+  original_productId: String
+}
+
+type VisualSearchResult @aws_iam @aws_api_key {
+  status: String!
+  message: String
+  results: [Product!]
+}
+
+type UploadUrl @aws_iam @aws_api_key {
+  url: String!
+  key: String!
+}
+
+type AgentResponse @aws_iam @aws_api_key {
+  message: String!
+}
+

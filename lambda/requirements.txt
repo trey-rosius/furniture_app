@@ -1,0 +1,11 @@
+aws-lambda-powertools
+aws-xray-sdk
+requests
+httpx
+boto3
+numpy==1.26.4
+strands-agents
+strands-agents-tools
+bedrock-agentcore
+bedrock-agentcore-starter-toolkit
+mcp

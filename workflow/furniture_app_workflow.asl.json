@@ -1,0 +1,144 @@
+{
+  "Comment": "A description of my state machine",
+  "StartAt": "Map",
+  "States": {
+    "Map": {
+      "Type": "Map",
+      "ItemProcessor": {
+        "ProcessorConfig": {
+          "Mode": "DISTRIBUTED",
+          "ExecutionType": "STANDARD"
+        },
+        "StartAt": "Choice",
+        "States": {
+          "Choice": {
+            "Type": "Choice",
+            "Choices": [
+              {
+                "Next": "StartAsyncInvoke",
+                "Condition": "{% ($substring($states.input.Key, $length($states.input.Key) - 4)) = (\".jpg\") %}"
+              }
+            ],
+            "Default": "Not an Image"
+          },
+          "StartAsyncInvoke": {
+            "Type": "Task",
+            "Arguments": {
+              "ModelId": "amazon.nova-2-multimodal-embeddings-v1:0",
+              "ModelInput": {
+                "taskType": "SEGMENTED_EMBEDDING",
+                "segmentedEmbeddingParams": {
+                  "embeddingDimension": 3072,
+                  "embeddingPurpose": "GENERIC_INDEX",
+                  "image": {
+                    "format": "jpeg",
+                    "detailLevel": "STANDARD_IMAGE",
+                    "source": {
+                      "s3Location": {
+                        "uri": "{% 's3://${BUCKET_NAME}/' & $states.input.Key %}"
+                      }
+                    }
+                  }
+                }
+              },
+              "OutputDataConfig": {
+                "S3OutputDataConfig": {
+                  "S3Uri": "s3://${BUCKET_NAME}/embeddings/"
+                }
+              }
+            },
+            "Resource": "arn:aws:states:::aws-sdk:bedrockruntime:startAsyncInvoke",
+            "Next": "Wait",
+            "Assign": {
+              "original_key": "{% $states.input.Key %}"
+            }
+          },
+          "Wait": {
+            "Type": "Wait",
+            "Seconds": 20,
+            "Next": "GetAsyncInvoke"
+          },
+          "GetAsyncInvoke": {
+            "Type": "Task",
+            "Arguments": {
+              "InvocationArn": "{% $states.input.InvocationArn %}"
+            },
+            "Resource": "arn:aws:states:::aws-sdk:bedrockruntime:getAsyncInvoke",
+            "Next": "Choice (1)"
+          },
+          "Choice (1)": {
+            "Type": "Choice",
+            "Choices": [
+              {
+                "Condition": "{% $states.input.Status = \"Completed\" %}",
+                "Next": "Lambda Invoke"
+              },
+              {
+                "Next": "Create embeddings failed",
+                "Condition": "{% $states.input.Status = \"Failed\" %}"
+              }
+            ],
+            "Default": "Wait"
+          },
+          "Lambda Invoke": {
+            "Type": "Task",
+            "Resource": "arn:aws:states:::lambda:invoke",
+            "Output": "{% $states.result.Payload %}",
+            "Arguments": {
+              "FunctionName": "${FUNCTION_ARN}",
+              "Payload": {
+                "S3Uri": "{% $states.input.OutputDataConfig.S3OutputDataConfig.S3Uri %}",
+                "mediaFileUri": "{% 's3://${BUCKET_NAME}/' & $original_key %}"
+              }
+            },
+            "Retry": [
+              {
+                "ErrorEquals": [
+                  "Lambda.ServiceException",
+                  "Lambda.AWSLambdaException",
+                  "Lambda.SdkClientException",
+                  "Lambda.TooManyRequestsException"
+                ],
+                "IntervalSeconds": 1,
+                "MaxAttempts": 3,
+                "BackoffRate": 2,
+                "JitterStrategy": "FULL"
+              }
+            ],
+            "Next": "Create Embeddings successful"
+          },
+          "Create Embeddings successful": {
+            "Type": "Succeed"
+          },
+          "Not an Image": {
+            "Type": "Pass",
+            "End": true
+          },
+          "Create embeddings failed": {
+            "Type": "Fail"
+          }
+        }
+      },
+      "End": true,
+      "Label": "Map",
+      "MaxConcurrency": 10,
+      "ItemReader": {
+        "Resource": "arn:aws:states:::s3:listObjectsV2",
+        "Arguments": {
+          "Bucket": "${BUCKET_NAME}",
+          "Prefix": "catalog/"
+        },
+        "ReaderConfig": {}
+      },
+      "ResultWriter": {
+        "Resource": "arn:aws:states:::s3:putObject",
+        "Arguments": {
+          "Bucket": "${BUCKET_NAME}",
+          "Prefix": "results"
+        }
+      },
+      "ToleratedFailureCount": 100
+    }
+  },
+  "QueryLanguage": "JSONata"
+}

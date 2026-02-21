@@ -1,1 +1,84 @@
+# OS files
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Node.js
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm
+.eslintcache
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.coverage
+.mypy_cache/
+
+# Build and Output
+dist/
+dist-ssr/
+build/
+bin-debug/
+obj/
+cdk.out/
+.env
+.env.*
+*.local
+amplify/deployment/
+amplify_outputs.json
+
+# CDK and AppSync patterns
+full_resources.json
+response.json
+synth_output.log
+synthesis_error.log
+*.tfstate
+*.tfstate.backup
+
+# IDEs
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Security - Sensitive files
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*.gpg
+*.pub
+secrets.v1.json
+
+# Temporary and Test files in root
+test_*.js
+test_*.py
+test_*.jpg
+test_*.esm.js
+verify_*.py
+mock_*.json
+
+# Internal Tooling
+.agent/
+.gemini/
+
+# Assets
+catalog/
