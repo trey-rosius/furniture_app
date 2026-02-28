@@ -217,6 +217,50 @@ body {
   animation: spin 1s ease-in-out infinite;
 }
 
+.pulse-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #60a5fa;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.7);
+  animation: pulse 1.5s infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.btn-danger {
+  background: #ef4444 !important;
+}
+
+.btn-danger:hover {
+  background: #dc2626 !important;
+}
+
+.btn-primary {
+  background: #3b82f6 !important;
+}
+
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(96, 165, 250, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(96, 165, 250, 0);
+  }
+}
+
+.text-accent { color: #60a5fa; }
+.text-secondary { color: #a78bfa; }
+.text-muted { color: var(--text-muted); }

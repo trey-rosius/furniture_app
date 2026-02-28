@@ -26,6 +26,12 @@ env/
 .pytest_cache/
 .coverage
 .mypy_cache/
+.tox/
+.nox/
+.egg-info/
+Pipfile
+Pipfile.lock
+.python-version
 
 # Build and Output
 dist/
@@ -39,6 +45,8 @@ cdk.out/
 *.local
 amplify/deployment/
 amplify_outputs.json
+cdk.context.json
+.cdk.staging/
 
 # CDK and AppSync patterns
 full_resources.json
@@ -82,3 +90,11 @@ mock_*.json
 
 # Assets
 catalog/
+visual_search/
+visuals/
+test_images/
+mock_order_*.json
+gateway_*.json
+# AgentCore specific
+agent/.agentcore/
+agent/tmp/

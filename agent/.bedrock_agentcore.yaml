@@ -1,0 +1,75 @@
+default_agent: furniture_stripe_agent
+agents:
+  furnitureagent:
+    name: furnitureagent
+    entrypoint: agent_runtime.py
+    platform: linux/arm64
+    container_runtime: docker
+    aws:
+      execution_role: arn:aws:iam::132260253285:role/AgentCoreGatewayExecutionRole
+      account: '132260253285'
+      region: us-east-1
+      ecr_repository: 132260253285.dkr.ecr.us-east-1.amazonaws.com/bedrock-agentcore-furniture-agent
+      ecr_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+    bedrock_agentcore:
+      agent_id: furnitureagent-6hUMr6H0ic
+      agent_arn: arn:aws:bedrock-agentcore:us-east-1:132260253285:runtime/furnitureagent-6hUMr6H0ic
+      agent_session_id: null
+    authorizer_configuration: null
+    oauth_configuration: null
+  FurnitureStripeAgent:
+    name: FurnitureStripeAgent
+    entrypoint: /Users/rosius/Documents/furniture_ai_app/lambda/stripe_proxy.py
+    platform: linux/arm64
+    container_runtime: docker
+    aws:
+      execution_role: arn:aws:iam::132260253285:role/AgentCoreGatewayExecutionRole
+      account: '132260253285'
+      region: us-east-1
+      ecr_repository: null
+      ecr_auto_create: true
+      network_configuration:
+        network_mode: PUBLIC
+      protocol_configuration:
+        server_protocol: MCP
+      observability:
+        enabled: true
+    bedrock_agentcore:
+      agent_id: null
+      agent_arn: null
+      agent_session_id: null
+    authorizer_configuration: null
+    oauth_configuration: null
+  furniture_stripe_agent:
+    name: furniture_stripe_agent
+    entrypoint: /Users/rosius/Documents/furniture_ai_app/lambda/stripe_proxy.py
+    platform: linux/arm64
+    container_runtime: docker
+    aws:
+      execution_role: arn:aws:iam::132260253285:role/AgentCoreGatewayExecutionRole
+      account: '132260253285'
+      region: us-east-1
+      ecr_repository: 132260253285.dkr.ecr.us-east-1.amazonaws.com/bedrock_agentcore-furniture_stripe_agent
+      ecr_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+      protocol_configuration:
+        server_protocol: MCP
+      observability:
+        enabled: true
+    bedrock_agentcore:
+      agent_id: furniture_stripe_agent-8htUoh6sPM
+      agent_arn: arn:aws:bedrock-agentcore:us-east-1:132260253285:runtime/furniture_stripe_agent-8htUoh6sPM
+      agent_session_id: null
+    authorizer_configuration:
+      customJWTAuthorizer:
+        allowedClients:
+        - 4og267ochobnl2gshd3pgqgkn8
+        discoveryUrl: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_SvpNsXJod/.well-known/openid-configuration
+    oauth_configuration: null

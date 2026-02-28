@@ -6,7 +6,6 @@ import uuid
 from decimal import Decimal
 from boto3.dynamodb.conditions import Attr
 from aws_lambda_powertools import Logger
-
 logger = Logger()
 
 DYNAMODB_TABLE = os.environ.get('DYNAMODB_TABLE', 'furniture-app-table')
@@ -55,15 +54,58 @@ def get_products_by_price_range(min_price, max_price):
         return {"error": str(e)}
 
 def create_order(product_id, quantity=1):
-    """Create a new order."""
+    """Create a new order and save it to DynamoDB."""
     logger.info(f"Creating order for product {product_id}, quantity {quantity}")
     order_id = str(uuid.uuid4())
-    # In a real app, you'd save this to an Orders table.
-    return {
-        "status": "SUCCESS",
-        "order_id": order_id,
-        "message": f"Order for {quantity} item(s) of product {product_id} has been created."
-    }
+    
+    try:
+        # Save to DynamoDB
+        table.put_item(
+            Item={
+                'PK': f"ORDER#{order_id}",
+                'SK': f"ORDER#{order_id}",
+                'product_id': product_id,
+                'quantity': Decimal(str(quantity)),
+                'status': 'PENDING',
+                'order_id': order_id
+            }
+        )
+        return {
+            "status": "SUCCESS",
+            "order_id": order_id,
+            "message": f"Order for {quantity} item(s) of product {product_id} has been created."
+        }
+    except Exception as e:
+        logger.error(f"Error creating order: {e}")
+        return {"error": str(e)}
+
+def get_order(order_id):
+    """Get a specific order by ID."""
+    logger.info(f"Fetching order: {order_id}")
+    try:
+        response = table.get_item(
+            Key={
+                'PK': f"ORDER#{order_id}",
+                'SK': f"ORDER#{order_id}"
+            }
+        )
+        return response.get('Item', {"error": "Order not found"})
+    except Exception as e:
+        logger.error(f"Error fetching order: {e}")
+        return {"error": str(e)}
+
+def get_orders():
+    """Get all orders."""
+    logger.info("Fetching all orders")
+    try:
+        response = table.scan(
+            FilterExpression=Attr('PK').begins_with('ORDER#')
+        )
+        return response.get('Items', [])
+    except Exception as e:
+        logger.error(f"Error fetching orders: {e}")
+        return {"error": str(e)}
+
 
 def lambda_handler(event, context):
     # Retrieve the tool name from the context
@@ -98,6 +140,11 @@ def lambda_handler(event, context):
         prod_id = event.get('product_id')
         qty = event.get('quantity', 1)
         result = create_order(prod_id, qty)
+    elif toolName == 'get_order':
+        order_id = event.get('order_id')
+        result = get_order(order_id)
+    elif toolName == 'get_orders':
+        result = get_orders()
     else:
         return {
             'statusCode': 400,

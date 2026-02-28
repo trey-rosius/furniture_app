@@ -19,9 +19,7 @@
           "description": "The category of furniture (e.g., Living Room, Bedroom, etc.)"
         }
       },
-      "required": [
-        "category"
-      ]
+      "required": ["category"]
     }
   },
   {
@@ -39,9 +37,7 @@
           "description": "The maximum price"
         }
       },
-      "required": [
-        "max_price"
-      ]
+      "required": ["max_price"]
     }
   },
   {
@@ -59,9 +55,30 @@
           "description": "The quantity to order (default is 1)"
         }
       },
-      "required": [
-        "product_id"
-      ]
+      "required": ["product_id"]
+    }
+  },
+  {
+    "name": "get_order",
+    "description": "Retrieve details of a specific order by its order ID.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "The ID of the order to retrieve."
+        }
+      },
+      "required": ["order_id"]
+    }
+  },
+  {
+    "name": "get_orders",
+    "description": "Retrieve a list of all orders.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "required": []
     }
   }
 ]
