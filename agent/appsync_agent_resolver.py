@@ -1,103 +1,75 @@
 import json
 import boto3
 import os
-import re
-from aws_lambda_powertools import Logger
-from bedrock_agentcore.runtime import AgentCoreRuntimeClient
+import logging
+# from aws_lambda_powertools import Logger # Bypassing for now to fix Import Error
 
-logger = Logger()
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 
-# Initialize Bedrock AgentCore client for standard invocations
+# Initialize standard boto3 client
 client = boto3.client('bedrock-agentcore', region_name=os.environ.get('AWS_REGION', 'us-east-1'))
-# Initialize runtime client for WebSocket Auth
-runtime_client = AgentCoreRuntimeClient(region=os.environ.get('AWS_REGION', 'us-east-1'))
+
+def get_user_token(event):
+    """Extract Cognito JWT token from AppSync authorization header."""
+    headers = event.get('request', {}).get('headers', {})
+    auth = headers.get('authorization', '')
+    if auth.startswith('Bearer '):
+        return auth[7:]
+    return auth
 
 def handler(event, context):
-    """
-    AppSync Resolver for Furniture AI Agent.
-    Handles invokeAgent (unary) and getAgentWebsocketConfig (WSS auth).
-    """
-    logger.info(f"Received event: {json.dumps(event)}")
+    logger.info(f"DEBUG: Event keys: {list(event.keys())}")
+    if 'request' in event:
+        logger.info(f"DEBUG: Request: {json.dumps(event['request'])}")
+    if 'identity' in event:
+        logger.info(f"DEBUG: Identity: {json.dumps(event['identity'])}")
     
     info = event.get('info', {})
     field_name = info.get('fieldName')
-    
-    # Use the specific agent runtime ARN
     agent_arn = os.environ.get('AGENT_ARN', "arn:aws:bedrock-agentcore:us-east-1:132260253285:runtime/furnitureagent-6hUMr6H0ic")
-
-    if field_name == 'getAgentWebsocketConfig':
-        return handle_get_websocket_config(agent_arn)
+    user_token = get_user_token(event)
     
-    # Default: handle invokeAgent
-    return handle_invoke_agent(event, agent_arn)
+    # We omit getAgentWebsocketConfig for now to avoid dependency on AgentCoreRuntimeClient
+    if field_name == 'getAgentWebsocketConfig':
+         return {"message": "Websocket auth currently disabled for debugging."}
+    
+    return handle_invoke_agent(event, agent_arn, user_token)
 
-def handle_get_websocket_config(agent_arn):
-    logger.info(f"Generating presigned WSS URL for agent: {agent_arn}")
-    try:
-        # Generate a presigned URL that the frontend can use directly
-        presigned_url = runtime_client.generate_presigned_url(
-            runtime_arn=agent_arn,
-            endpoint_name='DEFAULT',
-            expires=300
-        )
-        
-        logger.info("Successfully generated presigned WSS URL")
-        
-        return {
-            "url": presigned_url,
-            "headers": "{}" # Headers are included in query params for presigned URLs
-        }
-    except Exception as e:
-        import traceback
-        logger.error(f"Error generating websocket config: {str(e)}")
-        logger.error(traceback.format_exc())
-        raise e
-
-def handle_invoke_agent(event, agent_arn):
-    """Existing text-to-text invocation logic."""
+def handle_invoke_agent(event, agent_arn, user_token=None):
     prompt = event.get('arguments', {}).get('prompt')
     if not prompt:
         return {"message": "No prompt provided."}
     
     try:
-        # Invoke the Agent Runtime
-        payload = json.dumps({"prompt": prompt}).encode('utf-8')
+        payload = json.dumps({"prompt": prompt, "user_token": user_token})
+        invoke_params = {
+            'agentRuntimeArn': agent_arn,
+            'payload': payload,
+            'contentType': 'application/json',
+            'accept': 'text/event-stream'
+        }
         
-        response = client.invoke_agent_runtime(
-            agentRuntimeArn=agent_arn,
-            payload=payload,
-            contentType='application/json',
-            accept='text/event-stream'
-        )
+        logger.info(f"Invoking agent with token present: {bool(user_token)}")
+        
+        response = client.invoke_agent_runtime(**invoke_params)
         
         full_text = ""
-        body = response.get('response')
-        
-        buffer = ""
-        for chunk in body:
-            buffer += chunk.decode('utf-8')
-            while "\n\n" in buffer:
-                part, buffer = buffer.split("\n\n", 1)
-                match = re.search(r'^data: (.*)$', part, re.MULTILINE)
-                if match:
-                    try:
-                        event_data = json.loads(match.group(1))
-                        if 'delta' in event_data and 'text' in event_data['delta']:
-                            full_text += event_data['delta']['text']
-                        elif 'message' in event_data and 'content' in event_data['message']:
-                            for content_item in event_data['message']['content']:
-                                if 'text' in content_item:
-                                    text = content_item['text']
-                                    if len(text) > len(full_text):
-                                        full_text = text
-                    except Exception as parse_error:
-                        logger.warning(f"Failed to parse SSE event: {part}, error: {parse_error}")
+        for event in response.get('completion', []):
+            if 'chunk' in event:
+                full_text += event['chunk'].get('bytes', b'').decode('utf-8')
+            elif 'trace' in event:
+                pass
+                
+        if not full_text:
+             # Basic Boto3 non-streaming check if it wasn't a stream
+             if 'payload' in response:
+                  full_text = response['payload'].read().decode('utf-8')
 
         if not full_text:
             return {"message": "Agent did not return any text."}
-            
-        return {"message": full_text}
         
+        return {"message": full_text}
     except Exception as e:
         logger.error(f"Error invoking agent: {str(e)}")
         return {"message": f"Error: {str(e)}"}

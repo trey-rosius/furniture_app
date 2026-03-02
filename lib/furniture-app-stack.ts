@@ -198,7 +198,6 @@ export class FurnitureAppStack extends cdk.Stack {
       },
     );
 
-    // Grant S3 access to Cognito Roles for "visuals" folder
     const s3Policy = new iam.PolicyStatement({
       effect: iam.Effect.ALLOW,
       actions: ["s3:PutObject", "s3:GetObject", "s3:ListBucket"],
@@ -206,6 +205,7 @@ export class FurnitureAppStack extends cdk.Stack {
         catalogBucket.bucketArn,
         `${catalogBucket.bucketArn}/visuals/*`,
         `${catalogBucket.bucketArn}/public/visuals/*`, // Amplify default prefix
+        `${catalogBucket.bucketArn}/catalog/*`, // Added to allow access to furniture catalog images
       ],
     });
 
@@ -219,7 +219,7 @@ export class FurnitureAppStack extends cdk.Stack {
     api.grantMutation(unauthRole);
 
     // 5. Lambda Functions
-    const pythonRuntime = (lambda.Runtime as any).PYTHON_3_13;
+    const pythonRuntime = lambda.Runtime.PYTHON_3_11;
 
     // a. Presigned URL Lambda
     const getUploadUrlLambda = new PythonFunction(this, "GetUploadUrlLambda", {

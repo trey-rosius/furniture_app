@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { generateClient } from "aws-amplify/api";
+import { withAuthenticator } from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
 import {
   UploadCloud,
   Search,
@@ -49,7 +51,7 @@ function PresignedImage({ uri, alt }: { uri: string; alt: string }) {
   return <img src={url} alt={alt} onError={() => setError(true)} />;
 }
 
-export default function App() {
+function App({ signOut, user }: { signOut?: () => void; user?: any }) {
   const [logs, setLogs] = useState<string[]>([]);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [isUploading, setIsUploading] = useState(false);
@@ -576,8 +578,36 @@ export default function App() {
   return (
     <div className="app-container">
       <header className="header">
-        <h1>Furniture AI Explorer</h1>
-        <p>Real-time visual search & catalog processing testing console</p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <div>
+            <h1>Furniture AI Explorer</h1>
+            <p>Real-time visual search & catalog processing testing console</p>
+          </div>
+          {user && (
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+              <span style={{ color: "var(--text-dim)" }}>
+                {user.signInDetails?.loginId || user.username}
+              </span>
+              <button
+                onClick={signOut}
+                className="btn"
+                style={{
+                  background: "rgba(239, 68, 68, 0.2)",
+                  color: "#ef4444",
+                  border: "1px solid rgba(239, 68, 68, 0.3)",
+                }}
+              >
+                Sign Out
+              </button>
+            </div>
+          )}
+        </div>
       </header>
 
       <div className="grid">
@@ -928,3 +958,5 @@ export default function App() {
     </div>
   );
 }
+
+export default withAuthenticator(App);

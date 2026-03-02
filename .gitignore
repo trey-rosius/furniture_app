@@ -98,3 +98,6 @@ gateway_*.json
 # AgentCore specific
 agent/.agentcore/
 agent/tmp/
+
+# Temporary files in root
+tmp/

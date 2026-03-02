@@ -1,0 +1,17 @@
+aws_lambda_powertools
+aws_xray_sdk
+requests
+httpx
+bedrock-agentcore
+boto3
+httpx-sse
+mcp
+fastmcp
+starlette
+strands-agents
+strands-agents-tools
+aws_sdk_bedrock_runtime
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation
+opentelemetry-distro[otlp]
