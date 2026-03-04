@@ -333,17 +333,20 @@ export default function App() {
   const startVoiceChat = async () => {
     addLog("Initialing Voice Chat...");
     try {
-      const configRes = await client.graphql({
-        query: `mutation GetWebsocketConfig { getAgentWebsocketConfig { url } }`,
-      });
-      //@ts-ignore
-      if (!configRes.data?.getAgentWebsocketConfig) {
-        addLog(`❌ Mutation Error: ${JSON.stringify(configRes)}`);
-        return;
+      let url: string;
+      if (window.location.hostname === "localhost") {
+        url = "ws://localhost:8080/ws";
+      } else {
+        const configRes: any = await client.graphql({
+          query: `mutation GetWebsocketConfig { getAgentWebsocketConfig { url } }`,
+        });
+        if (!configRes.data?.getAgentWebsocketConfig) {
+          addLog(`❌ Mutation Error: ${JSON.stringify(configRes)}`);
+          return;
+        }
+        url = configRes.data.getAgentWebsocketConfig.url;
       }
-      //@ts-ignore
-      const url = configRes.data.getAgentWebsocketConfig.url;
-      addLog(`Connecting to AgentCore WebSocket...`);
+      addLog(`Connecting to WebSocket URL: ${url}`);
 
       const audioCtx = new (
         window.AudioContext || (window as any).webkitAudioContext
@@ -403,59 +406,63 @@ export default function App() {
         addLog("Voice Chat Disconnected.");
       };
 
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const micName = stream.getAudioTracks()[0]?.label || "Unknown Microphone";
-      addLog(`Connected to Microphone: ${micName}`);
-
-      const source = audioCtx.createMediaStreamSource(stream);
-
-      const workletCode = `
-        class AudioRecorderProcessor extends AudioWorkletProcessor {
-          process(inputs) {
-            const input = inputs[0];
-            if (input && input[0]) {
-              this.port.postMessage(input[0]);
-            }
-            return true;
-          }
-        }
-        registerProcessor('audio-recorder', AudioRecorderProcessor);
-      `;
-
-      const blob = new Blob([workletCode], { type: "application/javascript" });
-      const workletUrl = URL.createObjectURL(blob);
-
       try {
-        await audioCtx.audioWorklet.addModule(workletUrl);
-        const workletNode = new AudioWorkletNode(audioCtx, "audio-recorder");
+        const stream = await navigator.mediaDevices.getUserMedia({
+          audio: {
+            channelCount: 1,
+            echoCancellation: true,
+            noiseSuppression: true,
+          },
+        });
 
-        source.connect(workletNode);
-        workletNode.connect(audioCtx.destination);
+        const micName =
+          stream.getAudioTracks()[0]?.label || "Unknown Microphone";
+        addLog(`Connected to Microphone: ${micName}`);
+
+        const source = audioCtx.createMediaStreamSource(stream);
+        const processor = audioCtx.createScriptProcessor(4096, 1, 1);
 
         let packetCount = 0;
-        workletNode.port.onmessage = (e) => {
-          const input = e.data; // Float32Array
-
-          let maxAmp = 0;
-          for (let i = 0; i < input.length; i++) {
-            if (Math.abs(input[i]) > maxAmp) maxAmp = Math.abs(input[i]);
-          }
-
-          packetCount++;
-          if (packetCount % 20 === 0) {
-            console.log(`Mic amplitude: ${maxAmp.toFixed(4)}`);
-            if (maxAmp === 0) {
-              addLog(`Warning: Mic is capturing pure silence (Amplitude 0.0)`);
-            }
-          }
-
-          const pcm16 = floatTo16BitPCM(input);
-          const b64 = arrayBufferToBase64(pcm16.buffer);
+        processor.onaudioprocess = (e) => {
           if (ws.readyState === WebSocket.OPEN) {
+            const inputData = e.inputBuffer.getChannelData(0);
+
+            let maxAmp = 0;
+            for (let i = 0; i < inputData.length; i++) {
+              if (Math.abs(inputData[i]) > maxAmp)
+                maxAmp = Math.abs(inputData[i]);
+            }
+
+            packetCount++;
+            if (packetCount % 20 === 0) {
+              console.log(`Mic amplitude: ${maxAmp.toFixed(4)}`);
+            }
+
+            // Downsample to 16kHz robustly
+            const downsampleRatio = audioCtx.sampleRate / 16000;
+            const outputLength = Math.floor(inputData.length / downsampleRatio);
+            const int16Data = new Int16Array(outputLength);
+
+            for (let i = 0; i < outputLength; i++) {
+              const sourceIndex = Math.floor(i * downsampleRatio);
+              int16Data[i] = Math.max(
+                -32768,
+                Math.min(32767, inputData[sourceIndex] * 32768),
+              );
+            }
+
+            // Convert to base64
+            const bytes = new Uint8Array(int16Data.buffer);
+            let binary = "";
+            for (let i = 0; i < bytes.length; i++) {
+              binary += String.fromCharCode(bytes[i]);
+            }
+            const base64Audio = btoa(binary);
+
             ws.send(
               JSON.stringify({
                 type: "bidi_audio_input",
-                audio: b64,
+                audio: base64Audio,
                 format: "pcm",
                 sample_rate: 16000,
                 channels: 1,
@@ -464,41 +471,17 @@ export default function App() {
           }
         };
 
-        //@ts-ignore
-        ws.cleanup = () => {
-          workletNode.disconnect();
-          source.disconnect();
-          stream.getTracks().forEach((t) => t.stop());
-          URL.revokeObjectURL(workletUrl);
-        };
-      } catch (err) {
-        addLog(`Worklet Error: ${err}`);
-        // Fallback to ScriptProcessor if Worklet absolutely fails
-        const processor = audioCtx.createScriptProcessor(4096, 1, 1);
         source.connect(processor);
         processor.connect(audioCtx.destination);
-        processor.onaudioprocess = (e) => {
-          const input = e.inputBuffer.getChannelData(0);
-          const pcm16 = floatTo16BitPCM(input);
-          const b64 = arrayBufferToBase64(pcm16.buffer);
-          if (ws.readyState === WebSocket.OPEN) {
-            ws.send(
-              JSON.stringify({
-                type: "bidi_audio_input",
-                audio: b64,
-                format: "pcm",
-                sample_rate: 16000,
-                channels: 1,
-              }),
-            );
-          }
-        };
+
         //@ts-ignore
         ws.cleanup = () => {
           processor.disconnect();
           source.disconnect();
           stream.getTracks().forEach((t) => t.stop());
         };
+      } catch (err) {
+        addLog(`Microphone Error: ${err}`);
       }
     } catch (err: any) {
       addLog(
@@ -520,23 +503,6 @@ export default function App() {
     setIsVoiceActive(false);
     setVoiceTranscript("");
     audioQueueRef.current = [];
-  };
-
-  const floatTo16BitPCM = (input: Float32Array) => {
-    const output = new Int16Array(input.length);
-    for (let i = 0; i < input.length; i++) {
-      const s = Math.max(-1, Math.min(1, input[i]));
-      output[i] = s < 0 ? s * 0x8000 : s * 0x7fff;
-    }
-    return output;
-  };
-
-  const arrayBufferToBase64 = (buffer: ArrayBuffer) => {
-    let binary = "";
-    const bytes = new Uint8Array(buffer);
-    for (let i = 0; i < bytes.byteLength; i++)
-      binary += String.fromCharCode(bytes[i]);
-    return window.btoa(binary);
   };
 
   const processAudioQueue = async () => {

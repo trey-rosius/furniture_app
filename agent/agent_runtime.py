@@ -1,5 +1,8 @@
 import sys
+print("DEBUG: STARTING SCRIPT", file=sys.stderr, flush=True)
+print("DEBUG: Agent runtime starting...", file=sys.stderr, flush=True)
 from unittest.mock import MagicMock
+# Mock pyaudio for server environment
 sys.modules["pyaudio"] = MagicMock()
 
 import asyncio
@@ -20,6 +23,7 @@ from bedrock_agentcore.runtime import BedrockAgentCoreApp
 from starlette.websockets import WebSocket, WebSocketDisconnect
 from aws_lambda_powertools import Logger
 import boto3
+import uuid
 
 logger = Logger()
 
@@ -78,21 +82,22 @@ def create_transport(mcp_url: str, access_token: str):
 
 app = BedrockAgentCoreApp()
 
-@app.websocket
-async def websocket_endpoint(websocket: WebSocket, context):
+@app.websocket_route("/ws")
+async def websocket_endpoint(websocket: WebSocket, context=None):
+    connection_id = str(uuid.uuid4())
     await websocket.accept()
-    logger.info("WebSocket connected directly to Agent Container /ws!")
+    print(f"DEBUG: WebSocket connected for {connection_id}!", flush=True)
     
     try:
+        print("DEBUG: Fetching token...", flush=True)
         token = await token_manager.get_token()
         region = os.environ.get("AWS_REGION", "us-east-1")
         
-        # The Gateway combines both Lambda tools and Stripe MCP tools automatically
         mcp_client = MCPClient(lambda: create_transport(GATEWAY_URL, token))
         
         with mcp_client:
             tools = mcp_client.list_tools_sync()
-            logger.info(f"Loaded {len(tools)} tools from Gateway for Bidi streaming.")
+            print(f"DEBUG: Loaded {len(tools)} tools from Gateway", flush=True)
             
             model = BidiNovaSonicModel(
                 region=region,
@@ -109,39 +114,56 @@ async def websocket_endpoint(websocket: WebSocket, context):
             bidi_agent = BidiAgent(
                 model=model,
                 tools=tools,
-                system_prompt="You are a helpful AI furniture assistant. Be concise. IMPORTANT: When providing URLs or payment links, never insert spaces within the URL."
+                system_prompt="You are a helpful AI furniture assistant. Be concise."
             )
-            
+
+            print(f"DEBUG: Agent initialized for {connection_id}", flush=True)
+
             async def handle_websocket_input():
+                """Handle incoming messages from the client."""
                 while True:
                     try:
                         message = await websocket.receive_json()
-                        if message.get("type") == "bidi_text_input":
+                        
+                        # Check if it's a text message from the client
+                        if message.get("type") in ("text_input", "bidi_text_input"):
                             text = message.get("text", "")
-                            logger.info(f"Received WS text input: {text}")
+                            logger.info(f"Received text input: {text}")
+                            # Send the text to the agent
                             await bidi_agent.send(text)
+                            # Continue to next message without returning this one
                             continue
                         else:
+                            # Pass through other message types (like audio) to agent.run
                             return message
                     except WebSocketDisconnect:
-                        logger.info("Client disconnected during input processing")
-                        raise
+                        print("DEBUG: WebSocketDisconnect in handle_websocket_input", flush=True)
+                        return {"type": "disconnect"}
                     except Exception as e:
-                        logger.error(f"WS receive error: {e}")
-                        raise
-                        
-            await bidi_agent.run(inputs=[handle_websocket_input], outputs=[websocket.send_json])
+                        print(f"DEBUG: Error in handle_websocket_input: {e}", flush=True)
+                        traceback.print_exc()
+                        return {"type": "error", "message": str(e)}
 
+            print("DEBUG: Starting bidi agent loop", flush=True)
+            await bidi_agent.run(
+                inputs=[handle_websocket_input],
+                outputs=[websocket.send_json]
+            )
+            print("DEBUG: Bidi agent loop finished", flush=True)
+            
     except WebSocketDisconnect:
-        logger.info("Client disconnected from /ws")
+        print(f"DEBUG: WebSocket disconnected for {connection_id}", flush=True)
     except Exception as e:
-        logger.error(f"WebSocket unhandled error: {e}")
-        logger.error(traceback.format_exc())
+        print(f"DEBUG: Error in websocket_endpoint: {e}", flush=True)
+        traceback.print_exc()
     finally:
         try:
             await websocket.close()
         except:
             pass
+        print(f"DEBUG: WebSocket closed for {connection_id}", flush=True)
+
+# The route is registered via the @app.websocket decorator above
 
 
 # -----------------
@@ -191,4 +213,12 @@ async def agent_invocation(payload, context):
          yield event
 
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get("PORT", 8080))
+    print(f"DEBUG: Starting app on port {port}...", flush=True)
+    try:
+        app.run(port=port)
+        print("DEBUG: app.run() returned normally", flush=True)
+    except Exception as e:
+        print(f"DEBUG: app.run() failed with error: {e}", flush=True)
+        traceback.print_exc()
+        sys.exit(1)
