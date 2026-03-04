@@ -59,6 +59,7 @@ input ProductInput @aws_iam @aws_api_key @aws_cognito_user_pools {
   level: String
   image_uri: String
   original_productId: String
+  image: String
 }
 
 type Subscription @aws_iam @aws_api_key @aws_cognito_user_pools {
@@ -77,6 +78,7 @@ type Product @aws_iam @aws_api_key @aws_cognito_user_pools {
   level: String
   image_uri: String
   original_productId: String
+  image: String
 }
 
 type VisualSearchResult @aws_iam @aws_api_key @aws_cognito_user_pools {
@@ -92,6 +94,7 @@ type UploadUrl @aws_iam @aws_api_key @aws_cognito_user_pools {
 
 type AgentResponse @aws_iam @aws_api_key @aws_cognito_user_pools {
   message: String!
+  products: [Product]
 }
 
 type AgentWebsocketConfig @aws_iam @aws_api_key @aws_cognito_user_pools {

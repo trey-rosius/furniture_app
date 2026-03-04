@@ -4,7 +4,12 @@
     "description": "Get all products from the furniture catalog.",
     "inputSchema": {
       "type": "object",
-      "properties": {},
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "description": "Optional limit"
+        }
+      },
       "required": []
     }
   },
@@ -77,7 +82,12 @@
     "description": "Retrieve a list of all orders.",
     "inputSchema": {
       "type": "object",
-      "properties": {},
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "description": "Optional limit"
+        }
+      },
       "required": []
     }
   }

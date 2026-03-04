@@ -2,7 +2,6 @@ import boto3
 import os
 import json
 from aws_lambda_powertools import Logger, Tracer
-from aws_lambda_powertools.utilities.data_classes import AppSyncAuthorizerEvent, event_source
 
 logger = Logger()
 tracer = Tracer()

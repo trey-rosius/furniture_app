@@ -18,7 +18,7 @@ class DecimalEncoder(json.JSONEncoder):
             return float(obj)
         return super(DecimalEncoder, self).default(obj)
 
-def get_all_products():
+def get_all_products(limit=None):
     """Get all products from the catalog."""
     logger.info("Fetching all products")
     try:
@@ -94,7 +94,7 @@ def get_order(order_id):
         logger.error(f"Error fetching order: {e}")
         return {"error": str(e)}
 
-def get_orders():
+def get_orders(limit=None):
     """Get all orders."""
     logger.info("Fetching all orders")
     try:

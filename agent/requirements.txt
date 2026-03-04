@@ -1,0 +1,8 @@
+strands-agents[bidi]
+bedrock-agentcore
+aws-lambda-powertools
+mcp
+boto3
+httpx
+starlette
+uvicorn

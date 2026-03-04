@@ -28,6 +28,7 @@
   "dependencies": {
     "@aws-amplify/api": "^6.3.24",
     "@aws-amplify/pubsub": "^6.1.69",
+    "@aws-cdk/aws-bedrock-agentcore-alpha": "^2.240.0-alpha.0",
     "@aws-cdk/aws-lambda-python-alpha": "^2.238.0-alpha.0",
     "aws-cdk-lib": "^2.238.0",
     "cdk-s3-vectors": "0.3.2",

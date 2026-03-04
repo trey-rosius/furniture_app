@@ -1,0 +1,5 @@
+{
+  "name": "LuxeHome - Architectural Minimalist Furniture",
+  "description": "A high-end furniture store featuring architectural minimalist designs, visual search, and an AI design agent.",
+  "requestFramePermissions": ["camera", "microphone"]
+}

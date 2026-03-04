@@ -12,6 +12,7 @@ import * as s3n from "aws-cdk-lib/aws-s3-notifications";
 import * as kms from "aws-cdk-lib/aws-kms";
 import * as iam from "aws-cdk-lib/aws-iam";
 import * as secretsmanager from "aws-cdk-lib/aws-secretsmanager";
+import * as lambda_python from "@aws-cdk/aws-lambda-python-alpha";
 import { PythonFunction } from "@aws-cdk/aws-lambda-python-alpha";
 import * as s3Vectors from "cdk-s3-vectors";
 import * as sqs from "aws-cdk-lib/aws-sqs";
@@ -20,6 +21,7 @@ import * as cognito from "aws-cdk-lib/aws-cognito";
 import { Construct } from "constructs";
 import * as path from "path";
 import * as fs from "fs";
+import * as agentcore from "@aws-cdk/aws-bedrock-agentcore-alpha";
 
 export class FurnitureAppStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -635,45 +637,6 @@ export class FurnitureAppStack extends cdk.Stack {
       }),
     );
 
-    // 9. AppSync Resolvers
-    const getUploadUrlDS = api.addLambdaDataSource(
-      "GetUploadUrlDS",
-      getUploadUrlLambda,
-    );
-    getUploadUrlDS.createResolver("GetUploadUrlResolver", {
-      typeName: "Mutation",
-      fieldName: "getUploadUrl",
-    });
-
-    const getPresignedUrlDS = api.addLambdaDataSource(
-      "GetPresignedUrlDS",
-      getPresignedUrlLambda,
-    );
-    getPresignedUrlDS.createResolver("GetPresignedUrlResolver", {
-      typeName: "Mutation",
-      fieldName: "getPresignedUrl",
-    });
-
-    const triggerCatalogDS = api.addLambdaDataSource(
-      "TriggerCatalogDS",
-      catalogTriggerLambda,
-    );
-    triggerCatalogDS.createResolver("TriggerCatalogResolver", {
-      typeName: "Mutation",
-      fieldName: "triggerCatalogProcessing",
-    });
-
-    const noneDS = api.addNoneDataSource("NoneDS");
-    api.createResolver("PushSearchResultResolver", {
-      typeName: "Mutation",
-      fieldName: "pushSearchResult",
-      runtime: appsync.FunctionRuntime.JS_1_0_0,
-      dataSource: noneDS,
-      code: appsync.Code.fromAsset(
-        path.join(__dirname, "../resolvers/pushSearchResult.js"),
-      ),
-    });
-
     // e. Agent Runtime Lambda (Strands + AgentCore)
     const agentRuntimeLambda = new PythonFunction(this, "AgentRuntimeLambda", {
       entry: path.join(__dirname, "../agent"),
@@ -728,23 +691,237 @@ export class FurnitureAppStack extends cdk.Stack {
         handler: "handler",
         runtime: pythonRuntime,
         environment: {
-          AGENT_ARN: `arn:aws:bedrock-agentcore:${this.region}:${this.account}:runtime/furnitureagent-6hUMr6H0ic`,
+          AGENT_RUNTIME_ID: "placeholder", // Will be replaced by agentRuntime.runtimeId
         },
         timeout: cdk.Duration.minutes(1),
       },
     );
 
+    // 9. Bedrock AgentCore Constructs
+    // a. Memory
+    const memory = new agentcore.Memory(this, "FurnitureMemory", {
+      memoryName: "furniture_memory",
+      description: "Memory for furniture assistant",
+      expirationDuration: cdk.Duration.days(90),
+      memoryStrategies: [
+        agentcore.MemoryStrategy.usingBuiltInSummarization(),
+        agentcore.MemoryStrategy.usingBuiltInSemantic(),
+        agentcore.MemoryStrategy.usingBuiltInUserPreference(),
+      ],
+    });
+
+    // b. Gateway
+    const gateway = new agentcore.Gateway(this, "FurnitureGateway", {
+      gatewayName: "furniture-gateway",
+      description: "Gateway for furniture assistant tools",
+    });
+
+    // c. Gateway Target (Lambda for tools)
+    const toolSchemaPath = path.join(__dirname, "../agent/tools_schema.json");
+    let toolSchemaJson = {};
+    if (fs.existsSync(toolSchemaPath)) {
+      toolSchemaJson = JSON.parse(fs.readFileSync(toolSchemaPath, "utf8"));
+    }
+
+    gateway.addLambdaTarget("FurnitureToolsTargetV2", {
+      gatewayTargetName: "furniture-tools",
+      description: "Target for furniture catalog and ordering tools",
+      lambdaFunction: agentCoreToolsLambda,
+      toolSchema: agentcore.ToolSchema.fromInline(
+        toolSchemaJson as agentcore.ToolDefinition[],
+      ),
+    });
+
+    const stripeAuthDiscoveryUrl =
+      "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_SvpNsXJod/.well-known/openid-configuration";
+    const stripeAuthClientId = "4og267ochobnl2gshd3pgqgkn8";
+
+    /* Temporarily disabled failing Stripe runtime
+    const stripeRuntime = new agentcore.Runtime(this, "StripeRuntimeV11", {
+      runtimeName: "stripeproxyv11",
+      agentRuntimeArtifact: agentcore.AgentRuntimeArtifact.fromAsset(
+        path.join(__dirname, "../agent_stripe"),
+      ),
+      description: "Stripe Proxy Runtime based on FastMCP",
+      environmentVariables: {
+        STRIPE_SECRET_NAME: stripeApiKey.secretName,
+        REGION: this.region,
+      },
+      protocolConfiguration: agentcore.ProtocolType.MCP,
+      authorizerConfiguration:
+        agentcore.RuntimeAuthorizerConfiguration.usingOAuth(
+          stripeAuthDiscoveryUrl,
+          stripeAuthClientId,
+          [stripeAuthClientId], // Audience (Cognito 'aud' claim is the Client ID)
+          ["FurnitureGateway/invoke"], // Scope matching the Gateway provider
+        ),
+    });
+    stripeApiKey.grantRead(stripeRuntime.role!);
+    */
+
+    /* Temporarily disabled failing Stripe MCP target
+    const oauthProviderArn =
+      "arn:aws:bedrock-agentcore:us-east-1:132260253285:token-vault/default/oauth2credentialprovider/StripeRuntimeAuth";
+    const oauthSecretArn =
+      "arn:aws:secretsmanager:us-east-1:132260253285:secret:bedrock-agentcore-identity!default/oauth2/StripeRuntimeAuth-dKJCCA";
+
+    // Add an MCP server target directly to the gateway pointing to the Runtime
+    const stripeMcpTarget = gateway.addMcpServerTarget("StripeMcpTargetV22", {
+      gatewayTargetName: "stripe-proxy-v22",
+      description: "Runtime-based Stripe tool integration",
+      endpoint: `https://${stripeRuntime.agentRuntimeId}.runtime.bedrock-agentcore.${this.region}.amazonaws.com`,
+      credentialProviderConfigurations: [
+        agentcore.GatewayCredentialProvider.fromOauthIdentityArn({
+          providerArn: oauthProviderArn,
+          secretArn: oauthSecretArn,
+          scopes: ["FurnitureGateway/invoke"],
+        }),
+      ],
+    });
+
+    // CRITICAL: Grant Gateway permission to invoke the Runtime
+    stripeRuntime.grantInvoke(gateway.role);
+    */
+
+    // --- ADDED: Sync Function ---
+    const syncFunction = new lambda.Function(this, "SyncFunction", {
+      runtime: lambda.Runtime.PYTHON_3_12,
+      handler: "index.handler",
+      code: lambda.Code.fromInline(`
+import boto3
+import json
+
+def handler(event, context):
+    client = boto3.client('bedrock-agentcore-control')
+    response = client.synchronize_gateway_targets(
+        gatewayIdentifier=event['gatewayId'],
+        targetIds=event['targetIds']
+    )
+    return {
+        'statusCode': 200,
+        'body': json.dumps({'message': 'Sync initiated', 'response': str(response)})
+    }
+      `),
+    });
+
+    // stripeMcpTarget.grantSync(syncFunction);
+
+    // d. Runtime
+    const agentRuntime = new agentcore.Runtime(this, "FurnitureRuntime", {
+      runtimeName: "furniture_runtime",
+      agentRuntimeArtifact: agentcore.AgentRuntimeArtifact.fromAsset(
+        path.join(__dirname, "../agent"),
+      ),
+      description: "Runtime for furniture assistant agent",
+      environmentVariables: {
+        DYNAMODB_TABLE: productTable.tableName,
+        GATEWAY_ID: gateway.gatewayId,
+        GATEWAY_URL: `https://${gateway.gatewayId}.gateway.bedrock-agentcore.${this.region}.amazonaws.com/mcp`,
+        GATEWAY_CLIENT_ID: gateway.userPoolClient!.userPoolClientId,
+        GATEWAY_CLIENT_SECRET: (
+          gateway.userPoolClient as any
+        ).userPoolClientSecret.unsafeUnwrap(),
+        GATEWAY_TOKEN_ENDPOINT: gateway.tokenEndpointUrl!,
+        GATEWAY_SCOPE: `${gateway.node.id}/invoke`,
+        REGION: this.region,
+        STRIPE_SECRET_NAME: stripeApiKey.secretName,
+        MEMORY_ID: memory.memoryId,
+      },
+    });
+
+    // Update the placeholder for AGENT_RUNTIME_ARN in resolver
+    appsyncAgentResolverLambda.addEnvironment(
+      "AGENT_RUNTIME_ARN",
+      agentRuntime.agentRuntimeArn,
+    );
+
+    // Grant permissions to the runtime role
+    const runtimeRole = agentRuntime.role;
+    productTable.grantReadWriteData(runtimeRole);
+    stripeApiKey.grantRead(runtimeRole);
+
+    // Bedrock access for the runtime role
+    runtimeRole.addToPrincipalPolicy(
+      new iam.PolicyStatement({
+        actions: [
+          "bedrock:InvokeModel",
+          "bedrock:InvokeModelWithResponseStream",
+        ],
+        resources: ["*"],
+      }),
+    );
+
+    // Permission for Runtime to use Gateway
+    gateway.grantInvoke(runtimeRole);
+
+    // Grant AppSync resolver permission to invoke the specific runtime
+    agentRuntime.grantInvoke(appsyncAgentResolverLambda);
+
+    // Permissions for the AppSync resolver to interact with AgentCore runtime
     appsyncAgentResolverLambda.addToRolePolicy(
       new iam.PolicyStatement({
         actions: [
           "bedrock-agentcore:InvokeAgentRuntime",
           "bedrock-agentcore:InvokeAgentRuntimeWithWebSocketStream",
-          "bedrock-agentcore:Get*",
-          "bedrock-agentcore:List*",
+          "bedrock-agentcore:GetAgentRuntime",
+          "bedrock-agentcore:ListAgentRuntimes",
+          "bedrock-agentcore:GetAgentRuntimeEndpoint",
+          "bedrock-agentcore:GetAgentRuntimeVersion",
         ],
         resources: ["*"],
       }),
     );
+
+    // Permissions to enrich products and generate presigned URLs
+    productTable.grantReadData(appsyncAgentResolverLambda);
+    catalogBucket.grantRead(appsyncAgentResolverLambda);
+    appsyncAgentResolverLambda.addEnvironment(
+      "PRODUCT_TABLE",
+      productTable.tableName,
+    );
+    appsyncAgentResolverLambda.addEnvironment(
+      "CATALOG_BUCKET",
+      catalogBucket.bucketName,
+    );
+
+    // 10. AppSync Resolvers
+    const getUploadUrlDS = api.addLambdaDataSource(
+      "GetUploadUrlDS",
+      getUploadUrlLambda,
+    );
+    getUploadUrlDS.createResolver("GetUploadUrlResolver", {
+      typeName: "Mutation",
+      fieldName: "getUploadUrl",
+    });
+
+    const getPresignedUrlDS = api.addLambdaDataSource(
+      "GetPresignedUrlDS",
+      getPresignedUrlLambda,
+    );
+    getPresignedUrlDS.createResolver("GetPresignedUrlResolver", {
+      typeName: "Mutation",
+      fieldName: "getPresignedUrl",
+    });
+
+    const triggerCatalogDS = api.addLambdaDataSource(
+      "TriggerCatalogDS",
+      catalogTriggerLambda,
+    );
+    triggerCatalogDS.createResolver("TriggerCatalogResolver", {
+      typeName: "Mutation",
+      fieldName: "triggerCatalogProcessing",
+    });
+
+    const noneDS = api.addNoneDataSource("NoneDS");
+    api.createResolver("PushSearchResultResolver", {
+      typeName: "Mutation",
+      fieldName: "pushSearchResult",
+      runtime: appsync.FunctionRuntime.JS_1_0_0,
+      dataSource: noneDS,
+      code: appsync.Code.fromAsset(
+        path.join(__dirname, "../resolvers/pushSearchResult.js"),
+      ),
+    });
 
     const agentDS = api.addLambdaDataSource(
       "agentDS",
@@ -773,6 +950,18 @@ export class FurnitureAppStack extends cdk.Stack {
     });
     new cdk.CfnOutput(this, "AgentCoreToolsLambdaArn", {
       value: agentCoreToolsLambda.functionArn,
+    });
+    new cdk.CfnOutput(this, "AgentRuntimeId", {
+      value: agentRuntime.agentRuntimeId,
+    });
+    new cdk.CfnOutput(this, "AgentRuntimeArn", {
+      value: agentRuntime.agentRuntimeArn,
+    });
+    new cdk.CfnOutput(this, "GatewayId", {
+      value: gateway.gatewayId,
+    });
+    new cdk.CfnOutput(this, "MemoryId", {
+      value: memory.memoryId,
     });
 
     new cdk.CfnOutput(this, "UserPoolId", { value: userPool.userPoolId });
