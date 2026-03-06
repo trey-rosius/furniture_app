@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+strands-agents>=1.29.0
+boto3
+httpx
+aws_lambda_powertools
+bedrock-agentcore
+websockets
+mcp
+starlette
+aws-sdk-bedrock-runtime

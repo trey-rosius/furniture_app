@@ -1,224 +1,113 @@
-import sys
-print("DEBUG: STARTING SCRIPT", file=sys.stderr, flush=True)
-print("DEBUG: Agent runtime starting...", file=sys.stderr, flush=True)
-from unittest.mock import MagicMock
-# Mock pyaudio for server environment
-sys.modules["pyaudio"] = MagicMock()
-
-import asyncio
-import os
-import json
-import httpx
-import traceback
+import sys, asyncio, os, json, httpx, traceback, uuid, boto3
 from datetime import datetime, timedelta
+from unittest.mock import MagicMock
+sys.modules["pyaudio"] = MagicMock()
 
 from strands import Agent
 from strands.models import BedrockModel
-from strands.experimental.bidi.models.nova_sonic import BidiNovaSonicModel
-from strands.experimental.bidi.agent import BidiAgent
 from strands.tools.mcp.mcp_client import MCPClient
 from mcp.client.streamable_http import streamablehttp_client
-
 from bedrock_agentcore.runtime import BedrockAgentCoreApp
 from starlette.websockets import WebSocket, WebSocketDisconnect
 from aws_lambda_powertools import Logger
-import boto3
-import uuid
+
+# Hardened Monkey-patch: Bedrock/Strands sometimes yields numeric tool input fragments
+# which cause TypeErrors in strands.event_loop.streaming when concatenating.
+try:
+    import strands.event_loop.streaming as st
+    orig = st.handle_content_block_delta
+    def patch(delta, state):
+        try:
+            if state and isinstance(state, dict):
+                ctu = state.get("current_tool_use")
+                if isinstance(ctu, dict) and "input" in ctu:
+                    if not isinstance(ctu["input"], str): ctu["input"] = str(ctu["input"] or "")
+            if isinstance(delta, dict):
+                tu = delta.get("toolUse")
+                if isinstance(tu, dict) and "input" in tu:
+                    if not isinstance(tu["input"], str): tu["input"] = str(tu["input"] or "")
+        except: pass
+        return orig(delta, state)
+    st.handle_content_block_delta = patch
+except: pass
 
 logger = Logger()
-
-# Configuration
 os.environ["BYPASS_TOOL_CONSENT"] = "true"
 
-class GatewayTokenManager:
-    def __init__(self, client_id, client_secret, token_endpoint, scope):
-        self.client_id = client_id
-        self.client_secret = client_secret
-        self.token_endpoint = token_endpoint
-        self.scope = scope
-        self._token = None
-        self._expires_at = None
+class TM:
+    def __init__(self, cid, sec, ep, sc):
+        self.cid, self.sec, self.ep, self.sc = cid, sec, ep, sc
+        self._t, self._e = None, None
+    async def get(self):
+        if self._t and self._e and self._e > datetime.now(): return self._t
+        async with httpx.AsyncClient() as c:
+            r = await c.post(self.ep, data={'grant_type': 'client_credentials', 'client_id': self.cid, 'client_secret': self.sec, 'scope': self.sc})
+            d = r.json()
+            self._t, self._e = d['access_token'], datetime.now() + timedelta(seconds=d.get('expires_in', 3600)-300)
+            return self._t
 
-    async def get_token(self):
-        if self._token and self._expires_at and self._expires_at > datetime.now():
-            return self._token
-        logger.info("Fetching new Gateway access token...")
-        async with httpx.AsyncClient() as client:
-            response = await client.post(
-                self.token_endpoint,
-                data={
-                    'grant_type': 'client_credentials',
-                    'client_id': self.client_id,
-                    'client_secret': self.client_secret,
-                    'scope': self.scope
-                },
-                headers={'Content-Type': 'application/x-www-form-urlencoded'}
-            )
-            data = response.json()
-            if 'access_token' not in data:
-                logger.error(f"Failed to get token: {data}")
-                raise Exception(f"Token error: {data.get('error')}")
-            self._token = data['access_token']
-            expires_in = data.get('expires_in', 3600) - 300
-            self._expires_at = datetime.now() + timedelta(seconds=expires_in)
-            return self._token
-
-GATEWAY_URL = os.environ.get("GATEWAY_URL")
-CLIENT_ID = os.environ.get("GATEWAY_CLIENT_ID")
-CLIENT_SECRET = os.environ.get("GATEWAY_CLIENT_SECRET")
-TOKEN_ENDPOINT = os.environ.get("GATEWAY_TOKEN_ENDPOINT")
-SCOPE = os.environ.get("GATEWAY_SCOPE", "FurnitureGateway/invoke")
-TEXT_MODEL_ID = os.environ.get("TEXT_MODEL_ID", "amazon.nova-lite-v1:0")
-VOICE_MODEL_ID = os.environ.get("VOICE_MODEL_ID", "amazon.nova-2-sonic-v1:0")
-
-token_manager = GatewayTokenManager(CLIENT_ID, CLIENT_SECRET, TOKEN_ENDPOINT, SCOPE)
-
-def create_transport(mcp_url: str, access_token: str):
-    return streamablehttp_client(mcp_url, headers={"Authorization": f"Bearer {access_token}"})
-
-# -----------------
-# WS Handler
-# -----------------
-
+tm = TM(os.environ.get("GATEWAY_CLIENT_ID"), os.environ.get("GATEWAY_CLIENT_SECRET"), os.environ.get("GATEWAY_TOKEN_ENDPOINT"), os.environ.get("GATEWAY_SCOPE", "FurnitureGateway/invoke"))
 app = BedrockAgentCoreApp()
 
-@app.websocket_route("/ws")
-async def websocket_endpoint(websocket: WebSocket, context=None):
-    connection_id = str(uuid.uuid4())
-    await websocket.accept()
-    print(f"DEBUG: WebSocket connected for {connection_id}!", flush=True)
-    
+PROMPT = """You are LuxeHome's elite AI design assistant. 
+1. Provide concise, professional advice.
+2. Use tools for catalog and payments.
+3. NEVER read URLs or IDs aloud.
+4. CRITICAL: Stripe payment links (buy.stripe.com/test_...) MUST be shared as a single continuous string. 
+   NEVER add a space after 'test_'. 
+   Output: https://buy.stripe.com/test_REMAINING_CODE
+   (Incorrect example: https://buy.stripe.com/test_ 12345)
+"""
+
+@app.websocket
+async def websocket_endpoint(ws: WebSocket, context=None):
+    await ws.accept()
     try:
-        print("DEBUG: Fetching token...", flush=True)
-        token = await token_manager.get_token()
-        region = os.environ.get("AWS_REGION", "us-east-1")
-        
-        mcp_client = MCPClient(lambda: create_transport(GATEWAY_URL, token))
-        
-        with mcp_client:
-            tools = mcp_client.list_tools_sync()
-            print(f"DEBUG: Loaded {len(tools)} tools from Gateway", flush=True)
-            
-            model = BidiNovaSonicModel(
-                region=region,
-                model_id=VOICE_MODEL_ID,
-                provider_config={
-                    "audio": {
-                        "input_sample_rate": 16000,
-                        "output_sample_rate": 16000,
-                        "voice": "matthew",
-                    }
-                }
-            )
-            
-            bidi_agent = BidiAgent(
-                model=model,
-                tools=tools,
-                system_prompt="You are a helpful AI furniture assistant. Be concise."
-            )
-
-            print(f"DEBUG: Agent initialized for {connection_id}", flush=True)
-
-            async def handle_websocket_input():
-                """Handle incoming messages from the client."""
-                while True:
-                    try:
-                        message = await websocket.receive_json()
-                        
-                        # Check if it's a text message from the client
-                        if message.get("type") in ("text_input", "bidi_text_input"):
-                            text = message.get("text", "")
-                            logger.info(f"Received text input: {text}")
-                            # Send the text to the agent
-                            await bidi_agent.send(text)
-                            # Continue to next message without returning this one
-                            continue
-                        else:
-                            # Pass through other message types (like audio) to agent.run
-                            return message
-                    except WebSocketDisconnect:
-                        print("DEBUG: WebSocketDisconnect in handle_websocket_input", flush=True)
-                        return {"type": "disconnect"}
-                    except Exception as e:
-                        print(f"DEBUG: Error in handle_websocket_input: {e}", flush=True)
-                        traceback.print_exc()
-                        return {"type": "error", "message": str(e)}
-
-            print("DEBUG: Starting bidi agent loop", flush=True)
-            await bidi_agent.run(
-                inputs=[handle_websocket_input],
-                outputs=[websocket.send_json]
-            )
-            print("DEBUG: Bidi agent loop finished", flush=True)
-            
-    except WebSocketDisconnect:
-        print(f"DEBUG: WebSocket disconnected for {connection_id}", flush=True)
-    except Exception as e:
-        print(f"DEBUG: Error in websocket_endpoint: {e}", flush=True)
-        traceback.print_exc()
-    finally:
-        try:
-            await websocket.close()
-        except:
-            pass
-        print(f"DEBUG: WebSocket closed for {connection_id}", flush=True)
-
-# The route is registered via the @app.websocket decorator above
-
-
-# -----------------
-# Unary REST Handler
-# -----------------
-
-async def get_tools_and_invoke(payload):
-    try:
-        token = await token_manager.get_token()
-        region = os.environ.get("AWS_REGION", "us-east-1")
-        
-        # The Gateway combines both Lambda tools and Stripe MCP tools automatically
-        mcp_client = MCPClient(lambda: create_transport(GATEWAY_URL, token))
-        
-        with mcp_client:
-            tools = mcp_client.list_tools_sync()
-            logger.info(f"Loaded {len(tools)} tools from Gateway for Unary invocation.")
-                
-            text_model = BedrockModel(region_name=region, model_id=TEXT_MODEL_ID)
-            
-            agent = Agent(
-                model=text_model, 
-                tools=tools, 
-                callback_handler=None,
-                system_prompt="You are a helpful AI furniture assistant. Be concise. IMPORTANT: When providing URLs or payment links, never insert spaces within the URL."
-            )
-            
-            prompt = payload.get("prompt", "Hello")
-            async for event in agent.stream_async(prompt):
-                if hasattr(event, "model_dump"):
-                    yield event.model_dump()
-                elif hasattr(event, "dict"):
-                    yield event.dict()
-                elif isinstance(event, dict):
-                    yield event
-                else:
-                    yield {"type": "event", "content": str(event)}
-    except Exception as e:
-        error_msg = f"Fatal error: {str(e)}"
-        logger.error(error_msg)
-        logger.error(traceback.format_exc())
-        yield {"type": "error", "message": error_msg, "trace": traceback.format_exc()}
+        from strands.experimental.bidi.models.nova_sonic import BidiNovaSonicModel as Model
+        from strands.experimental.bidi.agent import BidiAgent as Bidi
+        tok = await tm.get()
+        cli = MCPClient(lambda: streamablehttp_client(os.environ.get("GATEWAY_URL"), headers={"Authorization": f"Bearer {tok}"}))
+        with cli:
+            tools = cli.list_tools_sync()
+            agent = Bidi(model=Model(region=os.environ.get("AWS_REGION", "us-east-1"), model_id=os.environ.get("VOICE_MODEL_ID", "amazon.nova-2-sonic-v1:0"), tools=tools), tools=tools, system_prompt=PROMPT)
+            async def inp():
+                m = await ws.receive_json()
+                if m.get("type") == "text_input": m["type"] = "bidi_text_input"
+                return m
+            await agent.run(inputs=[inp], outputs=[ws.send_json])
+    except: pass
+    finally: await ws.close()
 
 @app.entrypoint
 async def agent_invocation(payload, context):
-    async for event in get_tools_and_invoke(payload):
-         yield event
+    try:
+        tok = await tm.get()
+        cli = MCPClient(lambda: streamablehttp_client(os.environ.get("GATEWAY_URL"), headers={"Authorization": f"Bearer {tok}"}))
+        with cli:
+            tools = cli.list_tools_sync()
+            agent = Agent(model=BedrockModel(region_name=os.environ.get("AWS_REGION", "us-east-1"), model_id=os.environ.get("TEXT_MODEL_ID", "anthropic.claude-3-haiku-20240307-v1:0")), tools=tools, system_prompt=PROMPT)
+            res = await asyncio.to_thread(agent, payload.get("prompt", "Hello"))
+            msg = res.message if hasattr(res, "message") else res
+            content = []
+            for p in (msg.content if hasattr(msg, "content") else msg.get("content", [])):
+                t = getattr(p, "text", None) or (p.get("text") if isinstance(p, dict) else None)
+                if t: content.append({"text": t})
+            yield {"type": "message", "message": {"role": "assistant", "content": content}}
+            products = []
+            for m in agent.messages:
+                for p in (m.content if hasattr(m, "content") else m.get("content", [])):
+                    tr = getattr(p, "tool_result", None) or getattr(p, "toolResult", None) or (p.get("tool_result") or p.get("toolResult") if isinstance(p, dict) else None)
+                    if tr and (c_list := (tr.content if hasattr(tr, "content") else tr.get("content", []))):
+                        for c in c_list:
+                            if txt := (getattr(c, "text", None) or (c.get("text") if isinstance(c, dict) else None)):
+                                try:
+                                    d = json.loads(txt)
+                                    if isinstance(d, list): products.extend(d)
+                                    elif isinstance(d, dict) and "products" in d: products.extend(d["products"])
+                                except: pass
+            if products: yield {"type": "tool_result", "products": products[:10]}
+    except Exception as e:
+        yield {"type": "error", "message": str(e), "trace": traceback.format_exc()}
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8080))
-    print(f"DEBUG: Starting app on port {port}...", flush=True)
-    try:
-        app.run(port=port)
-        print("DEBUG: app.run() returned normally", flush=True)
-    except Exception as e:
-        print(f"DEBUG: app.run() failed with error: {e}", flush=True)
-        traceback.print_exc()
-        sys.exit(1)
+    app.run(port=int(os.environ.get("PORT", 8080)))

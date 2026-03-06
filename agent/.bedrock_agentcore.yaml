@@ -7,6 +7,7 @@ agents:
     container_runtime: docker
     aws:
       execution_role: arn:aws:iam::132260253285:role/AgentCoreGatewayExecutionRole
+      execution_role_auto_create: false
       account: '132260253285'
       region: us-east-1
       ecr_repository: 132260253285.dkr.ecr.us-east-1.amazonaws.com/bedrock-agentcore-furniture-agent
@@ -21,6 +22,10 @@ agents:
       agent_id: furnitureagent-6hUMr6H0ic
       agent_arn: arn:aws:bedrock-agentcore:us-east-1:132260253285:runtime/furnitureagent-6hUMr6H0ic
       agent_session_id: null
+    codebuild:
+      project_name: bedrock-agentcore-furnitureagent-builder
+      execution_role: arn:aws:iam::132260253285:role/AmazonBedrockAgentCoreSDKCodeBuild-us-east-1-011ab68583
+      source_bucket: bedrock-agentcore-codebuild-sources-132260253285-us-east-1
     authorizer_configuration: null
     oauth_configuration: null
   FurnitureStripeAgent:
@@ -30,6 +35,7 @@ agents:
     container_runtime: docker
     aws:
       execution_role: arn:aws:iam::132260253285:role/AgentCoreGatewayExecutionRole
+      execution_role_auto_create: false
       account: '132260253285'
       region: us-east-1
       ecr_repository: null
@@ -44,6 +50,10 @@ agents:
       agent_id: null
       agent_arn: null
       agent_session_id: null
+    codebuild:
+      project_name: null
+      execution_role: null
+      source_bucket: null
     authorizer_configuration: null
     oauth_configuration: null
   furniture_stripe_agent:
@@ -53,6 +63,7 @@ agents:
     container_runtime: docker
     aws:
       execution_role: arn:aws:iam::132260253285:role/AgentCoreGatewayExecutionRole
+      execution_role_auto_create: false
       account: '132260253285'
       region: us-east-1
       ecr_repository: 132260253285.dkr.ecr.us-east-1.amazonaws.com/bedrock_agentcore-furniture_stripe_agent
@@ -67,6 +78,10 @@ agents:
       agent_id: furniture_stripe_agent-8htUoh6sPM
       agent_arn: arn:aws:bedrock-agentcore:us-east-1:132260253285:runtime/furniture_stripe_agent-8htUoh6sPM
       agent_session_id: null
+    codebuild:
+      project_name: bedrock-agentcore-furniture_stripe_agent-builder
+      execution_role: arn:aws:iam::132260253285:role/AmazonBedrockAgentCoreSDKCodeBuild-us-east-1-939b298f60
+      source_bucket: bedrock-agentcore-codebuild-sources-132260253285-us-east-1
     authorizer_configuration:
       customJWTAuthorizer:
         allowedClients:

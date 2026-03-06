@@ -674,35 +674,12 @@ export class FurnitureAppStack extends cdk.Stack {
       ),
     });
 
-    // e. Agent Runtime Lambda (Strands + AgentCore)
-    const agentRuntimeLambda = new PythonFunction(this, "AgentRuntimeLambda", {
-      entry: path.join(__dirname, "../agent"),
-      index: "agent_runtime.py",
-      handler: "app",
-      runtime: pythonRuntime,
-      environment: {
-        DYNAMODB_TABLE: productTable.tableName,
-      },
-      timeout: cdk.Duration.minutes(5),
-      memorySize: 1024,
-    });
-    productTable.grantReadWriteData(agentRuntimeLambda);
-    agentRuntimeLambda.addToRolePolicy(
-      new cdk.aws_iam.PolicyStatement({
-        actions: [
-          "bedrock:InvokeModel",
-          "bedrock:InvokeModelWithResponseStream",
-        ],
-        resources: [`arn:aws:bedrock:${this.region}::foundation-model/*`],
-      }),
-    );
-
     // f. AgentCore Tools Lambda
     const agentCoreToolsLambda = new PythonFunction(
       this,
       "AgentCoreToolsLambda",
       {
-        entry: path.join(__dirname, "../agent"),
+        entry: path.join(__dirname, "../lambda"),
         index: "agentcore_tools.py",
         handler: "lambda_handler",
         runtime: pythonRuntime,
@@ -723,7 +700,7 @@ export class FurnitureAppStack extends cdk.Stack {
       this,
       "AppsyncAgentResolverLambda",
       {
-        entry: path.join(__dirname, "../agent"),
+        entry: path.join(__dirname, "../lambda"),
         index: "appsync_agent_resolver.py",
         handler: "handler",
         runtime: pythonRuntime,
@@ -768,9 +745,7 @@ export class FurnitureAppStack extends cdk.Stack {
     new cdk.CfnOutput(this, "CatalogBucketName", {
       value: catalogBucket.bucketName,
     });
-    new cdk.CfnOutput(this, "AgentRuntimeLambdaArn", {
-      value: agentRuntimeLambda.functionArn,
-    });
+
     new cdk.CfnOutput(this, "AgentCoreToolsLambdaArn", {
       value: agentCoreToolsLambda.functionArn,
     });

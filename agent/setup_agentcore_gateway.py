@@ -8,7 +8,7 @@ GATEWAY_ID = 'furnituregateway-iwz7nicp8r'
 # 1. Stripe Proxy ARN (AgentCore Runtime)
 STRIPE_AGENT_URL = (
     "https://bedrock-agentcore.us-east-1.amazonaws.com/runtimes/"
-    "arn%3Aaws%3Abedrock-agentcore%3Aus-east-1%3A132260253285%3Aruntime%2Ffurniture_stripe_agent-8htUoh6sPM"
+    "arn%3Aaws%3Abedrock-agentcore%3Aus-east-1%3A132260253285%3Aruntime%2Ffurniture_stripe_server-TDNzvPBmUR"
     "/invocations?qualifier=DEFAULT"
 )
 
@@ -16,7 +16,7 @@ STRIPE_AGENT_URL = (
 COGNITO_PROVIDER_ARN = 'arn:aws:bedrock-agentcore:us-east-1:132260253285:token-vault/default/oauth2credentialprovider/StripeRuntimeAuth'
 
 # 3. Correct Lambda Tools ARN (Found via CLI)
-LAMBDA_ARN = 'arn:aws:lambda:us-east-1:132260253285:function:FurnitureAppStack-AgentCoreToolsLambdaCE3FBE66-Qu6EdW8cAxYd'
+LAMBDA_ARN = 'arn:aws:lambda:us-east-1:132260253285:function:FurnitureAppStack-AgentCoreToolsLambdaCE3FBE66-M7dNmjWQlGrG'
 
 # 4. Path to the tools schema
 SCHEMA_PATH = os.path.join(os.path.dirname(__file__), 'tools_schema.json')
@@ -34,7 +34,12 @@ def configure_gateway_stack():
     for e in existing:
         if e['name'] in ['FurnitureLambdaTarget', 'StripeMCPTarget']:
             print(f"Deleting old target: {e['name']}...")
-            client.delete_gateway_target(gatewayIdentifier=GATEWAY_ID, targetId=e['targetId'])
+            try:
+                client.delete_gateway_target(gatewayIdentifier=GATEWAY_ID, targetId=e['targetId'])
+            except: pass
+    
+    import time
+    time.sleep(10)
 
     # ----- TARGET 1: AWS LAMBDA -----
     print("\nAdding Lambda Target...")

@@ -9,6 +9,24 @@
     }
   },
   {
+    "name": "get_products_paginated",
+    "description": "Get products from the furniture catalog with pagination.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "string",
+          "description": "The number of products to return (default is '10')"
+        },
+        "next_token": {
+          "type": "string",
+          "description": "The token for the next page of results"
+        }
+      },
+      "required": []
+    }
+  },
+  {
     "name": "get_products_per_category",
     "description": "Get products belonging to a specific category.",
     "inputSchema": {
@@ -29,11 +47,11 @@
       "type": "object",
       "properties": {
         "min_price": {
-          "type": "number",
-          "description": "The minimum price (default is 0)"
+          "type": "string",
+          "description": "The minimum price (default is '0')"
         },
         "max_price": {
-          "type": "number",
+          "type": "string",
           "description": "The maximum price"
         }
       },
@@ -51,8 +69,8 @@
           "description": "The ID of the product to order"
         },
         "quantity": {
-          "type": "integer",
-          "description": "The quantity to order (default is 1)"
+          "type": "string",
+          "description": "The quantity to order (default is '1')"
         }
       },
       "required": ["product_id"]

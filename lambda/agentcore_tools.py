@@ -23,7 +23,7 @@ def get_all_products():
     logger.info("Fetching all products")
     try:
         response = table.scan()
-        return response.get('Items', [])
+        return response.get('Items', [])[:5]
     except Exception as e:
         logger.error(f"Error fetching products: {e}")
         return {"error": str(e)}
@@ -35,7 +35,7 @@ def get_products_by_category(category):
         response = table.scan(
             FilterExpression=Attr('category').eq(category)
         )
-        return response.get('Items', [])
+        return response.get('Items', [])[:5]
     except Exception as e:
         logger.error(f"Error fetching category products: {e}")
         return {"error": str(e)}
@@ -48,7 +48,7 @@ def get_products_by_price_range(min_price, max_price):
         response = table.scan(
             FilterExpression=Attr('price').between(Decimal(str(min_price)), Decimal(str(max_price)))
         )
-        return response.get('Items', [])
+        return response.get('Items', [])[:5]
     except Exception as e:
         logger.error(f"Error fetching price range products: {e}")
         return {"error": str(e)}
@@ -107,6 +107,30 @@ def get_orders():
         return {"error": str(e)}
 
 
+def get_products_paginated(limit=10, next_token=None):
+    """Get products with pagination."""
+    logger.info(f"Fetching products paginated: limit={limit}, token={next_token}")
+    try:
+        scan_kwargs = {'Limit': int(limit)}
+        if next_token:
+            # We assume token is a JSON string of the LastEvaluatedKey
+            try:
+                scan_kwargs['ExclusiveStartKey'] = json.loads(next_token)
+            except:
+                pass 
+        
+        response = table.scan(**scan_kwargs)
+        items = response.get('Items', [])
+        last_key = response.get('LastEvaluatedKey')
+        
+        return {
+            "products": items,
+            "next_token": json.dumps(last_key) if last_key else None
+        }
+    except Exception as e:
+        logger.error(f"Error fetching paginated products: {e}")
+        return {"error": str(e)}
+
 def lambda_handler(event, context):
     # Retrieve the tool name from the context
     try:
@@ -129,6 +153,10 @@ def lambda_handler(event, context):
 
     if toolName == 'get_all_products':
         result = get_all_products()
+    elif toolName == 'get_products_paginated':
+        limit = event.get('limit', 10)
+        token = event.get('next_token')
+        result = get_products_paginated(limit, token)
     elif toolName == 'get_products_per_category':
         category = event.get('category')
         result = get_products_by_category(category)
@@ -151,7 +179,6 @@ def lambda_handler(event, context):
             'body': json.dumps({'error': f"Unknown tool: {toolName}"})
         }
 
-    return {
-        'statusCode': 200,
-        'body': json.dumps(result, cls=DecimalEncoder)
-    }
+    # Return the result directy for AgentCore
+    # We must ensure it's JSON serializable (convert Decimals)
+    return json.loads(json.dumps(result, cls=DecimalEncoder))

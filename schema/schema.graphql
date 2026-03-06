@@ -92,6 +92,7 @@ type UploadUrl @aws_iam @aws_api_key @aws_cognito_user_pools {
 
 type AgentResponse @aws_iam @aws_api_key @aws_cognito_user_pools {
   message: String!
+  products: [Product]
 }
 
 type AgentWebsocketConfig @aws_iam @aws_api_key @aws_cognito_user_pools {

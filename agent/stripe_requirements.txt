@@ -1,4 +1,0 @@
-mcp
-fastmcp
-httpx
-boto3
