@@ -1,0 +1,8 @@
+fastmcp
+httpx
+boto3
+mcp[server,cli]
+uvicorn
+fastapi
+stripe
+python-dotenv

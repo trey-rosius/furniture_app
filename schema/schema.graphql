@@ -4,31 +4,51 @@ schema {
   subscription: Subscription
 }
 
-type Query @aws_iam @aws_api_key {
+type Query @aws_iam @aws_api_key @aws_cognito_user_pools {
   getProduct(id: ID!): Product
   listProducts(category: String): [Product]
 }
 
-type Mutation @aws_iam @aws_api_key {
+type Mutation {
   # Trigger visual search (deprecated if using S3 triggers directly)
-  visualSearch(imageUri: String!): Boolean!
+  visualSearch(imageUri: String!): Boolean! @aws_api_key
 
   # Trigger distributed map workflow to process all images in the catalog.
-  triggerCatalogProcessing: Boolean!
+  triggerCatalogProcessing: Boolean! @aws_api_key
 
   # Get presigned URL for upload
   getUploadUrl(fileName: String!, contentType: String!): UploadUrl!
+    @aws_iam
+    @aws_api_key
+    @aws_cognito_user_pools
 
-  
+  # Get presigned URL for download
+  getPresignedUrl(uri: String!): String!
+    @aws_iam
+    @aws_api_key
+    @aws_cognito_user_pools
+
   # Invoke the Furniture AI Agent
   invokeAgent(prompt: String!): AgentResponse!
+    @aws_iam
+    @aws_api_key
+    @aws_cognito_user_pools
+
+  # Get WebSocket configuration for bidirectional voice chat
+  getAgentWebsocketConfig: AgentWebsocketConfig!
+    @aws_iam
+    @aws_api_key
+    @aws_cognito_user_pools
 
   # Push search results back to client
-  pushSearchResult(status: String!, message: String, results: [ProductInput!]): VisualSearchResult
-    @aws_iam @aws_api_key
+  pushSearchResult(
+    status: String!
+    message: String
+    results: [ProductInput!]
+  ): VisualSearchResult @aws_iam @aws_api_key @aws_cognito_user_pools
 }
 
-input ProductInput {
+input ProductInput @aws_iam @aws_api_key @aws_cognito_user_pools {
   PK: String
   SK: String
   productName: String
@@ -41,12 +61,12 @@ input ProductInput {
   original_productId: String
 }
 
-type Subscription @aws_iam @aws_api_key {
+type Subscription @aws_iam @aws_api_key @aws_cognito_user_pools {
   onSearchResult: VisualSearchResult
     @aws_subscribe(mutations: ["pushSearchResult"])
 }
 
-type Product @aws_iam @aws_api_key {
+type Product @aws_iam @aws_api_key @aws_cognito_user_pools {
   PK: String!
   SK: String!
   productName: String
@@ -59,18 +79,23 @@ type Product @aws_iam @aws_api_key {
   original_productId: String
 }
 
-type VisualSearchResult @aws_iam @aws_api_key {
+type VisualSearchResult @aws_iam @aws_api_key @aws_cognito_user_pools {
   status: String!
   message: String
   results: [Product!]
 }
 
-type UploadUrl @aws_iam @aws_api_key {
+type UploadUrl @aws_iam @aws_api_key @aws_cognito_user_pools {
   url: String!
   key: String!
 }
 
-type AgentResponse @aws_iam @aws_api_key {
+type AgentResponse @aws_iam @aws_api_key @aws_cognito_user_pools {
   message: String!
+  products: [Product]
 }
 
+type AgentWebsocketConfig @aws_iam @aws_api_key @aws_cognito_user_pools {
+  url: String!
+  headers: String!
+}

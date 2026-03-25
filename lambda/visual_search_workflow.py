@@ -25,6 +25,12 @@ s3_client = boto3.client('s3')
 MODEL_ID = 'amazon.nova-2-multimodal-embeddings-v1:0'
 BATCH_GET_ITEM_LAMBDA = os.environ.get('BATCH_GET_ITEM_LAMBDA')
 
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, Decimal):
+            return float(obj)
+        return super(DecimalEncoder, self).default(obj)
+        
 @durable_step
 def get_image_step(step_context: StepContext, bucket: str, key: str) -> str:
     """Download image from S3 and return base64 string."""
@@ -34,33 +40,77 @@ def get_image_step(step_context: StepContext, bucket: str, key: str) -> str:
     return base64.b64encode(image_bytes).decode('utf-8')
 
 @durable_step
-def generate_embedding_step(step_context: StepContext, base64_image: str, key: str) -> list:
-    """Invoke Bedrock Nova to generate multimodal embedding."""
-    step_context.logger.info("Generating embedding from Bedrock Nova")
+def generate_embedding_step(step_context: StepContext, key: str, bucket: str) -> str:
+    """Invoke Bedrock Nova to generate multimodal embedding asynchronously."""
+    step_context.logger.info(f"Starting async embedding from Bedrock Nova for s3://{bucket}/{key}")
     
     image_format = "png" if key.lower().endswith('.png') else "jpeg"
     if key.lower().endswith(('.jpg', '.jpeg')):
         image_format = "jpeg"
         
     native_request = {
-        "taskType": "SINGLE_EMBEDDING",
-        "singleEmbeddingParams": {
+        "taskType": "SEGMENTED_EMBEDDING",
+        "segmentedEmbeddingParams": {
             "embeddingPurpose": "GENERIC_INDEX",
             "embeddingDimension": 3072,
             "image": {
                 "format": image_format,
                 "detailLevel": "STANDARD_IMAGE",
-                "source": {"bytes": base64_image},
+                "source": {
+                    "s3Location": {
+                        "uri": f"s3://{bucket}/{key}"
+                    }
+                }
             },
         },
     }
     
-    bedrock_response = bedrock.invoke_model(
+    bedrock_response = bedrock.start_async_invoke(
         modelId=MODEL_ID,
-        body=json.dumps(native_request)
+        modelInput=native_request,
+        outputDataConfig={
+            's3OutputDataConfig': {
+                's3Uri': f"s3://{bucket}/async-embeddings/"
+            }
+        }
     )
-    result = json.loads(bedrock_response['body'].read())
-    return result["embeddings"][0]["embedding"]
+    return bedrock_response['invocationArn']
+
+import time
+import urllib.parse
+
+@durable_step
+def poll_embedding_job_step(step_context: StepContext, invocation_arn: str) -> list:
+    """Poll Bedrock to check if the async embedding job is complete, then fetch results."""
+    step_context.logger.info(f"Polling job {invocation_arn}")
+    
+    # 5 minutes lambda timeout allows 300s. We will poll max 20 times (every 3 seconds).
+    for _ in range(40):
+        status_response = bedrock.get_async_invoke(invocationArn=invocation_arn)
+        status = status_response['status']
+        
+        if status == 'Completed':
+            s3_output_uri = status_response['outputDataConfig']['s3OutputDataConfig']['s3Uri']
+            parsed_uri = urllib.parse.urlparse(s3_output_uri)
+            output_bucket = parsed_uri.netloc
+            output_prefix = urllib.parse.unquote_plus(parsed_uri.path.lstrip('/'))
+            
+            response = s3_client.list_objects_v2(Bucket=output_bucket, Prefix=output_prefix)
+            jsonl_key = next((obj['Key'] for obj in response.get('Contents', []) if obj['Key'].endswith('.jsonl')), None)
+            
+            if not jsonl_key:
+                raise Exception(f"Job completed but no .jsonl file found at {output_prefix}")
+                
+            embedding_obj = s3_client.get_object(Bucket=output_bucket, Key=jsonl_key)
+            embedding_data = json.loads(embedding_obj['Body'].read().decode('utf-8'))
+            return embedding_data.get("embedding", [])
+            
+        elif status in ['Failed', 'Stopped']:
+            raise Exception(f"Async embedding job failed or stopped with status: {status}. Reason: {status_response.get('failureMessage')}")
+            
+        time.sleep(3)
+        
+    raise Exception(f"Timeout waiting for async embedding job {invocation_arn}")
 
 @durable_step
 def search_vectors_step(step_context: StepContext, query_vector: list) -> list:
@@ -92,11 +142,7 @@ def fetch_product_details_step(step_context: StepContext, uuids: list) -> list:
     )
     return json.loads(batch_response['Payload'].read())
 
-class DecimalEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, Decimal):
-            return float(obj)
-        return super(DecimalEncoder, self).default(obj)
+
 
 @durable_step
 def emit_results_step(step_context: StepContext, results: list, status: str = "SUCCESS", message: str = ""):
@@ -133,11 +179,11 @@ def lambda_handler(event: dict, context: DurableContext) -> dict:
         return {"status": "error", "message": status_msg}
         
     try:
-        # 1. Get Image
-        base64_image = context.step(get_image_step(bucket, key))
+        # 1. Generate Embedding (Async Invoke)
+        invocation_arn = context.step(generate_embedding_step(key, bucket))
         
-        # 2. Generate Embedding
-        embedding = context.step(generate_embedding_step(base64_image, key))
+        # 2. Poll for Embedding Completion
+        embedding = context.step(poll_embedding_job_step(invocation_arn))
         
         # 3. Search Vectors
         uuids = context.step(search_vectors_step(embedding))

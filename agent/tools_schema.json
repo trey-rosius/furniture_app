@@ -1,0 +1,102 @@
+[
+  {
+    "name": "get_all_products",
+    "description": "Get all products from the furniture catalog.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  },
+  {
+    "name": "get_products_paginated",
+    "description": "Get products from the furniture catalog with pagination.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "string",
+          "description": "The number of products to return (default is '10')"
+        },
+        "next_token": {
+          "type": "string",
+          "description": "The token for the next page of results"
+        }
+      },
+      "required": []
+    }
+  },
+  {
+    "name": "get_products_per_category",
+    "description": "Get products belonging to a specific category.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "The category of furniture (e.g., Living Room, Bedroom, etc.)"
+        }
+      },
+      "required": ["category"]
+    }
+  },
+  {
+    "name": "get_products_within_price_range",
+    "description": "Get products within a specified price range.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "min_price": {
+          "type": "string",
+          "description": "The minimum price (default is '0')"
+        },
+        "max_price": {
+          "type": "string",
+          "description": "The maximum price"
+        }
+      },
+      "required": ["max_price"]
+    }
+  },
+  {
+    "name": "create_order",
+    "description": "Place an order for a specific product.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "The ID of the product to order"
+        },
+        "quantity": {
+          "type": "string",
+          "description": "The quantity to order (default is '1')"
+        }
+      },
+      "required": ["product_id"]
+    }
+  },
+  {
+    "name": "get_order",
+    "description": "Retrieve details of a specific order by its order ID.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "The ID of the order to retrieve."
+        }
+      },
+      "required": ["order_id"]
+    }
+  },
+  {
+    "name": "get_orders",
+    "description": "Retrieve a list of all orders.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  }
+]

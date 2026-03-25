@@ -1,0 +1,825 @@
+import { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import {
+  Send,
+  Camera,
+  Mic,
+  PlusCircle,
+  Loader2,
+  X,
+  Volume2,
+  MicOff,
+  Waves,
+} from "lucide-react";
+import { generateClient } from "aws-amplify/api";
+import PresignedImage from "../components/PresignedImage";
+
+const client = generateClient();
+
+interface Product {
+  id: string | number;
+  name: string;
+  price: string;
+  image: string;
+  imageUri?: string; // New field for S3 keys
+  category?: string;
+}
+
+interface Message {
+  id: string | number;
+  role: "user" | "agent";
+  content: string;
+  products?: Product[];
+}
+
+export async function getDesignAdvice(
+  message: string,
+): Promise<{ message: string; products: Product[] }> {
+  try {
+    const response = (await client.graphql({
+      query: `mutation InvokeAgent($prompt: String!) {
+        invokeAgent(prompt: $prompt) {
+          message
+          products {
+            productName
+            price
+            imageFile
+            image_uri
+            PK
+          }
+        }
+      }`,
+      variables: { prompt: message },
+    })) as any;
+
+    const data = response.data.invokeAgent;
+    const products: Product[] = (data.products || []).map((p: any) => ({
+      id: p.PK || `prod-${Math.random()}`,
+      name: p.productName || "Architectural Piece",
+      price:
+        typeof p.price === "number"
+          ? `$${p.price.toLocaleString()}`
+          : p.price || "$0",
+      image: p.image || p.image_uri || p.imageFile || FURNITURE_PLACEHOLDERS[0],
+      imageUri: p.image_uri || p.imageFile,
+    }));
+
+    return {
+      message: data.message,
+      products,
+    };
+  } catch (err: any) {
+    console.error("Error invoking agent:", err);
+    throw err;
+  }
+}
+
+// Premium placeholder images for a luxurious feel
+const FURNITURE_PLACEHOLDERS = [
+  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1583847268964-b28dc2f51ac9?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1538688543407-357ea13424d7?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1550254425-34c727652bc8?auto=format&fit=crop&q=80&w=600",
+];
+
+const extractProducts = (
+  text: string,
+): { products: Product[]; cleanedText: string } => {
+  const products: Product[] = [];
+
+  // 1. Bullet Pattern: - or * ProductName - or : $Price
+  const bulletRegex =
+    /(?:^|\n)[-*]\s*(.*?)\s*[-:]\s*(\$\d+(?:,\d+)*(?:\.\d+)?)/g;
+  let match;
+  while ((match = bulletRegex.exec(text)) !== null) {
+    products.push({
+      id: `prod-${Date.now()}-${Math.random()}`,
+      name: match[1].trim(),
+      price: match[2].trim(),
+      image:
+        FURNITURE_PLACEHOLDERS[products.length % FURNITURE_PLACEHOLDERS.length],
+    });
+  }
+
+  // 2. Table Pattern: | ProductName | $Price |
+  const tableRegex = /\|\s*([^|]*?)\s*\|\s*(\$\d+(?:,\d+)*(?:\.\d+)?)\s*\|/g;
+  while ((match = tableRegex.exec(text)) !== null) {
+    const name = match[1].trim();
+    if (name.toLowerCase() === "product name" || name === "--") continue;
+
+    products.push({
+      id: `prod-${Date.now()}-${Math.random()}`,
+      name: name,
+      price: match[2].trim(),
+      image:
+        FURNITURE_PLACEHOLDERS[products.length % FURNITURE_PLACEHOLDERS.length],
+    });
+  }
+
+  // Final cleanup for names: split CamelCase (e.g. SovereignChildren -> Sovereign Children)
+  products.forEach((p) => {
+    if (typeof p.name === "string") {
+      p.name = p.name.replace(/([a-z])([A-Z])/g, "$1 $2");
+    }
+  });
+
+  return { products, cleanedText: text };
+};
+
+export default function Chat() {
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      id: 1,
+      role: "agent",
+      content:
+        "Hello! I'm your LuxeHome Design Agent. How can I help you elevate your space today?",
+    },
+  ]);
+  const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isVoiceMode, setIsVoiceMode] = useState(false);
+  const [isVoiceActive, setIsVoiceActive] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const [userLiveTranscript, setUserLiveTranscript] = useState("");
+  const [agentLiveTranscript, setAgentLiveTranscript] = useState("");
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const voiceClientRef = useRef<WebSocket | null>(null);
+  const sourceRef = useRef<MediaStreamAudioSourceNode | null>(null);
+  const audioQueueRef = useRef<string[]>([]);
+  const isPlayingRef = useRef(false);
+  const workletNodeRef = useRef<AudioWorkletNode | null>(null);
+  const streamRef = useRef<MediaStream | null>(null);
+  const userLiveRef = useRef("");
+  const agentLiveRef = useRef("");
+  const lastCommittedRef = useRef("");
+  const isConnectingRef = useRef(false);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  }, [messages, userLiveTranscript, agentLiveTranscript, isLoading]);
+
+  const handleSend = async () => {
+    if (!input.trim() || isLoading) return;
+
+    const userMsg: Message = {
+      id: Date.now(),
+      role: "user",
+      content: input,
+    };
+
+    setMessages((prev) => [...prev, userMsg]);
+    setInput("");
+    setIsLoading(true);
+
+    try {
+      const { message, products: backendProducts } =
+        await getDesignAdvice(input);
+      const { products: extractedProducts, cleanedText } =
+        extractProducts(message);
+
+      // Merge backend products with extracted products, prioritizing backend ones
+      // and ensuring we have unique products by name
+      const allProducts = [...backendProducts];
+      extractedProducts.forEach((ep) => {
+        if (
+          !allProducts.find(
+            (bp) => bp.name.toLowerCase() === ep.name.toLowerCase(),
+          )
+        ) {
+          allProducts.push(ep);
+        }
+      });
+
+      const agentMsg: Message = {
+        id: `msg-${Date.now() + 1}`,
+        role: "agent",
+        content: cleanedText || "I'm sorry, I couldn't process that request.",
+        products: allProducts.length > 0 ? allProducts : undefined,
+      };
+
+      setMessages((prev) => [...prev, agentMsg]);
+    } catch (error) {
+      console.error("Chat error:", error);
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: Date.now() + 1,
+          role: "agent",
+          content:
+            "I'm having trouble connecting to my design database. Please try again in a moment.",
+        },
+      ]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Voice Mode Helpers
+
+  const processAudioQueue = async () => {
+    if (
+      isPlayingRef.current ||
+      audioQueueRef.current.length === 0 ||
+      !audioContextRef.current
+    )
+      return;
+
+    isPlayingRef.current = true;
+    const b64 = audioQueueRef.current.shift()!;
+    const binary = window.atob(b64);
+    const len = binary.length;
+    const bytes = new Uint8Array(len);
+    for (let i = 0; i < len; i++) bytes[i] = binary.charCodeAt(i);
+    const pcm16 = new Int16Array(bytes.buffer);
+    const float32 = new Float32Array(pcm16.length);
+    for (let i = 0; i < pcm16.length; i++) float32[i] = pcm16[i] / 0x8000;
+
+    const buffer = audioContextRef.current.createBuffer(
+      1,
+      float32.length,
+      16000,
+    );
+    buffer.getChannelData(0).set(float32);
+    const source = audioContextRef.current.createBufferSource();
+    source.buffer = buffer;
+    source.connect(audioContextRef.current.destination);
+    source.onended = () => {
+      isPlayingRef.current = false;
+      processAudioQueue();
+    };
+    source.start();
+  };
+
+  const startVoiceMode = async () => {
+    if (
+      isConnectingRef.current ||
+      (voiceClientRef.current &&
+        voiceClientRef.current.readyState === WebSocket.OPEN)
+    ) {
+      return;
+    }
+
+    try {
+      isConnectingRef.current = true;
+      setIsVoiceMode(true);
+      setIsVoiceActive(false);
+      setUserLiveTranscript("");
+      setAgentLiveTranscript("");
+      userLiveRef.current = "";
+      agentLiveRef.current = "";
+
+      const configRes = (await client.graphql({
+        query: `mutation GetWebsocketConfig { getAgentWebsocketConfig { url } }`,
+      })) as any;
+
+      if (!configRes.data?.getAgentWebsocketConfig) {
+        throw new Error("Failed to get WebSocket config");
+      }
+
+      const urlFromAppSync = configRes.data.getAgentWebsocketConfig.url;
+      const url = urlFromAppSync;
+      console.log("Connecting to WebSocket URL:", url);
+
+      const audioCtx = new (
+        window.AudioContext || (window as any).webkitAudioContext
+      )({ sampleRate: 16000 });
+      await audioCtx.resume();
+      audioContextRef.current = audioCtx;
+
+      const ws = new WebSocket(url);
+      voiceClientRef.current = ws;
+
+      ws.onerror = (err) => {
+        console.error("WS Error:", err);
+      };
+      ws.onopen = () => {
+        setIsVoiceActive(true);
+        isConnectingRef.current = false;
+        console.log("Voice connected");
+      };
+
+      ws.onmessage = async (e) => {
+        const textData = e.data;
+        let data;
+        try {
+          data = JSON.parse(textData);
+        } catch (err) {
+          console.error("Parse error:", err, textData);
+          return;
+        }
+        console.log("WS Received:", data);
+
+        if (data.type === "bidi_audio_stream" || data.output_audio) {
+          audioQueueRef.current.push(data.audio || data.output_audio);
+          processAudioQueue();
+        } else if (
+          data.type === "bidi_transcript_stream" ||
+          data.type === "bidi_user_transcript"
+        ) {
+          const role =
+            data.role ||
+            data.speaker ||
+            (data.type.includes("user") ? "user" : "agent");
+          const text = data.text || "";
+          if (!text || text.trim() === "") return;
+
+          if (role === "user") {
+            // Flush agent transcript if turn changed
+            if (agentLiveRef.current.trim()) {
+              const content = agentLiveRef.current.trim();
+              if (lastCommittedRef.current !== content) {
+                setMessages((m) => [
+                  ...m,
+                  {
+                    id: `msg-${Date.now()}-${Math.random()}`,
+                    role: "agent",
+                    content,
+                  },
+                ]);
+                lastCommittedRef.current = content;
+              }
+              agentLiveRef.current = "";
+              setAgentLiveTranscript("");
+            }
+
+            userLiveRef.current = (userLiveRef.current + " " + text).trim();
+            setUserLiveTranscript(userLiveRef.current);
+
+            if (text.match(/[?.!]/)) {
+              const content = userLiveRef.current;
+              if (lastCommittedRef.current !== content) {
+                setMessages((m) => [
+                  ...m,
+                  {
+                    id: `msg-${Date.now()}-${Math.random()}`,
+                    role: "user",
+                    content,
+                  },
+                ]);
+                lastCommittedRef.current = content;
+              }
+              userLiveRef.current = "";
+              setUserLiveTranscript("");
+            }
+          } else {
+            // Flush user transcript if turn changed
+            if (userLiveRef.current.trim()) {
+              const content = userLiveRef.current.trim();
+              if (lastCommittedRef.current !== content) {
+                setMessages((m) => [
+                  ...m,
+                  {
+                    id: `msg-${Date.now()}-${Math.random()}`,
+                    role: "user",
+                    content,
+                  },
+                ]);
+                lastCommittedRef.current = content;
+              }
+              userLiveRef.current = "";
+              setUserLiveTranscript("");
+            }
+
+            agentLiveRef.current = (agentLiveRef.current + " " + text).trim();
+            setAgentLiveTranscript(agentLiveRef.current);
+
+            if (text.match(/[?.!]/)) {
+              const content = agentLiveRef.current;
+              if (lastCommittedRef.current !== content) {
+                const { products, cleanedText } = extractProducts(content);
+                setMessages((m) => [
+                  ...m,
+                  {
+                    id: `msg-${Date.now()}-${Math.random()}`,
+                    role: "agent",
+                    content: cleanedText,
+                    products: products.length > 0 ? products : undefined,
+                  },
+                ]);
+                lastCommittedRef.current = content;
+              }
+              agentLiveRef.current = "";
+              setAgentLiveTranscript("");
+            }
+          }
+        }
+      };
+
+      ws.onclose = (e) => {
+        console.log("WS Closed:", e.code, e.reason);
+        setIsVoiceActive(false);
+        setIsVoiceMode(false);
+        isConnectingRef.current = false;
+      };
+
+      const stream = await navigator.mediaDevices.getUserMedia({
+        audio: {
+          channelCount: 1,
+          echoCancellation: true,
+          noiseSuppression: true,
+        },
+      });
+      streamRef.current = stream;
+
+      const source = audioCtx.createMediaStreamSource(stream);
+      sourceRef.current = source;
+
+      const processor = audioCtx.createScriptProcessor(4096, 1, 1);
+
+      let packetCount = 0;
+      processor.onaudioprocess = (e) => {
+        if (ws.readyState === WebSocket.OPEN) {
+          const inputData = e.inputBuffer.getChannelData(0);
+
+          let maxAmp = 0;
+          for (let i = 0; i < inputData.length; i++) {
+            if (Math.abs(inputData[i]) > maxAmp)
+              maxAmp = Math.abs(inputData[i]);
+          }
+
+          packetCount++;
+          if (packetCount % 20 === 0) {
+            console.log(`Mic amplitude: ${maxAmp.toFixed(4)}`);
+          }
+
+          // Downsample to 16kHz robustly
+          const downsampleRatio = audioCtx.sampleRate / 16000;
+          const outputLength = Math.floor(inputData.length / downsampleRatio);
+          const int16Data = new Int16Array(outputLength);
+
+          for (let i = 0; i < outputLength; i++) {
+            const sourceIndex = Math.floor(i * downsampleRatio);
+            int16Data[i] = Math.max(
+              -32768,
+              Math.min(32767, inputData[sourceIndex] * 32768),
+            );
+          }
+
+          // Convert to base64
+          const bytes = new Uint8Array(int16Data.buffer);
+          let binary = "";
+          for (let i = 0; i < bytes.length; i++) {
+            binary += String.fromCharCode(bytes[i]);
+          }
+          const base64Audio = btoa(binary);
+
+          ws.send(
+            JSON.stringify({
+              type: "bidi_audio_input",
+              audio: base64Audio,
+              format: "pcm",
+              sample_rate: 16000,
+              channels: 1,
+            }),
+          );
+        }
+      };
+
+      source.connect(processor);
+      processor.connect(audioCtx.destination);
+      (ws as any).processor = processor;
+    } catch (err) {
+      console.error("Failed to start voice mode:", err);
+      setIsVoiceMode(false);
+      isConnectingRef.current = false;
+      alert(
+        "Error initializing voice chat. Please check your microphone permissions.",
+      );
+    }
+  };
+
+  const stopVoiceMode = () => {
+    setIsVoiceMode(false);
+    setIsVoiceActive(false);
+
+    const uText = userLiveRef.current.trim();
+    const aText = agentLiveRef.current.trim();
+
+    if (uText && lastCommittedRef.current !== uText) {
+      setMessages((prev) => [
+        ...prev,
+        { id: `msg-${Date.now()}-u`, role: "user", content: uText },
+      ]);
+      lastCommittedRef.current = uText;
+    }
+    if (aText && lastCommittedRef.current !== aText) {
+      const { products, cleanedText } = extractProducts(aText);
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: `msg-${Date.now()}-a`,
+          role: "agent",
+          content: cleanedText,
+          products: products.length > 0 ? products : undefined,
+        },
+      ]);
+      lastCommittedRef.current = aText;
+    }
+
+    // CRITICAL: Clear live transcripts after stopping to avoid duplication
+    setUserLiveTranscript("");
+    setAgentLiveTranscript("");
+    userLiveRef.current = "";
+    agentLiveRef.current = "";
+
+    if (voiceClientRef.current) {
+      const wsWithProcessor = voiceClientRef.current as any;
+      if (wsWithProcessor.processor) wsWithProcessor.processor.disconnect();
+      voiceClientRef.current.close();
+      voiceClientRef.current = null;
+    }
+
+    if (sourceRef.current) {
+      sourceRef.current.disconnect();
+      sourceRef.current = null;
+    }
+
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach((t) => t.stop());
+      streamRef.current = null;
+    }
+
+    if (audioContextRef.current) {
+      audioContextRef.current.close();
+      audioContextRef.current = null;
+    }
+
+    audioQueueRef.current = [];
+    isPlayingRef.current = false;
+  };
+
+  return (
+    <div className="flex flex-col h-[calc(100vh-73px)] relative max-w-5xl mx-auto w-full overflow-hidden bg-[#f8f8f6]">
+      <div
+        className="flex-1 overflow-y-auto p-6 md:p-10 space-y-10 no-scrollbar scroll-smooth"
+        ref={scrollRef}
+      >
+        {messages.map((msg) => (
+          <motion.div
+            key={msg.id}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className={`flex flex-col gap-2 max-w-[85%] ${msg.role === "user" ? "ml-auto items-end" : "items-start"}`}
+          >
+            <div
+              className={`flex items-center gap-2 mb-1 ${msg.role === "user" ? "flex-row-reverse" : ""}`}
+            >
+              <span
+                className={`text-[10px] font-bold tracking-widest uppercase ${msg.role === "agent" ? "text-amber-600" : "text-gray-400"}`}
+              >
+                {msg.role === "agent" ? "LuxeHome Designer" : "Client"}
+              </span>
+            </div>
+            <div
+              className={`p-6 rounded-2xl shadow-sm border ${
+                msg.role === "agent"
+                  ? "bg-white text-gray-800 border-amber-100 rounded-tl-none"
+                  : "bg-gray-800 text-white border-gray-700 rounded-tr-none"
+              }`}
+            >
+              <p className="text-[15px] leading-relaxed whitespace-pre-wrap">
+                {msg.content}
+              </p>
+              {msg.products && (
+                <div className="flex gap-4 overflow-x-auto pb-4 pt-2 -mx-2 px-2 no-scrollbar snap-x snap-mandatory">
+                  {msg.products.map((product) => (
+                    <motion.div
+                      key={product.id}
+                      whileHover={{ y: -4 }}
+                      className="min-w-[200px] w-[200px] bg-white rounded-2xl border border-amber-100/50 shadow-sm overflow-hidden snap-start flex-shrink-0 group"
+                    >
+                      <div className="relative h-40 overflow-hidden bg-gray-100">
+                        <PresignedImage
+                          uri={product.imageUri || product.image}
+                          alt={product.name}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+                        <button className="absolute bottom-3 right-3 w-8 h-8 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                          <PlusCircle className="w-5 h-5 text-amber-600" />
+                        </button>
+                      </div>
+                      <div className="p-4">
+                        <h4 className="text-[13px] font-bold text-gray-900 line-clamp-1 mb-1">
+                          {product.name}
+                        </h4>
+                        <div className="flex items-center justify-between">
+                          <span className="text-[12px] text-amber-600 font-bold bg-amber-50 px-2 py-0.5 rounded-md">
+                            {product.price}
+                          </span>
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </motion.div>
+        ))}
+
+        {userLiveTranscript && (
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="flex flex-col items-end gap-2 ml-auto max-w-[80%]"
+          >
+            <div className="flex items-center gap-2 mb-1 flex-row-reverse">
+              <span className="text-[10px] font-bold tracking-widest uppercase text-gray-400">
+                You are speaking...
+              </span>
+              <div className="w-1.5 h-1.5 rounded-full bg-gray-400 animate-pulse" />
+            </div>
+            <div className="p-4 bg-gray-800 text-white/90 border border-gray-700 shadow-xl rounded-2xl rounded-tr-none italic text-sm">
+              "{userLiveTranscript}"
+            </div>
+          </motion.div>
+        )}
+
+        {agentLiveTranscript && (
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="flex flex-col items-start gap-2 max-w-[80%]"
+          >
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-[10px] font-bold tracking-widest uppercase text-amber-600">
+                LuxeHome Designer
+              </span>
+              <div className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+            </div>
+            <div className="p-4 bg-white text-gray-800 border border-amber-100 shadow-lg rounded-2xl rounded-tl-none italic text-sm leading-relaxed">
+              "{agentLiveTranscript}"
+            </div>
+          </motion.div>
+        )}
+
+        {isLoading && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="flex flex-col gap-2 max-w-[80%] items-start"
+          >
+            <span className="text-[10px] font-bold tracking-widest uppercase text-amber-600">
+              LuxeHome Designer
+            </span>
+            <div className="p-5 rounded-2xl bg-gray-50 text-gray-400 rounded-tl-none border border-gray-100 flex items-center gap-3">
+              <div className="flex gap-1">
+                <div
+                  className="w-1.5 h-1.5 bg-amber-600 rounded-full animate-bounce"
+                  style={{ animationDelay: "0s" }}
+                ></div>
+                <div
+                  className="w-1.5 h-1.5 bg-amber-600 rounded-full animate-bounce"
+                  style={{ animationDelay: "0.2s" }}
+                ></div>
+                <div
+                  className="w-1.5 h-1.5 bg-amber-600 rounded-full animate-bounce"
+                  style={{ animationDelay: "0.4s" }}
+                ></div>
+              </div>
+              <span className="text-xs italic">
+                Consulting design archives...
+              </span>
+            </div>
+          </motion.div>
+        )}
+      </div>
+
+      <div className="p-6 md:px-10 md:pb-10 bg-gradient-to-t from-[#f8f8f6] via-[#f8f8f6] to-transparent">
+        <div className="max-w-3xl mx-auto relative">
+          <div className="flex flex-wrap justify-center gap-2 mb-4">
+            {[
+              "Show more like these",
+              "Change color filter",
+              "Check dimensions",
+            ].map((hint) => (
+              <button
+                key={hint}
+                onClick={() => setInput(hint)}
+                className="px-4 py-1.5 bg-[#f3f0e7]/60 hover:bg-[#f3f0e7] rounded-full text-[11px] font-semibold tracking-wide text-gray-600 transition-colors border border-transparent hover:border-[#e7b923]/20"
+              >
+                {hint}
+              </button>
+            ))}
+          </div>
+          <div className="relative flex items-center bg-white rounded-2xl shadow-2xl border border-gray-100 p-2 pr-4 transition-all focus-within:ring-2 focus-within:ring-amber-200">
+            <button className="p-3 text-gray-300 hover:text-amber-600 transition-colors">
+              <PlusCircle className="w-6 h-6" />
+            </button>
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && handleSend()}
+              placeholder={
+                isVoiceMode ? "Listening..." : "Type your design query..."
+              }
+              className="flex-1 bg-transparent border-none focus:ring-0 text-gray-700 placeholder-gray-300 text-sm py-3 px-2"
+            />
+            <div className="flex items-center gap-2">
+              <button className="p-2 text-gray-400 hover:text-amber-600 transition-colors">
+                <Camera className="w-5 h-5" />
+              </button>
+              <div className="h-6 w-px bg-gray-100 mx-1"></div>
+              <button
+                onClick={isVoiceMode ? stopVoiceMode : startVoiceMode}
+                className={`p-2 relative rounded-full transition-all ${isVoiceMode ? "bg-amber-100 text-amber-600 scale-110" : "text-gray-400 hover:text-amber-600 hover:bg-gray-50"}`}
+              >
+                <Mic
+                  className={`w-6 h-6 ${isVoiceActive ? "animate-pulse" : ""}`}
+                />
+                {isVoiceActive && (
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full border-2 border-white"></div>
+                )}
+              </button>
+              <button
+                onClick={handleSend}
+                disabled={isLoading}
+                className="ml-2 bg-[#1a1a1a] text-white rounded-xl px-5 py-2.5 text-sm font-bold hover:bg-gray-800 transition-all shadow-lg shadow-black/5 disabled:opacity-50"
+              >
+                {isLoading ? (
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                ) : (
+                  "Send"
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <AnimatePresence>
+        {isVoiceMode && (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            className="fixed bottom-32 left-1/2 -translate-x-1/2 z-[100] bg-white shadow-2xl rounded-2xl border border-amber-100 p-4 flex items-center gap-4 min-w-[300px]"
+          >
+            <div className="flex items-end gap-1 h-8 px-2">
+              {[...Array(5)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  animate={{ height: isVoiceActive ? [8, 24, 12, 20, 8] : 8 }}
+                  transition={{ repeat: Infinity, duration: 1, delay: i * 0.1 }}
+                  className="w-1.5 bg-amber-500 rounded-full"
+                />
+              ))}
+            </div>
+            <div className="flex flex-col pr-4">
+              <span className="text-[10px] font-black uppercase tracking-tighter text-amber-600">
+                Voice Link Active
+              </span>
+              <span className="text-xs text-gray-500">
+                I'm listening to your vision...
+              </span>
+            </div>
+            <button
+              onClick={stopVoiceMode}
+              className="p-2 bg-gray-100 hover:bg-gray-200 rounded-full text-gray-500 transition-colors"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Chat Footer Context */}
+      <footer className="px-6 md:px-20 py-4 border-t border-[#f3f0e7] bg-white/40 backdrop-blur-sm flex justify-between items-center shrink-0">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-lg bg-[#f3f0e7] flex items-center justify-center overflow-hidden border border-[#f3f0e7]">
+            <div
+              className="w-full h-full bg-center bg-cover"
+              style={{
+                backgroundImage:
+                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLpXvfwf6d0Wm6i5tdoWHFPlE8IF6nGXaD1Ra6EKzCgzcJ-9lAEYE1RTlo-Vc6GNArkg9Nr-jvnwi4MBskjruYa7LYOrDlD8LDKvLB95gqcWOJDOnH3AgkjTK33ZAs2ZiwrxgejDmbA2rWhuiuYrnS3CdHkMWk8ZgB-zt_8Uw3HIOXB0ANhFQIqSDMDtZ8JzdutNNfY7SvaAIMoK7D-kT3-q5n9bER6yJdUhZDN6-9pIY5fS2BGjAO6Qfqh93cPTQLvy4Y_GShGh2w')",
+              }}
+            ></div>
+          </div>
+          <div>
+            <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">
+              Matching Context
+            </p>
+            <p className="text-xs font-bold text-gray-600">
+              Eames-Style Velvet Sofa
+            </p>
+          </div>
+        </div>
+        <div className="hidden md:flex gap-6 items-center">
+          <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+            Status: Active Design Session
+          </span>
+          <div className="flex gap-1.5">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#e7b923]"></div>
+            <div className="w-1.5 h-1.5 rounded-full bg-[#f3f0e7]"></div>
+            <div className="w-1.5 h-1.5 rounded-full bg-[#f3f0e7]"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}

@@ -6,7 +6,6 @@ import uuid
 from decimal import Decimal
 from boto3.dynamodb.conditions import Attr
 from aws_lambda_powertools import Logger
-
 logger = Logger()
 
 DYNAMODB_TABLE = os.environ.get('DYNAMODB_TABLE', 'furniture-app-table')
@@ -24,7 +23,7 @@ def get_all_products():
     logger.info("Fetching all products")
     try:
         response = table.scan()
-        return response.get('Items', [])
+        return response.get('Items', [])[:5]
     except Exception as e:
         logger.error(f"Error fetching products: {e}")
         return {"error": str(e)}
@@ -36,7 +35,7 @@ def get_products_by_category(category):
         response = table.scan(
             FilterExpression=Attr('category').eq(category)
         )
-        return response.get('Items', [])
+        return response.get('Items', [])[:5]
     except Exception as e:
         logger.error(f"Error fetching category products: {e}")
         return {"error": str(e)}
@@ -49,21 +48,88 @@ def get_products_by_price_range(min_price, max_price):
         response = table.scan(
             FilterExpression=Attr('price').between(Decimal(str(min_price)), Decimal(str(max_price)))
         )
-        return response.get('Items', [])
+        return response.get('Items', [])[:5]
     except Exception as e:
         logger.error(f"Error fetching price range products: {e}")
         return {"error": str(e)}
 
 def create_order(product_id, quantity=1):
-    """Create a new order."""
+    """Create a new order and save it to DynamoDB."""
     logger.info(f"Creating order for product {product_id}, quantity {quantity}")
     order_id = str(uuid.uuid4())
-    # In a real app, you'd save this to an Orders table.
-    return {
-        "status": "SUCCESS",
-        "order_id": order_id,
-        "message": f"Order for {quantity} item(s) of product {product_id} has been created."
-    }
+    
+    try:
+        # Save to DynamoDB
+        table.put_item(
+            Item={
+                'PK': f"ORDER#{order_id}",
+                'SK': f"ORDER#{order_id}",
+                'product_id': product_id,
+                'quantity': Decimal(str(quantity)),
+                'status': 'PENDING',
+                'order_id': order_id
+            }
+        )
+        return {
+            "status": "SUCCESS",
+            "order_id": order_id,
+            "message": f"Order for {quantity} item(s) of product {product_id} has been created."
+        }
+    except Exception as e:
+        logger.error(f"Error creating order: {e}")
+        return {"error": str(e)}
+
+def get_order(order_id):
+    """Get a specific order by ID."""
+    logger.info(f"Fetching order: {order_id}")
+    try:
+        response = table.get_item(
+            Key={
+                'PK': f"ORDER#{order_id}",
+                'SK': f"ORDER#{order_id}"
+            }
+        )
+        return response.get('Item', {"error": "Order not found"})
+    except Exception as e:
+        logger.error(f"Error fetching order: {e}")
+        return {"error": str(e)}
+
+def get_orders():
+    """Get all orders."""
+    logger.info("Fetching all orders")
+    try:
+        response = table.scan(
+            FilterExpression=Attr('PK').begins_with('ORDER#')
+        )
+        return response.get('Items', [])
+    except Exception as e:
+        logger.error(f"Error fetching orders: {e}")
+        return {"error": str(e)}
+
+
+def get_products_paginated(limit=10, next_token=None):
+    """Get products with pagination."""
+    logger.info(f"Fetching products paginated: limit={limit}, token={next_token}")
+    try:
+        scan_kwargs = {'Limit': int(limit)}
+        if next_token:
+            # We assume token is a JSON string of the LastEvaluatedKey
+            try:
+                scan_kwargs['ExclusiveStartKey'] = json.loads(next_token)
+            except:
+                pass 
+        
+        response = table.scan(**scan_kwargs)
+        items = response.get('Items', [])
+        last_key = response.get('LastEvaluatedKey')
+        
+        return {
+            "products": items,
+            "next_token": json.dumps(last_key) if last_key else None
+        }
+    except Exception as e:
+        logger.error(f"Error fetching paginated products: {e}")
+        return {"error": str(e)}
 
 def lambda_handler(event, context):
     # Retrieve the tool name from the context
@@ -87,6 +153,10 @@ def lambda_handler(event, context):
 
     if toolName == 'get_all_products':
         result = get_all_products()
+    elif toolName == 'get_products_paginated':
+        limit = event.get('limit', 10)
+        token = event.get('next_token')
+        result = get_products_paginated(limit, token)
     elif toolName == 'get_products_per_category':
         category = event.get('category')
         result = get_products_by_category(category)
@@ -98,13 +168,17 @@ def lambda_handler(event, context):
         prod_id = event.get('product_id')
         qty = event.get('quantity', 1)
         result = create_order(prod_id, qty)
+    elif toolName == 'get_order':
+        order_id = event.get('order_id')
+        result = get_order(order_id)
+    elif toolName == 'get_orders':
+        result = get_orders()
     else:
         return {
             'statusCode': 400,
             'body': json.dumps({'error': f"Unknown tool: {toolName}"})
         }
 
-    return {
-        'statusCode': 200,
-        'body': json.dumps(result, cls=DecimalEncoder)
-    }
+    # Return the result directy for AgentCore
+    # We must ensure it's JSON serializable (convert Decimals)
+    return json.loads(json.dumps(result, cls=DecimalEncoder))
