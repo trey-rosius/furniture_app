@@ -32,7 +32,19 @@ This document provides the architectural blueprint and sequential prompts requir
 ### Phase 4: Bedrock AgentCore & Gateway
 > "Containerize a Python agent using `public.ecr.aws/docker/library/python:3.12-slim`. Configure it to connect to a Bedrock AgentCore Gateway (provide `GATEWAY_URL` and `GATEWAY_SCOPE`). Implement tools in the agent to query DynamoDB for furniture items and include a system prompt that provides mock Stripe checkout links (e.g., `https://buy.stripe.com/test_...`) as continuous strings."
 
-### Phase 5: Premium Frontend Development
+### Phase 5: AgentCore Custom Tools (Python Lambda)
+> "Create a Python Lambda function `agentcore_tools.py` as an MCP tool handler. Implement tools for `get_all_products`, `get_products_per_category`, and `create_order` (saving to DynamoDB). Use `context.client_context.custom['bedrockAgentCoreToolName']` to route requests. Provide a `tools_schema.json` defining the input schemas for each tool. Key: Ensure all DynamoDB Decimals are converted to floats before returning."
+
+### Phase 6: Stripe MCP Proxy Service (Docker)
+> "Deploy a native Stripe MCP proxy in `agent/stripe_proxy`. Use `FastMCP` and the official Stripe Python SDK. Implement `create_stripe_payment_link` which creates a `Price` and a `PaymentLink` for a given item. Retrieve the Stripe API key from AWS Secrets Manager (`bedrock-agentcore-identity!default/apikey/StripeDirectKey`). Host it on AgentCore Runtime as a Docker service."
+
+### Phase 7: Bidirectional Voice Agent & Runtime
+> "Implement `agent_runtime.py` using `strands` and `BedrockAgentCoreApp`. Integrate the `BidiNovaSonicModel` for real-time voice. The agent must use an `MCPClient` to connect to the AgentCore Gateway and discover the tools from Phases 5 and 6. Implement a `TM` (Token Manager) class to handle OAuth2 client credentials flow with Cognito for Gateway authentication."
+
+### Phase 8: AppSync & Frontend Integration
+> "Build `appsync_agent_resolver.py` to bridge AppSync to AgentCore. Implement `invokeAgent` (handling `text/event-stream` and parsing tool results for products) and `getAgentWebsocketConfig` (generating a presigned SigV4 `wss://` URL). In the frontend, use a custom hook to manage the WebSocket connection, sending PCM16 audio and handling real-time AI responses."
+
+### Phase 9: Premium Frontend Development
 > "Build a React frontend using Vite and Tailwind v4. Use Framer Motion (version 12+) for glassmorphism effects and smooth transitions between Home, Camera (Visual Search), and Chat (AI Voice) pages. Connect to AppSync and S3 using `aws-amplify`. The Visual Search component should upload an image via presigned URL and subscribe to `onSearchResult` for real-time updates."
 
 ---
@@ -56,3 +68,12 @@ In CDK, adding S3 notifications to a Lambda that also needs write access to that
 
 ### 6. Framer Motion & React 19
 Ensure you are using the latest `motion` package (v12+) if targetting React 19 to avoid peer dependency conflicts during `npm install`.
+
+### 7. Stripe Secret Naming
+The native Stripe proxy expects the Secret ID in a specific format (`bedrock-agentcore-identity!default/apikey/StripeDirectKey`). If you change the secret name in AWS, you **must** update the `STRIPE_SECRET_NAME` environment variable in the AgentCore deployment.
+
+### 8. Voice Agent Audio Format
+The `amazon.nova-2-sonic-v1:0` model expects raw **PCM16 (Little Endian)** audio at **24,000Hz**. Sending 44.1kHz or 48kHz audio without resampling will result in robotic voice output or tool-calling failures.
+
+### 9. Robust Bedrock Stream Parsing
+Bedrock AgentCore sometimes yields Python-style string representations (`repr`) of tool results in the event stream. Your AppSync resolver should use a fallback like `ast.literal_eval` to safely parse these if `json.loads` fails.
